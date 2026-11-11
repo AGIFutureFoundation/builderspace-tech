@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BuilderSpace sitemap — single-page site today. Add URLs here as pages ship; add this sitemap to the family master index (~/workspace/your_files/subdomain-sitemap/sitemap-index.xml) only once the domain is live. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://builderspace.tech/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+</urlset>

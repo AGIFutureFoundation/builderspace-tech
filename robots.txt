@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://builderspace.tech/sitemap.xml
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+Agentmap: https://builderspace.tech/.well-known/ai-catalog.json

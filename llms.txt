@@ -1,0 +1,97 @@
+# BuilderSpace
+
+BuilderSpace — Midwest Builder Tour: hackathons, build weekends, pitch nights and speaker
+spaces, with free training resources for new founders. San Francisco startup teams travel to
+Louisiana and Nebraska to train alongside local builders and help local economies in areas
+seeing new data centres and jobs.
+
+Status, stated plainly: **everything here is PLANNED.** All 16 events are currently
+Private/unlisted on Luma, no invites have been sent, and **no venue, sponsor, speaker, or
+partner is confirmed**. Locations for in-person events are TBD unless marked Online. This
+file will never list a venue or sponsor that hasn't signed.
+
+- Site: https://builderspace.tech/ (GitHub Pages)
+- Contact (humans and agents): events@builderspace.tech
+- Sponsorship inquiries: sponsors@builderspace.tech (alias of the same mailbox)
+- Human steward: Mike Rice. Registration for agents is email-based and human-gated — see /auth.md.
+
+## Events
+
+Onboarding nights — five free online sessions, Thursdays 6:00–7:30pm Central:
+- Thu Nov 12, 2026 — Welcome to the Tour (Online)
+- Thu Nov 19, 2026 — Community Night: Meet SF + Midwest Builders (Online)
+- Thu Dec 3, 2026 — Build Night: Ship Your First Project (Online)
+- Thu Dec 10, 2026 — Info Night: Sponsors, Training & Incubators (Online)
+- Thu Dec 17, 2026 — Pre-Season Prep: Get Ready for January (Online)
+
+The 2027 tour — eleven planned events, Central time, locations TBD:
+- Jan 8, 2027 — Season Opening Kickoff
+- Jan 9–11, 2027 — Bayou AI Build Weekend (multi-day hackathon)
+- Feb 11, 2027 — Crescent City Founder Toolkit
+- Feb 17, 2027 — Nights & Weekends: NOLA Builder Night
+- Feb 18, 2027 — Heartland Builders & Coffee
+- Mar 5–7, 2027 — Cajun Code Sprint (multi-day hackathon) — Luma: https://luma.com/x4fbwvvb
+- Mar 26–28, 2027 — Prairie AgTech Build Weekend (multi-day build weekend)
+- Apr 8, 2027 — Nights & Weekends: Prairie Builder Night — Luma: https://luma.com/ygc1jzq0
+- Apr 15, 2027 — Red River Pitch Night
+- Apr 22, 2027 — BuildFest Skills & Certs Day
+- May 1, 2027 — Grand Finale (season closing)
+
+Only the two Luma links above are on file; the other 14 events have no public link yet.
+Final details are confirmed on Luma as they land.
+
+## The roadmap
+
+- Phase 0 (Nov 12 – Dec 17, 2026) — Onboarding, online: form the community before anyone travels.
+- Phase 1 (Jan 8 – Mar 7, 2027) — Louisiana: New Orleans (Kickoff, Bayou AI Build Weekend,
+  Founder Toolkit, NOLA Builder Night) and Lafayette (Cajun Code Sprint). Heartland Builders &
+  Coffee (Feb 18) is grouped in this leg; its city is not yet named in the plan.
+- Phase 2 (Mar 26 – Apr 15, 2027) — Nebraska: Omaha and Lincoln are the plan's anchor cities;
+  individual Nebraska event cities are not yet assigned in the records.
+- Phase 3 (Apr 22 – May 1, 2027) — Certify & close: Skills & Certs Day, then the Grand Finale.
+
+"What success looks like" on the site is the plan's aspiration, framed as goals — never as
+commitments or confirmed partners.
+
+## Founder training & resources
+
+The tour's second job is training new founders. On the site:
+- "How to Get Credits for Startup Founders" — a nine-guide series on stacking startup credits
+  honestly (the map, cloud, infra/dev tools, AI credits, business tools, the nonprofit track,
+  rejections, redeeming & tracking). Amounts are "up to" maximums; confirm terms with each
+  provider the day you apply. The guides are being published as resource pages by the AGI
+  Future Foundation; links on the site are placeholders until that push lands.
+- A startup credits & programs catalogue, a credits audit of real application outcomes, and
+  an application prep library — all grounded in real applications, approvals, and rejections.
+
+## Sponsorship
+
+The tour is seeking sponsors — cash and/or product credits. In return the tour team works as
+the sponsor's brand ambassadors and developer-relations crew on the road: workshops and demos
+on the sponsor's tools, the sponsor's stack in the curriculum, hackathon tracks and judging,
+tour content, and first access to the builders being trained. All sponsorship numbers are
+proposed and negotiable; **no amounts are published here because none are set** — tier
+amounts on file are blank placeholders the steward fills. Nothing is promised, and no sponsor
+is named until they've signed. Inquiries: sponsors@builderspace.tech.
+
+## Discovery files
+
+Machine-readable files for agents on this site:
+- /agents.json — catalogue of what is offered to agents and humans, with contacts.
+- /agent.json — the steward protocol in structured form.
+- /auth.md — agent registration (email-based, human-gated; no token, no OAuth/OIDC).
+- /.well-known/ai-catalog.json — agent resource discovery manifest.
+- /.well-known/api-catalog — resource/discovery linkset (this site has no API; the linkset lists real documents only).
+- /sitemap.xml — every page (currently one page).
+No OpenAPI spec, no status/health endpoint, no MCP server, and no OAuth/OIDC discovery
+documents exist for this site. Markdown content negotiation (Accept: text/markdown) is
+planned via a Cloudflare Worker once the domain is proxied — until then, this file is the
+Markdown homepage.
+
+## Agent rules
+
+Agents may summarize, cite, and route inquiries to a human steward. Agents may NOT commit
+BuilderSpace or the steward, move funds, sign, book, or represent themselves as BuilderSpace.
+Sponsorship, venue, and speaker agreements are made by humans, in writing, only. Every first
+step is steward-gated: write to events@builderspace.tech with a subject starting [Agent],
+naming your operator and human principal.
