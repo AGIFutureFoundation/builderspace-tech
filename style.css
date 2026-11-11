@@ -23,3 +23,26 @@ footer{background:#14202b;color:#cfd8de;padding:2.2rem 0;margin-top:1rem}
 footer a{color:#ffd23f}
 ul.clean{padding-left:1.1rem}li{margin:.3rem 0}
 .card.phase{border-top:4px solid var(--acc)}
+
+/* ============================================================
+   SITE UPGRADE 2026-11-11 (staging) — BuilderSpace
+   Added for the staged content upgrade only: hero mark and
+   CTAs, film grid, library/store staging slots, guide lead
+   typography, and footer nav. No existing rules were changed.
+   ============================================================ */
+.hero-mark{width:96px;height:96px;border-radius:20px;display:block;margin-bottom:1rem;background:#fff}
+.hero-ctas{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}
+.hero-ctas .btn{margin-top:0}
+.btn.secondary{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.85)}
+.btn.secondary:hover{border-color:#fff}
+.hero-note{margin-top:1rem;font-size:.98rem;opacity:.95;max-width:44rem}
+.films-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1rem;margin-top:1.4rem}
+.film-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;margin:0}
+.film-card figcaption{color:var(--mut);font-size:.92rem;line-height:1.5}
+.watch-pending{font-weight:600;color:var(--acc2)}
+.slot-badge{display:inline-block;background:#14202b;color:#ffd23f;font-weight:700;border-radius:999px;padding:.22rem .75rem;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.7rem}
+#library-store{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.foot-nav a{margin-right:.2rem}
+section p.sub{line-height:1.65}
+header.hero p.lede + p.lede{margin-top:.7rem;font-size:1.05rem}
+@media (max-width:560px){.hero-mark{width:72px;height:72px}.hero-ctas .btn{width:100%;text-align:center}}
