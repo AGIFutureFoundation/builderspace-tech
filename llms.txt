@@ -18,7 +18,7 @@ file will never list a venue or sponsor that hasn't signed.
 ## Events
 
 Onboarding nights — five free online sessions, Thursdays 6:00–7:30pm Central:
-- Thu Nov 12, 2026 — Welcome to the Tour (Online)
+- Fri Dec 4, 2026 — Welcome to the Tour (Online)
 - Thu Nov 19, 2026 — Community Night: Meet SF + Midwest Builders (Online)
 - Thu Dec 3, 2026 — Build Night: Ship Your First Project (Online)
 - Thu Dec 10, 2026 — Info Night: Sponsors, Training & Incubators (Online)
@@ -42,7 +42,7 @@ Final details are confirmed on Luma as they land.
 
 ## The roadmap
 
-- Phase 0 (Nov 12 – Dec 17, 2026) — Onboarding, online: form the community before anyone travels.
+- Phase 0 (Nov 19 – Dec 17, 2026) — Onboarding, online: form the community before anyone travels.
 - Phase 1 (Jan 8 – Mar 7, 2027) — Louisiana: New Orleans (Kickoff, Bayou AI Build Weekend,
   Founder Toolkit, NOLA Builder Night) and Lafayette (Cajun Code Sprint). Heartland Builders &
   Coffee (Feb 18) is grouped in this leg; its city is not yet named in the plan.

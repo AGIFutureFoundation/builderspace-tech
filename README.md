@@ -21,10 +21,10 @@ employers building the new tech region.
 fact — where the story is still being drawn, the caption says so.*
 
 **Beat 1 — The door opens online.** BuilderSpace begins with five free online
-onboarding nights, Thursdays 6:00–7:30pm Central, Nov 12 – Dec 17, 2026. First-time
+onboarding nights, Thursdays 6:00–7:30pm Central, Nov 19 – Dec 17, 2026. First-time
 builders, career switchers, students, and founders — whoever you are, there is a seat.
 
-**Beat 2 — Session 01.** *Welcome to the Tour* — Thursday, November 12, 2026, online.
+**Beat 2 — Session 01.** *Welcome to the Tour* — Friday, December 4, 2026, online.
 The season's first night: meet the crew, hear the plan, bring your agent if you have one.
 
 **Beat 3 — Registrations are open.** The tour's event listings live on Luma and are
