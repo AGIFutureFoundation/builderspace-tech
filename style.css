@@ -46,3 +46,172 @@ ul.clean{padding-left:1.1rem}li{margin:.3rem 0}
 section p.sub{line-height:1.65}
 header.hero p.lede + p.lede{margin-top:.7rem;font-size:1.05rem}
 @media (max-width:560px){.hero-mark{width:72px;height:72px}.hero-ctas .btn{width:100%;text-align:center}}
+
+/* ============================================================
+   AGENTIC NETWORK DESIGN SYSTEM v1 — BuilderSpace proof
+   Shared craft layer applied to the founder-credits journey and
+   the resources hub: deeper hero fields, display type, stronger
+   cards/actions, wider rhythm and explicit focus. BuilderSpace
+   keeps its deep teal, orange and signal-yellow identity.
+   ============================================================ */
+:root{
+  --ds-ink-950:#07131f;
+  --ds-deep:#0a2e3e;
+  --ds-teal:#124559;
+  --ds-teal-2:#1b6a85;
+  --ds-orange:#e4572e;
+  --ds-yellow:#ffd23f;
+  --ds-paper:#f7f5f0;
+  --ds-surface:#fffdf7;
+  --ds-muted:#405364;
+  --ds-line:#ddd3ba;
+  --ds-gold:#c9a227;
+  --ds-display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --ds-shadow-md:0 14px 36px rgba(7,19,31,.13);
+  --ds-shadow-lg:0 24px 60px rgba(7,19,31,.18);
+}
+html{scroll-padding-top:6rem}
+body.design-v1{
+  background:
+    radial-gradient(ellipse 70% 26rem at 50% -10rem,rgba(255,210,63,.14),transparent 68%),
+    var(--ds-paper);
+  font-size:16.5px;line-height:1.62;
+}
+body.design-v1 ::selection{background:var(--ds-yellow);color:var(--ds-ink-950)}
+body.design-v1 a{text-underline-offset:3px}
+body.design-v1 a:focus-visible,body.design-v1 .btn:focus-visible{
+  outline:3px solid #0e7c7b;outline-offset:3px;border-radius:8px;
+}
+body.design-v1 .wrap{max-width:72rem;padding-left:clamp(1.25rem,4vw,3rem);padding-right:clamp(1.25rem,4vw,3rem)}
+body.design-v1 nav.top{
+  z-index:60;background:rgba(255,253,247,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(201,162,39,.42);box-shadow:0 8px 28px rgba(7,19,31,.06);
+}
+body.design-v1 nav.top .wrap{min-height:4.25rem;align-items:center;gap:.4rem 1.15rem}
+body.design-v1 nav.top a{color:#24476e;padding:.55rem .2rem;border-radius:8px}
+body.design-v1 nav.top a:hover{color:var(--ds-deep);background:rgba(255,210,63,.22);text-decoration:none}
+body.design-v1 header.hero{
+  position:relative;overflow:hidden;
+  padding:clamp(4rem,8vw,6.5rem) 0 clamp(3.5rem,7vw,5.5rem);
+  background:
+    radial-gradient(ellipse 48% 55% at 88% 8%,rgba(255,210,63,.28),transparent 66%),
+    radial-gradient(ellipse 55% 70% at 8% 110%,rgba(27,106,133,.55),transparent 70%),
+    linear-gradient(145deg,var(--ds-ink-950),var(--ds-deep) 52%,var(--ds-teal-2));
+}
+body.design-v1 header.hero::after{
+  content:"";position:absolute;inset:auto 0 0;height:1px;background:linear-gradient(90deg,transparent,var(--ds-yellow),transparent);
+}
+body.design-v1 h1,body.design-v1 h2{font-family:var(--ds-display);font-weight:650;color:var(--ds-deep)}
+body.design-v1 header.hero h1{
+  color:#fffdf7;font-size:clamp(2.8rem,6.4vw,4.8rem);line-height:.99;letter-spacing:-.025em;max-width:13ch;
+}
+body.design-v1 h2{font-size:clamp(2rem,4vw,3rem);line-height:1.08;letter-spacing:-.018em;margin-bottom:.9rem}
+body.design-v1 h2::after{
+  content:"";display:block;width:4.5rem;height:3px;border-radius:999px;margin-top:.8rem;
+  background:linear-gradient(90deg,var(--ds-orange),var(--ds-yellow),transparent);
+}
+body.design-v1 header.hero .kicker{color:var(--ds-yellow);font-weight:800;opacity:1}
+body.design-v1 header.hero p.lede{font-size:1.22rem;line-height:1.6;max-width:45rem;color:#e6eef2}
+body.design-v1 .badge{
+  background:var(--ds-yellow);border:1px solid rgba(255,255,255,.35);box-shadow:0 8px 22px rgba(0,0,0,.18);
+  padding:.45rem .9rem;line-height:1.35;
+}
+body.design-v1 section{padding:clamp(3.5rem,7vw,5.5rem) 0}
+body.design-v1 .sub{color:var(--ds-muted);font-size:1.04rem;line-height:1.68;max-width:46rem}
+body.design-v1 .grid{gap:1.25rem;margin-top:1.6rem}
+body.design-v1 .card{
+  background:linear-gradient(180deg,var(--ds-surface),#fffaf0);
+  border-color:rgba(151,119,37,.3);border-radius:20px;padding:1.5rem;
+  box-shadow:0 10px 30px rgba(7,19,31,.07);
+  transition:transform 200ms cubic-bezier(.22,1,.36,1),box-shadow 200ms ease,border-color 200ms ease;
+}
+body.design-v1 .card:hover,body.design-v1 .card:focus-within{
+  transform:translateY(-2px);border-color:rgba(228,87,46,.62);box-shadow:var(--ds-shadow-md);
+}
+body.design-v1 .card h3{font-family:inherit;font-size:1.22rem;line-height:1.3;color:var(--ds-deep)}
+body.design-v1 .card .date{color:var(--ds-orange);letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+body.design-v1 .card .meta,body.design-v1 .meta{color:var(--ds-muted);line-height:1.62}
+body.design-v1 .btn{
+  min-height:3rem;display:inline-flex;align-items:center;justify-content:center;
+  padding:.78rem 1.3rem;border-radius:999px;background:var(--ds-orange);
+  box-shadow:0 10px 24px rgba(228,87,46,.24);
+  transition:transform 180ms cubic-bezier(.22,1,.36,1),box-shadow 180ms ease,background 180ms ease;
+}
+body.design-v1 .btn:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(228,87,46,.28)}
+body.design-v1 .btn.secondary{box-shadow:none;background:rgba(255,255,255,.06)}
+body.design-v1 .note{
+  background:#fff8dc;border-color:#e2c66d;border-left:5px solid var(--ds-gold);
+  border-radius:16px;padding:1.25rem 1.4rem;box-shadow:0 8px 24px rgba(7,19,31,.06);
+}
+body.design-v1 footer{
+  background:var(--ds-ink-950);border-top:4px solid var(--ds-yellow);
+  padding:3rem 0;color:#c7d2df;
+}
+body.design-v1 footer a{color:var(--ds-yellow)}
+body.design-v1 footer :focus-visible{outline-color:var(--ds-yellow)}
+
+/* Founder-credits purchase path: make the buy section read as a decision panel. */
+body.design-v1.founder-credits-page #buy .wrap{
+  background:linear-gradient(145deg,var(--ds-ink-950),var(--ds-deep));
+  border-radius:28px;padding:clamp(2rem,5vw,3.5rem);color:#e6eef2;
+  box-shadow:var(--ds-shadow-lg);
+}
+body.design-v1.founder-credits-page #buy h2{color:#fffdf7}
+body.design-v1.founder-credits-page #buy .sub{color:#c7d2df}
+body.design-v1.founder-credits-page #buy .note{color:#17222d}
+body.design-v1.founder-credits-page #get-the-guide .btn,
+body.design-v1.founder-credits-page #buy .btn{min-width:min(100%,20rem)}
+
+/* Resources hub: reconcile its standalone inline theme with the shared system
+   without changing its content or links. Higher-specificity rules intentionally
+   override the page's legacy inline base styles. */
+body.design-v1.resources-page{margin:0;background:var(--ds-paper);color:#17222d}
+body.design-v1.resources-page .wrap{max-width:72rem;padding-left:clamp(1.25rem,4vw,3rem);padding-right:clamp(1.25rem,4vw,3rem)}
+body.design-v1.resources-page>header{
+  padding:clamp(3.5rem,7vw,5.5rem) 0 clamp(3rem,6vw,4.5rem);color:#e6eef2;
+  background:
+    radial-gradient(ellipse 48% 60% at 90% 0%,rgba(255,210,63,.26),transparent 66%),
+    linear-gradient(145deg,var(--ds-ink-950),var(--ds-deep) 58%,var(--ds-teal-2));
+}
+body.design-v1.resources-page>header p:first-child{
+  display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;margin-top:0;
+}
+body.design-v1.resources-page>header a{color:var(--ds-yellow);font-weight:700}
+body.design-v1.resources-page h1{
+  font-family:var(--ds-display);color:#fffdf7;font-size:clamp(2.8rem,6vw,4.5rem);line-height:1;margin:.35em 0;
+}
+body.design-v1.resources-page>header p{max-width:46rem;font-size:1.12rem;line-height:1.62}
+body.design-v1.resources-page main.wrap{padding-top:1rem;padding-bottom:4rem}
+body.design-v1.resources-page h2{
+  font-family:var(--ds-display);color:var(--ds-deep);font-size:clamp(2rem,4vw,3rem);margin-top:3.5rem;
+}
+body.design-v1.resources-page .card{
+  border-color:rgba(151,119,37,.3);border-radius:20px;padding:1.5rem;margin:1rem 0;
+  box-shadow:0 10px 30px rgba(7,19,31,.07);
+}
+body.design-v1.resources-page .card h3{font-size:1.24rem;color:var(--ds-deep)}
+body.design-v1.resources-page .card p{color:var(--ds-muted)}
+body.design-v1.resources-page .tag{background:var(--ds-teal);min-height:1.65rem;padding:.18rem .65rem}
+body.design-v1.resources-page .tag.plan{background:#7a5b00}
+body.design-v1.resources-page footer{
+  background:transparent;border-top:1px solid var(--ds-line);padding:2rem 0 0;margin-top:3rem;color:var(--ds-muted);
+}
+body.design-v1.resources-page footer a{color:#8a5f00}
+
+@media(max-width:760px){
+  body.design-v1 nav.top .wrap{gap:.2rem .8rem;padding-top:.65rem;padding-bottom:.65rem}
+  body.design-v1 nav.top a{font-size:.92rem}
+  body.design-v1 .card{padding:1.25rem}
+}
+@media(max-width:560px){
+  body.design-v1 .btn{width:100%}
+  body.design-v1 header.hero h1{font-size:2.7rem}
+  body.design-v1.founder-credits-page #buy .wrap{border-radius:22px}
+}
+@media (prefers-reduced-motion: reduce){
+  body.design-v1 *,body.design-v1 *::before,body.design-v1 *::after{
+    animation:none!important;transition:none!important;scroll-behavior:auto!important;
+  }
+  body.design-v1 .card:hover,body.design-v1 .btn:hover{transform:none}
+}
+
