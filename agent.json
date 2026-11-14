@@ -1,1 +1,140 @@
-{"agent_protocol":"PROPOSED, steward-gated, receipt-required","capabilities":["summarize","cite","route_inquiry"],"contact":"events@builderspace.tech","description":"BuilderSpace — Midwest Builder Tour: hackathons, build weekends, pitch nights and speaker spaces, with free training resources for new founders.","machine_readable":["/llms.txt","/agents.json","/agent.json","/auth.md","/.well-known/ai-catalog.json","/.well-known/api-catalog","/sitemap.xml"],"name":"BuilderSpace","not_capabilities":["commit","sign","move_funds","book_venue","confirm_sponsor","represent_organization"],"status":{"as_of":"2026-11-09","events":"All 16 events (5 online onboarding nights, Nov-Dec 2026; 11 tour events, Jan-May 2027) are PLANNED and currently Private/unlisted on Luma. No venue, sponsor, speaker, or partner is confirmed.","note":"Sponsorship tier amounts are unset (blank placeholders on file); no prices are stated here. Agreements are made by the human steward, in writing, only."},"token":null,"url":"https://builderspace.tech/"}
+{
+  "affordances": [
+    {
+      "state": "LIVE",
+      "verb": "discover"
+    },
+    {
+      "route": "PRICES.json (registry entry ids named in this manifest)",
+      "state": "LIVE",
+      "verb": "quote"
+    },
+    {
+      "state": "LIVE",
+      "verb": "cite"
+    },
+    {
+      "route": "mailto:x@agifuturefoundation.org",
+      "state": "LIVE",
+      "verb": "request-human"
+    },
+    {
+      "route": "mailto:x@agifuturefoundation.org (subject: CODE: <CODE> — <product>)",
+      "state": "LIVE",
+      "verb": "register-honour-code"
+    },
+    {
+      "route": "mailto:x@agifuturefoundation.org (subject: WAITLIST: <product-id>)",
+      "state": "LIVE",
+      "verb": "join-waitlist"
+    },
+    {
+      "gate": "Only registry entries whose state is LIVE or LIVE-WITH-DEFECT, one entry at a time, route verbatim from the registry. Every other entry returns its state and gate instead.",
+      "route": "The PayPal route recorded in the PRICES.json entry",
+      "state": "LIVE",
+      "verb": "purchase"
+    },
+    {
+      "gate": "The Session 01 Booking / CTO links are created at the PayPal sitting (Mike's sign-in). The paid Session 01 line also carries an open naming conflict (the live Dec 4 Session 01 is a free tour night) recorded in PRICES.json.",
+      "state": "GATED",
+      "verb": "book-discovery-call"
+    }
+  ],
+  "citation": "cite:builderspace",
+  "deployment": "LIVE — merged manifest pushed 2026-11-13 (agent-layer merge pass, approved by Mike 2026-11-13 17:06 PT). This validated manifest is the base; substantive content unique to the earlier hand-written live agent.json is preserved under liveSiteRecord.",
+  "holding": "agicorp",
+  "houseLaw": {
+    "approval": "Draft-first, exact-copy: no agent sends, posts, publishes, or submits outward without Mike's approval of the exact version. Nightshift work also requires Bino's approval.",
+    "caps": {
+      "coldEmailPerDayProgrammeWide": 250,
+      "emailPerMailboxPerDay": 90,
+      "social": "One platform at a time; ~2 minutes between same-platform actions; <=3 posts/account/day; <=25 actions/platform/day network-wide; first platform warning = full stop on that platform that day. Caps bind the account, never the device or agent count."
+    },
+    "contacts": "Published institutional contacts only. Pattern/inferred emails are never mailable. The filings graph is never a contact source.",
+    "evidenceLabels": "Claims carry VERIFIED / REPORTED / HYPOTHESIS. Filed fact and intended plan are never blended. Tax status, stated only as: California nonprofit corporation; EIN assigned; no IRS determination letter on file.",
+    "holdingSeparation": "Holdings keep separate lanes, contacts, and claims. Cross-holding work splits into one Agent-Net packet per holding. Fellowship surfaces carry no commerce, ever.",
+    "humanHandoff": "Anyone who asks for a human, or opens a price/scope conversation beyond published registry prices, leaves the automated thread the same day, flagged to the human (Mike; Russell Vacanti on Foundation matters; a Fellowship steward on Fellowship matters). Agents state published prices; they never quote custom terms, discounts, or timelines.",
+    "neverForAgents": [
+      "sign",
+      "move funds",
+      "hire or fire",
+      "offer securities",
+      "enact doctrine or charters",
+      "complete payment, KYC, or signature steps"
+    ],
+    "standard": "AGENT-FRIENDLY-STANDARD.md",
+    "suppression": "Suppressed contacts are locked out of every queue on every surface. Suppression is checked before a queue is built and again before any draft. An agent that cannot check suppression does not send; it hands off."
+  },
+  "id": "builderspace",
+  "identity": {
+    "agentNet": {
+      "identityNote": "An agent identifies by its Agent-Net agent id. Identity grants authorship, never transaction authority. Packet contents stay off-chain; per-agent SHA-256 hash chains roll to a Merkle root anchored on Base.",
+      "protocol": "PROTOCOL.md v1 — packets (AN-YYYYMMDD-NNN, signed header, exactly one holding project), claim-by-commit (first claim wins), steward merges to main",
+      "repo": "AGIFutureFoundation/agent-net (private mirror); local ~/workspace/agent-net/",
+      "wallets": "Model on record: per-agent operational wallets capped at $10 USDC; one dedicated anchor wallet (~$25 ETH, gas only). NO real wallets are provisioned; provisioning and funding are Mike's hand alone."
+    },
+    "principal": "Mike Rice",
+    "stewardAgent": "AGI",
+    "x402FirstContact": [
+      {
+        "point": "hire-briefs",
+        "pricePerCall": 0.1,
+        "state": "GATED-DEPLOY"
+      },
+      {
+        "point": "lab-data (LAB-009 / LAB-010)",
+        "pricePerCall": 0.25,
+        "state": "GATED-DEPLOY"
+      },
+      {
+        "point": "tips",
+        "pricePerCall": 1.0,
+        "state": "GATED-DEPLOY"
+      }
+    ],
+    "x402Note": "These three points are the ONLY priced first-contact points. Known agents and people use free lanes. Deploy gated on the Cloudflare token + CDP sign-in."
+  },
+  "liveSiteRecord": {
+    "agent_protocol": "PROPOSED, steward-gated, receipt-required",
+    "capabilities": [
+      "summarize",
+      "cite",
+      "route_inquiry"
+    ],
+    "contact": "events@builderspace.tech",
+    "description": "BuilderSpace — Midwest Builder Tour: hackathons, build weekends, pitch nights and speaker spaces, with free training resources for new founders.",
+    "machine_readable": [
+      "/llms.txt",
+      "/agents.json",
+      "/agent.json",
+      "/auth.md",
+      "/.well-known/ai-catalog.json",
+      "/.well-known/api-catalog",
+      "/sitemap.xml"
+    ],
+    "not_capabilities": [
+      "commit",
+      "sign",
+      "move_funds",
+      "book_venue",
+      "confirm_sponsor",
+      "represent_organization"
+    ],
+    "status": {
+      "as_of": "2026-11-09",
+      "events": "All 16 events (5 online onboarding nights, Nov-Dec 2026; 11 tour events, Jan-May 2027) are PLANNED and currently Private/unlisted on Luma. No venue, sponsor, speaker, or partner is confirmed.",
+      "note": "Sponsorship tier amounts are unset (blank placeholders on file); no prices are stated here. Agreements are made by the human steward, in writing, only."
+    },
+    "token": null
+  },
+  "manifestVersion": "2026-11-13.1",
+  "name": "BuilderSpace",
+  "registryEntries": [
+    "session-01-booking"
+  ],
+  "standard": "AGENT-FRIENDLY-STANDARD.md",
+  "summary": "The builder tour: bringing the coding and startup world to tour towns, bridging the tech divide, matching builders with employers. Session 01 is a free Welcome night (Fri Dec 4, 2026, 18:00–19:30 CT, Private on Luma). The paid Session 01 build-along line is a separate registry entry carrying its open naming note.",
+  "surface": "Staged agent layer — the live page set lands with the design-system push batch.",
+  "type": "programme",
+  "url": "https://builderspace.tech"
+}
