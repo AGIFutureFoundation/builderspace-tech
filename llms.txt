@@ -73,6 +73,9 @@ tour content, and first access to the builders being trained. All sponsorship nu
 proposed and negotiable; **no amounts are published here because none are set** — tier
 amounts on file are blank placeholders the steward fills. Nothing is promised, and no sponsor
 is named until they've signed. Inquiries: sponsors@builderspace.tech.
+Sponsors can also post offers for builders on the Sponsor Offers board:
+https://builderspace.tech/offers.html — posting is free; every offer is reviewed by a
+human before it is listed, and offers are listed in the sponsor's own words.
 
 ## Discovery files
 

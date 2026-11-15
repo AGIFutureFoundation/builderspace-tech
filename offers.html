@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sponsor Offers — BuilderSpace</title>
+<meta name="description" content="The BuilderSpace Sponsor Offers board: sponsors post offers for the builders who come to BuilderSpace sessions, hackathons, and the tour — credits, tools, space, prizes, food, mentorship. Posting is free; every offer is reviewed before it is listed.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="top"><div class="wrap">
+  <a href="index.html"><strong>BuilderSpace</strong></a>
+  <a href="index.html#events">Events</a>
+  <a href="index.html#roadmap">The Roadmap</a>
+  <a href="index.html#onboarding">Onboarding Nights</a>
+  <a href="index.html#resources">Founder Training &amp; Resources</a>
+  <a href="index.html#films">Films</a>
+  <a href="index.html#sponsors">Sponsor the Tour</a>
+  <a href="guide.html">Guide</a>
+  <a href="/stack.html">Library</a>
+  <a href="offers.html" class="here">Offers</a>
+  <a href="https://www.agicorp.network/store/">Store</a>
+  <a href="mailto:events@builderspace.tech">events@builderspace.tech</a>
+</div></nav>
+
+<header class="pagehead"><div class="wrap">
+  <div class="kicker">BuilderSpace · Sponsor Offers</div>
+  <h1>Offers from sponsors, for builders.</h1>
+  <p class="lede">This is the board where sponsors post offers for the builders who come to BuilderSpace sessions, hackathons, and the tour: <strong>credits, tools, space, prizes, food, and mentorship</strong>. If your company has something real for builders, post it below — a person on the team reads every offer, and the good ones are listed here where builders will actually see them.</p>
+  <span class="badge">POSTING IS FREE — EVERY OFFER IS REVIEWED BEFORE IT IS LISTED</span>
+</div></header>
+
+<section id="board"><div class="wrap">
+  <h2>The board</h2>
+  <p class="sub">Offers posted by sponsors, reviewed by the BuilderSpace team, and listed for the community. Every value shown is stated by the sponsor in their own words; BuilderSpace adds nothing to it.</p>
+  <div id="offers-grid" class="grid"></div>
+  <div id="offers-empty" class="spot" style="display:none">
+    <div class="date">FOUNDING SPONSOR OFFERS OPEN</div>
+    <h3>The first offers land here</h3>
+    <p>No offers are listed yet — the board is new. The founding offers will be the first ones builders meet at every onboarding night, build weekend, and tour stop this season. If your company has credits, tools, space, prizes, food, or mentorship for builders, yours can be the first name on this board.</p>
+    <p><a class="btn" href="#post">Post an offer →</a></p>
+  </div>
+  <p id="offers-note" class="small"></p>
+</div></section>
+
+<section id="good"><div class="wrap">
+  <h2>What makes a good offer</h2>
+  <div class="grid">
+    <div class="card"><h3>Concrete value</h3><p class="meta">Say exactly what a builder walks away with — the credit, the tool, the seat, the meal — not a general promise of support.</p></div>
+    <div class="card"><h3>Clear terms</h3><p class="meta">Name the limits up front: who qualifies, how many there are, what is excluded. Builders trust offers whose fine print is on the front.</p></div>
+    <div class="card"><h3>A real expiry</h3><p class="meta">Give the offer an end date. A deadline gets it claimed; an open-ended offer gets forgotten.</p></div>
+    <div class="card"><h3>One link</h3><p class="meta">One link that takes a builder straight to claiming or learning more — not a homepage they have to dig through.</p></div>
+  </div>
+</div></section>
+
+<section id="post"><div class="wrap">
+  <h2>Post an offer</h2>
+  <p class="sub">Fill this in and the form opens a pre-addressed email in your own email app — check it and press send. That is the whole posting process; there is no account and nothing to pay.</p>
+
+  <form id="offer-form" class="offerform" novalidate>
+    <label class="fl" for="f-sponsor">Sponsor / organisation name <span class="req">*</span></label>
+    <input class="fi" id="f-sponsor" name="sponsor" type="text" autocomplete="organization" required>
+
+    <label class="fl" for="f-contact">Contact name <span class="req">*</span></label>
+    <input class="fi" id="f-contact" name="contact" type="text" autocomplete="name" required>
+
+    <label class="fl" for="f-email">Contact email <span class="req">*</span></label>
+    <input class="fi" id="f-email" name="email" type="email" autocomplete="email" required>
+
+    <label class="fl" for="f-title">Offer title <span class="req">*</span></label>
+    <input class="fi" id="f-title" name="title" type="text" required>
+
+    <label class="fl" for="f-category">Category <span class="req">*</span></label>
+    <select class="fi" id="f-category" name="category" required>
+      <option value="">Choose a category…</option>
+      <option>Credits &amp; tools</option>
+      <option>Venue &amp; space</option>
+      <option>Prizes</option>
+      <option>Food &amp; hospitality</option>
+      <option>Mentorship</option>
+      <option>Other</option>
+    </select>
+
+    <label class="fl" for="f-get">What builders get <span class="req">*</span></label>
+    <textarea class="fi" id="f-get" name="get" required></textarea>
+
+    <label class="fl" for="f-value">Value <span class="meta">(optional — your own words, exactly as it should be listed)</span></label>
+    <input class="fi" id="f-value" name="value" type="text">
+
+    <label class="fl" for="f-for">Who it's for</label>
+    <select class="fi" id="f-for" name="audience">
+      <option>All builders</option>
+      <option>Session attendees</option>
+      <option>Hackathon teams</option>
+    </select>
+
+    <label class="fl" for="f-expiry">Expiry date <span class="meta">(optional)</span></label>
+    <input class="fi" id="f-expiry" name="expiry" type="date">
+
+    <label class="fl" for="f-link">Link <span class="meta">(optional — where a builder claims or learns more)</span></label>
+    <input class="fi" id="f-link" name="link" type="url" placeholder="https://">
+
+    <label class="fl" for="f-terms">Terms or limits <span class="meta">(optional)</span></label>
+    <textarea class="fi" id="f-terms" name="terms"></textarea>
+
+    <div id="form-error" class="formerr" style="display:none"></div>
+
+    <p class="note"><strong>Before you send:</strong> offers are reviewed before listing. Posting an offer does not guarantee listing; we reply from events@builderspace.tech.</p>
+
+    <p><button class="btn" type="submit" style="border:0;cursor:pointer;font:inherit">Post this offer by email →</button></p>
+  </form>
+
+  <div id="offer-thanks" class="spot" style="display:none">
+    <div class="date">THANK YOU</div>
+    <h3>Your offer is on its way</h3>
+    <p>Your email app should now show the offer, addressed to events@builderspace.tech — press send there and it is with the team. Watch events@builderspace.tech for our reply. Every offer is reviewed before it is listed, and posting does not guarantee listing.</p>
+    <p><a class="btn2" href="#board">Back to the board →</a></p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><strong>BuilderSpace</strong> · builderspace.tech · Contact: <a href="mailto:events@builderspace.tech">events@builderspace.tech</a> · Sponsorship: <a href="mailto:sponsors@builderspace.tech">sponsors@builderspace.tech</a></p>
+  <p class="foot-nav"><a href="index.html">Home</a> · <a href="guide.html">Guide</a> · <a href="louisiana.html">Why Louisiana</a> · <a href="faq.html">FAQ</a> · <a href="offers.html">Sponsor Offers</a> · Library (staging slot) · Store (staging slot — waitlist)</p>
+  <p>Part of the agentic network — hub: <a href="https://www.agicorp.network">agicorp.network</a></p>
+  <p>Events are planned; details confirmed on Luma. All events are currently Private/unlisted on Luma, with no venues or sponsors confirmed yet.</p>
+</div></footer>
+
+<script>
+(function(){
+  function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+  var grid=document.getElementById("offers-grid"),
+      empty=document.getElementById("offers-empty"),
+      note=document.getElementById("offers-note");
+  function render(offers){
+    var list=(offers||[]).filter(function(o){return o && typeof o==="object";});
+    if(!list.length){ empty.style.display="block"; grid.innerHTML=""; return; }
+    empty.style.display="none";
+    grid.innerHTML=list.map(function(o){
+      var h='<div class="card">';
+      if(o.category) h+='<span class="tag">'+esc(o.category)+'</span>';
+      h+='<h3>'+esc(o.title||"Offer")+'</h3>';
+      if(o.sponsor) h+='<p class="date">'+esc(o.sponsor)+'</p>';
+      if(o.description) h+='<p>'+esc(o.description)+'</p>';
+      if(o.value) h+='<p class="meta"><strong>Value, in the sponsor\u2019s words:</strong> '+esc(o.value)+'</p>';
+      var bits=[];
+      if(o.audience) bits.push('For: '+esc(o.audience));
+      if(o.expires) bits.push('Open until: '+esc(o.expires));
+      if(o.added) bits.push('Listed: '+esc(o.added));
+      if(bits.length) h+='<p class="meta">'+bits.join(' · ')+'</p>';
+      if(o.url) h+='<p><a class="btn2" href="'+esc(o.url)+'" rel="noopener">Claim / learn more →</a></p>';
+      return h+'</div>';
+    }).join("");
+  }
+  if(window.fetch){
+    fetch("offers.json").then(function(r){return r.json();}).then(function(data){
+      render(data && data.offers);
+    }).catch(function(){
+      render([]);
+      note.textContent="The board\u2019s list could not be loaded just now — posting an offer by the form below works either way.";
+    });
+  } else { render([]); }
+
+  var form=document.getElementById("offer-form"),
+      thanks=document.getElementById("offer-thanks"),
+      err=document.getElementById("form-error");
+  function val(id){return document.getElementById(id).value.trim();}
+  form.addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var required=[
+      ["f-sponsor","sponsor / organisation name"],
+      ["f-contact","contact name"],
+      ["f-email","contact email"],
+      ["f-title","offer title"],
+      ["f-category","category"],
+      ["f-get","what builders get"]
+    ];
+    var missing=[];
+    for(var i=0;i<required.length;i++){
+      if(!val(required[i][0])) missing.push(required[i][1]);
+    }
+    var email=val("f-email");
+    if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) missing.push("a valid contact email");
+    if(missing.length){
+      err.style.display="block";
+      err.innerHTML="<strong>Almost there</strong> — the form still needs: "+missing.join(", ")+".";
+      err.scrollIntoView({behavior:"smooth",block:"center"});
+      return;
+    }
+    err.style.display="none";
+    var title=val("f-title");
+    var lines=[
+      "Sponsor offer — posted from the BuilderSpace Sponsor Offers board (builderspace.tech/offers.html)",
+      "",
+      "Sponsor / organisation: "+val("f-sponsor"),
+      "Contact name: "+val("f-contact"),
+      "Contact email: "+email,
+      "Offer title: "+title,
+      "Category: "+val("f-category"),
+      "",
+      "What builders get:",
+      val("f-get")
+    ];
+    if(val("f-value")) lines.push("","Value (sponsor's own words): "+val("f-value"));
+    lines.push("","Who it's for: "+(val("f-for")||"All builders"));
+    if(val("f-expiry")) lines.push("Expiry date: "+val("f-expiry"));
+    if(val("f-link")) lines.push("Link: "+val("f-link"));
+    if(val("f-terms")) lines.push("","Terms or limits:",""+val("f-terms"));
+    lines.push("","The poster understands: offers are reviewed before listing, and posting does not guarantee listing.");
+    var href="mailto:events@builderspace.tech"
+      +"?subject="+encodeURIComponent("Sponsor offer: "+title)
+      +"&body="+encodeURIComponent(lines.join("\n"));
+    window.location.href=href;
+    form.style.display="none";
+    thanks.style.display="block";
+    thanks.scrollIntoView({behavior:"smooth",block:"center"});
+  });
+})();
+</script>
+
+</body>
+</html>
