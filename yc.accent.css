@@ -1,0 +1,140 @@
+/* ============================================================
+   BuilderSpace — .ds-yc accent layer (design-match pack, 2026-11-16)
+   Source spec: YC-BUILDERSPACE-SPEC.md §3 (tokens, components, layering).
+   A style language only: white canvas, one orange doing all chromatic
+   work, hard 0px corners, system-sans headline-first hierarchy, narrow
+   prose measure. Scoped to body.ds-yc so it ships page by page and
+   leaves every other BuilderSpace surface (incl. .ds-learn catalogue
+   pages and one-apply.html) untouched. Loaded after style.css.
+   ============================================================ */
+
+body.ds-yc{
+  --yc-canvas:#FFFFFF;
+  --yc-paste:#F6F6EF;
+  --yc-ink:#1A1A1A;
+  --yc-ink-2:#595959;
+  --yc-orange:#F26625;
+  --yc-hover:#E85D00;
+  --yc-deep:#CC4F00;
+  --yc-soft:rgba(242,102,37,.10);
+  --yc-line:#E7E5DF;
+  background:var(--yc-canvas);
+  color:var(--yc-ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.6;
+}
+body.design-v1.ds-yc{background:var(--yc-canvas)}
+body.ds-yc ::selection{background:var(--yc-soft);color:var(--yc-ink)}
+
+/* Links — text-safe deep orange, underlined in prose */
+body.ds-yc a{color:var(--yc-deep)}
+body.ds-yc a:hover{color:var(--yc-hover)}
+body.ds-yc a:focus-visible,body.ds-yc .btn:focus-visible,body.ds-yc button:focus-visible{
+  outline:3px solid var(--yc-deep);outline-offset:2px;border-radius:0;
+}
+
+/* Thin top bar — white, hairline, plain ink links */
+body.ds-yc nav.top,
+body.design-v1.ds-yc nav.top{
+  background:var(--yc-canvas);border-bottom:1px solid var(--yc-line);
+  box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;
+}
+body.ds-yc nav.top a,
+body.design-v1.ds-yc nav.top a{
+  color:var(--yc-ink);font-weight:600;background:transparent;border-radius:0;
+}
+body.ds-yc nav.top a:hover,
+body.design-v1.ds-yc nav.top a:hover{color:var(--yc-deep);background:transparent;text-decoration:underline}
+body.ds-yc nav.top a.here{color:var(--yc-deep);text-decoration:underline}
+
+/* Headline hero — white canvas, no art, no gradient; the headline works */
+body.ds-yc header.hero,body.ds-yc header.pagehead,
+body.design-v1.ds-yc header.hero,body.design-v1.ds-yc header.pagehead{
+  background:var(--yc-canvas);color:var(--yc-ink);
+  padding:clamp(3.5rem,8vw,5.5rem) 0 clamp(2.5rem,6vw,3.5rem);
+}
+body.ds-yc header.hero::after,body.design-v1.ds-yc header.hero::after{display:none}
+body.ds-yc .kicker{color:var(--yc-deep);opacity:1;font-weight:700}
+body.ds-yc h1{
+  font-weight:800;letter-spacing:-.02em;line-height:1.05;
+  font-size:clamp(2.5rem,6vw,4.25rem);color:var(--yc-ink);
+}
+body.ds-yc header.hero p.lede,body.ds-yc header.pagehead p.lede{
+  font-size:1.15rem;max-width:47.5rem;color:var(--yc-ink);
+}
+body.ds-yc .hero-note{color:var(--yc-ink-2);opacity:1}
+body.ds-yc .hero-mark{border-radius:0;background:transparent}
+
+/* Primary action — one orange, square, no shadow */
+body.ds-yc .btn,body.design-v1.ds-yc .btn{
+  background:var(--yc-orange);color:#fff;border:0;border-radius:0;
+  font-weight:700;box-shadow:none;
+}
+body.ds-yc .btn:hover,body.design-v1.ds-yc .btn:hover{background:var(--yc-hover);color:#fff}
+body.ds-yc .btn.secondary{
+  background:var(--yc-canvas);color:var(--yc-ink);
+  border:1.5px solid var(--yc-ink);
+}
+body.ds-yc .btn.secondary:hover{border-color:var(--yc-deep);color:var(--yc-deep)}
+body.ds-yc .btn2{
+  background:var(--yc-canvas);color:var(--yc-deep);
+  border:1.5px solid var(--yc-deep);border-radius:0;font-weight:700;
+}
+body.ds-yc .btn2:hover{color:var(--yc-hover);border-color:var(--yc-hover)}
+
+/* Badges and slot markers — paste/soft chips, square */
+body.ds-yc .badge{
+  background:var(--yc-soft);color:var(--yc-deep);
+  border-radius:0;font-weight:700;
+}
+body.ds-yc .slot-badge{
+  background:var(--yc-ink);color:#fff;border-radius:0;
+}
+
+/* Sections and prose — narrow measure, plain H2s */
+body.ds-yc h2{font-weight:700;line-height:1.15;color:var(--yc-ink)}
+body.ds-yc .sub{color:var(--yc-ink-2);max-width:47.5rem}
+body.ds-yc section p.sub{line-height:1.65}
+
+/* Directory rows in card clothing — hairlines, square, white */
+body.ds-yc .card,body.design-v1.ds-yc .card{
+  background:var(--yc-canvas);border:1px solid var(--yc-line);
+  border-radius:0;box-shadow:none;
+}
+body.ds-yc .card.phase{border-top:1px solid var(--yc-line)}
+body.ds-yc .card h3{color:var(--yc-ink)}
+body.ds-yc .date{color:var(--yc-deep)}
+body.ds-yc .meta{color:var(--yc-ink-2)}
+body.ds-yc .film-card{
+  background:var(--yc-canvas);border:1px solid var(--yc-line);border-radius:0;
+}
+body.ds-yc .film-card img{border-radius:0 !important}
+body.ds-yc .watch-pending{color:var(--yc-deep)}
+body.ds-yc .tag{
+  background:var(--yc-soft);color:var(--yc-deep);border-radius:0;font-weight:700;
+}
+
+/* Notes and lone-fact bands — paste-paper ground */
+body.ds-yc .note{
+  background:var(--yc-paste);border:1px solid var(--yc-line);border-radius:0;
+}
+body.ds-yc #library-store{
+  background:var(--yc-paste);border-top:1px solid var(--yc-line);border-bottom:1px solid var(--yc-line);
+}
+body.ds-yc .spot{
+  background:var(--yc-paste);border:1px solid var(--yc-line);border-radius:0;
+}
+
+/* Forms (offers board) — square inputs, deep-orange focus */
+body.ds-yc .fi{border:1px solid var(--yc-line);border-radius:0;background:var(--yc-canvas);color:var(--yc-ink)}
+body.ds-yc .fi:focus{outline:3px solid var(--yc-deep);outline-offset:1px}
+body.ds-yc .req{color:var(--yc-deep)}
+
+/* Footer — minimal, light, plain links */
+body.ds-yc footer{
+  background:var(--yc-canvas);color:var(--yc-ink-2);
+  border-top:1px solid var(--yc-line);
+}
+body.ds-yc footer a{color:var(--yc-deep)}
+body.ds-yc footer a:hover{color:var(--yc-hover)}
+body.ds-yc footer strong{color:var(--yc-ink)}
