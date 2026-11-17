@@ -24,6 +24,7 @@ posthog.init('phc_yuj9CrYP8epdnwhmSJLUCFwq2KSzA6wLj3gQUiE6wApA',{api_host:'https
                                                                                                                    a.get_group = function () { function b(a) { c[a] = function () { call(a, "set", "people", "set", "set_once") } } for (var d = 0; d < j.length; d++) b(j[d]); return function () { a._i.push([c, arguments]) } }; b._i.push(["init", e, f, c]) }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0;
                                      e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g) } })(document, window.mixpanel || []); 
     mixpanel.init("23d0a7b892c49d99899ec156cb2ea410", {debug: true, track_pageview: true, persistence: "localStorage"});
+    mixpanel.track_pageview();
   </script>
 <style>
 .chip{display:inline-block;background:#124559;color:#fff;border-radius:999px;padding:.18rem .7rem;font-size:.78rem;font-weight:700;letter-spacing:.02em}
