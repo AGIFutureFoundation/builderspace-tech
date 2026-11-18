@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-18 (founders one-apply enterprise loop, 08:25 PT run — DB 269→279: AssemblyAI + LiveKit verified on official pages; Redis, Awesome Foundation, WorkOS, Mozilla Incubator, Pollination Project, Coefficient Tailwind logged REPORTED; Cohere + Groq logged as no-live-programme-verified (withdrawn/closed); submitted unchanged at 43)",
+ "generated_at": "2026-11-18 (founders one-apply enterprise loop, 08:55 PT run - DB 279->303: 24 records landed. 8 estate-ledger reconciliations (TiDB $500 in hand, CircleCI, Anyscale, RunPod, Baseten submitted on record; OpenRouter $15, You.com $99.98, Cerebrium $5 in hand - all already inside the itemized $73,025.98, headline unchanged); 6 official-page verdicts (Plane VERIFIED staged-eligible, FastPix VERIFIED blocked on account step, GitHub blocked-partner-gated REPORTED, Figma blocked-partner-gated, PlanetScale + Twilio no-live-programme-verified); 10 main-chat sweep filings reconciled as submitted-per-estate-record (Checkly, Fastly, Fibery, AppSignal, BrowserStack OSS, TestingBot OSS, Crowdin OSS, Featurebase, Pendo, Symbl - confirmation verbatims owed, NOT in the strict submitted count). Strict submitted 43->51 (all reconciliations of pre-existing filings; 0 new filings this run).)",
  "source": "programmes-db.json",
  "buckets": {
   "verified_in_hand_usd": 75556,
   "verified_in_hand_note": "Estate headline $75,556 (2026-11-17). Itemized verified components: PostHog $50,000 + Algolia $10,000 coupon (ACTIVE to 2027-11-16) + Sentry $5,000 + Cartesia Startups grant approx $7,200 (Scale tier, 8M credits/month x 12 months, first invoice $0.00) + TiDB $500 + Deepgram $200 + You.com $99.98 + OpenRouter $15 + Railway $5 + Fireworks $1 + Cerebrium $5.00 = $73,025.98 itemized. The remaining $2,530.02 of the headline is not yet itemized to a console read — a reconciliation against the $65,826 itemized record is still owed (see MEMORY). Present the headline only with this breakdown and evidence labels, never as a bare number, and never as 'raised'. Dashboard/console/provider-confirmation evidence only; offers are never balances; discounts are never credits.",
-  "in_motion_submitted_records": 43,
+  "in_motion_submitted_records": 51,
   "in_motion_note": "Confirmed submissions with published ceilings, counted as records not dollars; ceilings live on each record's offer field.",
-  "logged_candidate_records_total": 279,
+  "logged_candidate_records_total": 303,
   "loop_target": {
    "database_target": "300-350 records (enterprise loop, 2026-11-18)",
-   "records_now": 279,
+   "records_now": 303,
    "note": "Enterprise loop window 2026-11-18 ~00:25-10:25 PT. Prior credits + grants loop closed at 257 records / 38 submitted / 7 loop-window confirmed."
   }
  },
@@ -9831,6 +9831,769 @@
    "programme": "Coefficient Giving — Project Tailwind",
    "provider": "Coefficient Giving (formerly Open Philanthropy)",
    "url": "https://coefficientgiving.org"
+  },
+  {
+   "eligibility": [
+    "TiDB Cloud account on the estate's x@ identity (credit applied to the account; no separate public application terms are carried in the estate record)"
+   ],
+   "estate_run": {
+    "confirmation_verbatim": "VERIFIED — billing console: $500 credit, expiry 2027-11-05 (master credits ledger §1; programmes overview). Counted in the VERIFIED IN HAND itemization ($73,025.98); the headline $75,556 is unchanged by this record — it lands a DB record that was owed, it does not add money.",
+    "entity": "AGI Future Foundation",
+    "status": "submitted",
+    "submitted_at": "Before 2026-11-16 (credit verified in the billing console per the master credits ledger §1)",
+    "value_in_motion": "$500 VERIFIED IN HAND (not in motion)"
+   },
+   "id": "tidb-cloud-startup-credit",
+   "offer": "$500 TiDB Cloud credit — VERIFIED IN HAND (billing console), expiry 2027-11-05",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "This record was owed since the credit landed: the per-vendor guide existed (2026-11-18, 08:25 run) before the DB record did. Record and guide are now reconciled.",
+     "Never quote the $500 twice: it already sits inside the estate's itemized in-hand total."
+    ],
+    "required_fields": [],
+    "review_clock": "Credit already applied; expiry 2027-11-05.",
+    "steps": [
+     "Hold the credit on the TiDB Cloud account; check the billing console for the live balance and the 2027-11-05 expiry before planning spend against it.",
+     "Use the credit against real TiDB Cloud workloads before expiry — a credit that lapses unused is $0 (see the per-vendor guide guides/tidb-cloud.md)."
+    ]
+   },
+   "programme": "TiDB Cloud startup credit",
+   "provider": "PingCAP (TiDB Cloud)",
+   "url": "https://www.pingcap.com"
+  },
+  {
+   "eligibility": [
+    "New to CircleCI, or on the Free plan",
+    "Pre-Seed through Series A",
+    "Founded within the last 5 years",
+    "Part of a recognized accelerator or VC — if none, proof of funding of at least $500K USD raised (official page, read 2026-11-18)"
+   ],
+   "estate_run": {
+    "confirmation_verbatim": "Submitted + on-page confirmation (master credits ledger §3 row 33). Criteria caveat carried on that record: the form's stated criteria include an accelerator/VC affiliation or at least $500K raised; the Foundation meets neither and made no such claim — acceptance is CircleCI's call.",
+    "entity": "AGI Future Foundation",
+    "status": "submitted",
+    "submitted_at": "2026-11-15 (on record in the master credits ledger §3 row 33)",
+    "value_in_motion": "$10,000-$20,000 (published range on the ledger record; offer, not a balance)"
+   },
+   "id": "circleci-for-startups",
+   "offer": "Up to $20,000 in CircleCI compute credits plus free Starter Support (valued at $249/month), for up to 24 months; amount and duration vary by stage and location",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "A $0-raised applicant does not meet the published funding alternative — do not state a raise or an affiliation that does not exist on any future form.",
+     "The promotional period ends when the credits are consumed or the period ends, whichever comes first."
+    ],
+    "required_fields": [
+     "Startup application via the programme page / startups@circleci.com route"
+    ],
+    "review_clock": "Not published on the page.",
+    "steps": [
+     "Read the eligibility block on circleci.com/startup-program/ first — the accelerator/VC-or-$500K gate is stated there, not hidden.",
+     "The estate's filing is already on record (2026-11-15) — never re-file. Questions: startups@circleci.com."
+    ]
+   },
+   "programme": "CircleCI for Startups",
+   "provider": "CircleCI",
+   "url": "https://circleci.com/startup-program/"
+  },
+  {
+   "eligibility": [
+    "Early-stage AI startups (per the estate's filing record; full published terms were not captured into the DB before this run — official-page re-verification owed before any future action)"
+   ],
+   "estate_run": {
+    "confirmation_verbatim": "Submitted + on-page confirmation (master credits ledger §3 row 38).",
+    "entity": "AGI Future Foundation",
+    "status": "submitted",
+    "submitted_at": "2026-11-14 (master credits ledger §3 row 38)",
+    "value_in_motion": "Up to $20,000 (offer, not a balance)"
+   },
+   "id": "anyscale-ai-startup-program",
+   "offer": "Up to $20,000 (published ceiling on the estate's filing record; offer, not a balance)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Record landed 2026-11-18 (enterprise loop) to reconcile the master ledger into the DB — the filing predates the DB record by four days."
+    ],
+    "required_fields": [],
+    "review_clock": "Not captured in the filing record.",
+    "steps": [
+     "The estate's filing is already on record (2026-11-14) — never re-file.",
+     "Before relying on any term of this programme, re-read the current official programme page: this record was landed from the estate's own filing ledger to close a DB gap, and its eligibility list is the filing record's, not a fresh page read."
+    ]
+   },
+   "programme": "Anyscale AI Startup Program",
+   "provider": "Anyscale",
+   "url": "https://www.anyscale.com"
+  },
+  {
+   "eligibility": [
+    "Startup applicants under the programme's Starter tier (per the estate's filing record; full published terms were not captured into the DB before this run — official-page re-verification owed before any future action)"
+   ],
+   "estate_run": {
+    "confirmation_verbatim": "Submitted 2026-11-14, filed by Mike himself (master credits ledger §3 row 37).",
+    "entity": "AGI Future Foundation",
+    "status": "submitted",
+    "submitted_at": "2026-11-14 (filed by Mike; master credits ledger §3 row 37)",
+    "value_in_motion": "$1,000 (offer, not a balance)"
+   },
+   "id": "runpod-startup-program",
+   "offer": "$1,000 Starter credits (published figure on the estate's filing record; offer, not a balance)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Founder-filed: any follow-up route runs through the founder's own RunPod account."
+    ],
+    "required_fields": [],
+    "review_clock": "Not captured in the filing record.",
+    "steps": [
+     "The estate's filing is already on record (2026-11-14, filed by the founder) — never re-file.",
+     "Re-read the current official programme page before relying on any term: this record reconciles the filing ledger into the DB."
+    ]
+   },
+   "programme": "RunPod Startup Program — Starter",
+   "provider": "RunPod",
+   "url": "https://www.runpod.io"
+  },
+  {
+   "eligibility": [
+    "Workspace account review by Baseten (console route)",
+    "Separate door — Baseten AI Startup Program: the master ledger records it INELIGIBLE for the Foundation (legal terms exclude nonprofit entities); never file that door"
+   ],
+   "estate_run": {
+    "confirmation_verbatim": "Console shows 'We're reviewing your account' (master credits ledger §3 row 41).",
+    "entity": "AGI Future Foundation",
+    "status": "submitted",
+    "submitted_at": "2026-11-15 (master credits ledger §3 row 41)",
+    "value_in_motion": "Starting credits exist; amount not published — $0 counted"
+   },
+   "id": "baseten-account-approval",
+   "offer": "Account approval with starting credits (amount not published on the estate's record)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Two-door vendor: one door filed (account approval), one door ruled ineligible on its own terms. Keep them separate in every report."
+    ],
+    "required_fields": [
+     "Baseten workspace account (founder-created)"
+    ],
+    "review_clock": "Account review; no clock captured in the filing record.",
+    "steps": [
+     "The workspace approval request is already on record (2026-11-15) — never re-file; the outcome reads on the Baseten console.",
+     "Do not open the separate Baseten AI Startup Program door: the ledger's terms read excludes nonprofit entities."
+    ]
+   },
+   "programme": "Baseten account approval (workspace route)",
+   "provider": "Baseten",
+   "url": "https://www.baseten.co"
+  },
+  {
+   "eligibility": [
+    "OpenRouter account on the estate's x@ identity with an API key (grant credits read per key)"
+   ],
+   "estate_run": {
+    "confirmation_verbatim": "VERIFIED — per-key read-back, 2026-11-15: $15 grant credits on the x@ account + key (master credits ledger §1). Counted in the VERIFIED IN HAND itemization ($73,025.98); the headline $75,556 is unchanged by this record.",
+    "entity": "AGI Future Foundation",
+    "status": "submitted",
+    "submitted_at": "Before 2026-11-15 (per-key read-back verified 2026-11-15; master credits ledger §1)",
+    "value_in_motion": "$15 VERIFIED IN HAND (not in motion)"
+   },
+   "id": "openrouter-grant-credits",
+   "offer": "$15 grant credits — VERIFIED IN HAND (per-key read-back 2026-11-15), plus a recurring free-models allowance of 50 requests/day (recurring, never added to balances)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Free-model rate limits and grant balances are different mechanics on the same account — never blend them into one figure."
+    ],
+    "required_fields": [],
+    "review_clock": "Credits already applied.",
+    "steps": [
+     "Check the balance per API key in the OpenRouter console before planning spend — the verification on record is a per-key read, not an account-level promise.",
+     "Keep the 50 free requests/day allowance separate in every report: it is a recurring rate, not a balance."
+    ]
+   },
+   "programme": "OpenRouter grant credits",
+   "provider": "OpenRouter",
+   "url": "https://openrouter.ai"
+  },
+  {
+   "eligibility": [
+    "You.com account on the estate's identity (credits verified on the account; the claim route's published terms were not captured into the DB before this run)"
+   ],
+   "estate_run": {
+    "confirmation_verbatim": "VERIFIED IN HAND $99.98 — itemized component of the $73,025.98 verified total (one-apply-data.json buckets note; MEMORY programmes record). The headline $75,556 is unchanged by this record — it lands a record that was owed.",
+    "entity": "AGI Future Foundation",
+    "status": "submitted",
+    "submitted_at": "Landed in the 2026-11-16/17 verification pass (estate memory; itemized in one-apply-data.json's in-hand note)",
+    "value_in_motion": "$99.98 VERIFIED IN HAND (not in motion)"
+   },
+   "id": "you-com-startup-credits",
+   "offer": "$99.98 in credits — VERIFIED IN HAND (landed 2026-11-16/17 verification pass; itemized in the estate's in-hand breakdown)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Never quote the $99.98 twice: it already sits inside the itemized in-hand total."
+    ],
+    "required_fields": [],
+    "review_clock": "Credits already applied.",
+    "steps": [
+     "Verify the live balance on the You.com account before planning spend against it; balances relied on after 30 days get re-verified first (estate maintenance rule)."
+    ]
+   },
+   "programme": "You.com startup credits",
+   "provider": "You.com",
+   "url": "https://you.com"
+  },
+  {
+   "eligibility": [
+    "Cerebrium account on the estate's identity (credits verified on the account; the claim route's published terms were not captured into the DB before this run)"
+   ],
+   "estate_run": {
+    "confirmation_verbatim": "VERIFIED IN HAND $5.00 — itemized component of the $73,025.98 verified total (one-apply-data.json buckets note; MEMORY verified-credits record). The headline $75,556 is unchanged by this record.",
+    "entity": "AGI Future Foundation",
+    "status": "submitted",
+    "submitted_at": "Landed in the 2026-11-16/17 verification pass (estate memory; itemized in one-apply-data.json's in-hand note)",
+    "value_in_motion": "$5.00 VERIFIED IN HAND (not in motion)"
+   },
+   "id": "cerebrium-startup-credits",
+   "offer": "$5.00 in credits — VERIFIED IN HAND (landed in the 2026-11-16/17 verification pass; itemized in the estate's in-hand breakdown)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "A $5 balance is small but it is a balance, not an offer — it is counted once, inside the itemized total only."
+    ],
+    "required_fields": [],
+    "review_clock": "Credits already applied.",
+    "steps": [
+     "Verify the live balance on the Cerebrium account before planning spend; re-verify any balance relied on after 30 days (estate maintenance rule)."
+    ]
+   },
+   "programme": "Cerebrium startup credits",
+   "provider": "Cerebrium",
+   "url": "https://cerebrium.ai"
+  },
+  {
+   "eligibility": [
+    "Registered and independent company, not a subsidiary",
+    "Up to $1.5M raised",
+    "Founded 3 years ago or less",
+    "New to Plane, or on the Free plan today",
+    "Operates as a product company (all read on the official page, 2026-11-18)"
+   ],
+   "estate_run": {
+    "attempted_at": "2026-11-18 08:55 PT run (official page read in full)",
+    "entity": "AGI Future Foundation",
+    "notes": "VERIFIED on the official page this run. The Foundation fits every published criterion (filed 2026-04-24, $0 raised, product company, no Plane account on record). Fileable next — no account, card, or signature step is published ahead of the application; the application is made from a work email and reviewed against public presence.",
+    "status": "staged",
+    "value_in_motion": "$0 — not submitted"
+   },
+   "id": "plane-for-startups",
+   "offer": "6 months of Plane Pro free for up to 25 seats, including Plane AI — stated worth up to $2,000 (provider's valuation of its own plan; in-kind access, never counted as credits)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Plane may request a Crunchbase profile, a funding announcement, or proof of registration where public sources are insufficient — have the Foundation's filing facts ready.",
+     "One redemption per startup, even with multiple accelerator/VC referrals; the offer cannot be applied to an Enterprise Grid workspace.",
+     "The $2,000 figure is Plane's valuation of 25 Pro seats — in-kind access, never a credit balance."
+    ],
+    "required_fields": [
+     "Founder details",
+     "Company details",
+     "Funding details",
+     "Work email"
+    ],
+    "review_clock": "Decision by email within 2 weeks of application (official page).",
+    "steps": [
+     "Apply on plane.so/startup-program with basic details about the founder, the company, and its funding, sent from a work email.",
+     "Review: decision by email within 2 weeks (FAQ: allow 7-10 business days).",
+     "On approval, Pro activates for 6 months on the workspace or self-hosted instance, for up to 25 seats; an existing Free workspace upgrades in place."
+    ]
+   },
+   "programme": "Plane for Startups",
+   "provider": "Plane (Makeplane)",
+   "url": "http://plane.so/startup-program"
+  },
+  {
+   "eligibility": [
+    "Company less than 4 years old",
+    "Raised less than $10M in funding (both read on the official page, 2026-11-18)"
+   ],
+   "estate_run": {
+    "attempted_at": "2026-11-18 08:55 PT run (official page read in full)",
+    "entity": "AGI Future Foundation",
+    "mike_step": "Create the FastPix account and upgrade to the paid plan on its billing page (the programme's own route: sign up, upgrade to the paid plan — charged for usage only — then complete the application form). Account creation is a founder password step; once the account is on the paid plan, the application form itself is fileable.",
+    "notes": "VERIFIED on the official page this run. The Foundation fits both published criteria (filed 2026-04-24, $0 raised). The extra $1,200 tier requires YC membership or VC funding — not claimable on this record and never quoted as the offer.",
+    "status": "blocked",
+    "value_in_motion": "$0 — not submitted"
+   },
+   "id": "fastpix-for-startups",
+   "offer": "$600 in FastPix credits (encoding, storage, streaming), valid 1 year from activation, plus 100k Video Data views/month free; referral and VC/accelerator extras are separate conditional offers",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "The application comes AFTER the paid-plan upgrade in FastPix's own route — do not hunt for a pre-account form.",
+     "Referral doubling ($600 to both parties) only opens to startups already accepted into the programme."
+    ],
+    "required_fields": [
+     "FastPix account on a paid plan",
+     "Application form (company details)"
+    ],
+    "review_clock": "Review after application; notification by email (official FAQ).",
+    "steps": [
+     "BEFORE applying: sign up for FastPix and upgrade to the paid plan on the billing page (usage-charged only, per the official FAQ) — a founder account step.",
+     "Complete the application form linked from fastpix.com/startup-program.",
+     "FastPix reviews and, if eligible, applies the $600 credit and notifies by email; unused credits expire 1 year after activation."
+    ]
+   },
+   "programme": "FastPix for Startups",
+   "provider": "FastPix",
+   "url": "https://fastpix.com/startup-program"
+  },
+  {
+   "eligibility": [
+    "Affiliated with a GitHub for Startups partner (VC, accelerator, or startup support organisation) — application runs through the partner",
+    "Received outside equity funding, at Series B or earlier (non-equity credits do not count as funding)",
+    "New to GitHub Enterprise (no Enterprise plan in the past six months, no previous GitHub credits or licences)"
+   ],
+   "estate_run": {
+    "attempted_at": "2026-11-18 08:55 PT run (terms reconciled from four independent programme trackers, each checked against GitHub's official page in Oct 2026)",
+    "entity": "AGI Future Foundation",
+    "notes": "Evidence class REPORTED: the terms above are GitHub's as published on github.com/enterprise/startups, read via trackers that verified them on the official page (Oct 2026); this run did not re-read the official page directly. The Foundation fails two gates on its own facts ($0 outside funding; no partner affiliation on record), so no truthful application exists today.",
+    "status": "blocked-partner-gated",
+    "value_in_motion": "$0 — not submitted"
+   },
+   "id": "github-for-startups",
+   "offer": "$10,000 in GitHub platform credits on GitHub Enterprise Cloud, valid up to 12 months from approval, usable across Enterprise licences, Copilot, Advanced Security, Actions and other metered products",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Credits are one balance across the Enterprise platform, expire at 12 months or when consumed, and cannot be transferred between accounts.",
+     "GitHub runs an authorisation charge on a payment method during onboarding (per partner guidance) — a founder step if this ever becomes fileable.",
+     "This programme replaced the older free-seats offer, which is discontinued — do not quote the old 20-seats figure."
+    ],
+    "required_fields": [
+     "Application through a GitHub for Startups partner",
+     "GitHub Enterprise Cloud account named in the application"
+    ],
+    "review_clock": "At GitHub's discretion after a partner-routed application.",
+    "steps": [
+     "Check the two gates first: partner affiliation AND outside funding. Both are mandatory; a cold application from the public page is an unaffiliated application and does not qualify.",
+     "If a partner affiliation and a raise ever exist, apply through the partner's route so the affiliation carries into the application."
+    ]
+   },
+   "programme": "GitHub for Startups",
+   "provider": "GitHub",
+   "url": "https://github.com/enterprise/startups"
+  },
+  {
+   "eligibility": [
+    "No programme eligibility exists — there is no programme to be eligible for (official page read in full, 2026-11-18)"
+   ],
+   "estate_run": {
+    "attempted_at": "2026-11-18 08:55 PT run (official page read in full)",
+    "entity": "AGI Future Foundation",
+    "notes": "VERIFIED no-programme: planetscale.com/startups describes standard paid plans and migration support only — no credits, no discount, no application. Third-party listings claiming up to $5,000 in PlanetScale startup credits are not confirmed on PlanetScale's own site and are never quoted.",
+    "status": "no-live-programme-verified",
+    "value_in_motion": "$0 — not submitted"
+   },
+   "id": "planetscale-for-startups",
+   "offer": "No startup credits, discount, or application programme on the official page: the page markets the standard plans (single-node Postgres from $5/month, high-availability clusters from $15/month) and migration help",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Aggregator credit figures for PlanetScale ($5,000) circulate widely; the provider's own startups page does not state them."
+    ],
+    "required_fields": [],
+    "review_clock": "None — no programme.",
+    "steps": [
+     "Do not file anything — there is no application route on the official page.",
+     "If PlanetScale is ever needed, the route is a standard paid plan (from $5/month) or a migration conversation — a spending decision, not a programme claim."
+    ]
+   },
+   "programme": "PlanetScale for Startups",
+   "provider": "PlanetScale",
+   "url": "https://planetscale.com/startups"
+  },
+  {
+   "eligibility": [
+    "No standing programme eligibility exists (official page read in full, 2026-11-18). The separate Twilio.org Impact Access lane is determination-letter gated and lives on the fellowship-nonprofit-letter-gated-stack record — never merge the two."
+   ],
+   "estate_run": {
+    "attempted_at": "2026-11-18 08:55 PT run (official page read in full)",
+    "entity": "AGI Future Foundation",
+    "notes": "VERIFIED: Twilio's own startups page FAQ states 'We do not offer additional credits to startups at this time.' The AI Startup Searchlight 2026 award (up to $5,000/$10,000 Twilio credits for 30 honorees) closed in September 2026 per the provider's materials and is not a standing route. The estate's $15 Twilio trial deferral note (credits master ledger §4) is a trial claim, not a programme.",
+    "status": "no-live-programme-verified",
+    "value_in_motion": "$0 — not submitted"
+   },
+   "id": "twilio-startups",
+   "offer": "No standing startup credits: every new account gets a small trial credit only. Twilio's official FAQ: 'We do not offer additional credits to startups at this time.'",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Third-party listings of standing Twilio startup credits ($2,500-$10,000) describe the closed Searchlight award or the withdrawn pre-2026 programme — Twilio's own page contradicts them."
+    ],
+    "required_fields": [],
+    "review_clock": "None — no standing programme.",
+    "steps": [
+     "Do not file for standing credits — none exist on the official page.",
+     "A free account with trial credits is the only self-serve route; upgrading means adding payment details (a founder step)."
+    ]
+   },
+   "programme": "Twilio Startups (standing credits)",
+   "provider": "Twilio",
+   "url": "https://www.twilio.com/en-us/solutions/startups"
+  },
+  {
+   "eligibility": [
+    "Direct route: none published on Figma's official pages — Figma's official pricing FAQ states 'We do not have any discounts for non-profits'",
+    "Partner route (REPORTED): new Figma customers, under $10M raised, applying via an approved VC or accelerator partner"
+   ],
+   "estate_run": {
+    "attempted_at": "2026-11-18 08:55 PT run (official pricing FAQ + secondary programme trackers)",
+    "entity": "AGI Future Foundation",
+    "notes": "Evidence: the no-nonprofit-discount fact is VERIFIED on Figma's official pricing FAQ. The partner-route offer (up to 1 year of Professional free; some partners give 50% off for 6 months instead) is REPORTED from programme trackers, not read on a Figma programme page this run. The Foundation has no approved-partner affiliation on record, so no truthful route exists today.",
+    "status": "blocked-partner-gated",
+    "value_in_motion": "$0 — not submitted"
+   },
+   "id": "figma-for-startups",
+   "offer": "Partner-route only (REPORTED): up to 1 year of Figma Professional free via an approved VC/accelerator partner; terms vary by partner. No direct programme and no nonprofit discount on Figma's official pages",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Figma's free Starter plan is a free tier, not a startup programme — do not record it as one."
+    ],
+    "required_fields": [
+     "Approved VC/accelerator partner referral"
+    ],
+    "review_clock": "Set by the referring partner's terms.",
+    "steps": [
+     "Check for a partner affiliation first — without one there is no application.",
+     "If an affiliation is ever held, claim through that partner and record the exact tier granted (full year free vs 50% discount varies by partner)."
+    ]
+   },
+   "programme": "Figma for Startups",
+   "provider": "Figma",
+   "url": "https://www.figma.com/pricing-faq/"
+  },
+  {
+   "eligibility": [
+    "Startup discount: early-stage startups younger than two years — 30% off all plans",
+    "Nonprofit discount: qualifying nonprofits — 50% off all plans (both stated in Checkly's official pricing FAQ, read 2026-11-18 via the official pricing page)"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16 (main-chat startup sweep, second 10 resolved 22:38 PT — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "Filing on record in the estate's final signup-loop report ('8 fired' batch). The confirmation verbatim was not captured into the estate record — owed; this record is therefore NOT counted in the DB's strict submitted total until the verbatim or a provider reply is produced. The estate holds two discount lanes on Checkly's own FAQ (startup 30% / nonprofit 50%); a nonprofit claim must never be made with a tax-exempt status the Foundation does not hold — the discount basis used in the filing is not stated in the estate record and must be confirmed before any reliance.",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "Discount on a paid plan (30% startup / 50% nonprofit per the official FAQ) — a discount, never credits; $0 counted"
+   },
+   "id": "checkly-startup-discount",
+   "offer": "Discount programme on the official pricing FAQ: 30% off all plans for early-stage startups under two years old; 50% off for nonprofits. A discount on a purchase — never credits",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Checkly has no credits programme on its official pages — only the two FAQ discounts and a free Hobby plan."
+    ],
+    "required_fields": [
+     "Application via the pricing-page FAQ link"
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "The estate filing is on record (2026-11-16) — never re-file.",
+     "Confirm which discount basis the filing used and capture the provider's reply before counting this anywhere."
+    ]
+   },
+   "programme": "Checkly startup / nonprofit discounts",
+   "provider": "Checkly",
+   "url": "https://www.checklyhq.com/pricing/"
+  },
+  {
+   "eligibility": [
+    "Early-stage startups through approved startup and partner ecosystems (per secondary programme listings; Fastly's own blog names the Launchpad programme — full published criteria were not captured into the estate record)"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16 (main-chat startup sweep, second 10 resolved 22:38 PT — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "Filing on record in the estate's final signup-loop report ('8 fired' batch). Confirmation verbatim not captured — owed; NOT counted in the strict submitted total until produced. Fastly's own blog (fastly.com, read 2026-11-18) confirms a Launchpad programme for startups offering free credits; the amount is not published in the sources read.",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "Free credits, amount unpublished by Fastly in the sources read — $0 counted"
+   },
+   "id": "fastly-launchpad",
+   "offer": "Fastly Launchpad programme for startups: free credits to get started and support growth (Fastly's own blog; amount not published)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Fastly's $50 developer-account trial credit is a separate self-serve trial, not the Launchpad programme — never blend the two."
+    ],
+    "required_fields": [],
+    "review_clock": "Not captured in the filing record.",
+    "steps": [
+     "The estate filing is on record (2026-11-16) — never re-file.",
+     "Capture the provider's reply / confirmation verbatim to promote this record to submitted."
+    ]
+   },
+   "programme": "Fastly Launchpad (for Startups)",
+   "provider": "Fastly",
+   "url": "https://www.fastly.com/blog/seo-ab-testing-and-security-3-benefits-cdns-bring-to-startups"
+  },
+  {
+   "eligibility": [
+    "Terms not captured in the estate's filing record — official-page verification owed before any reliance (REPORTED)"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16 (main-chat startup sweep, second 10 resolved 22:38 PT — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED from the estate's own filing record only. Confirmation verbatim not captured — owed; NOT counted in the strict submitted total until produced.",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "Amount unpublished in the estate record — $0 counted"
+   },
+   "id": "fibery-for-startups",
+   "offer": "Startup programme offer not captured in the estate's filing record — no figure is quoted (official-page verification owed)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Do not quote any Fibery figure from aggregator listings; only Fibery's own page counts, and it has not been read for this record yet."
+    ],
+    "required_fields": [],
+    "review_clock": "Not captured.",
+    "steps": [
+     "The estate filing is on record (2026-11-16) — never re-file.",
+     "Owed: read Fibery's official startup terms and capture the provider reply to complete this record."
+    ]
+   },
+   "programme": "Fibery for Startups",
+   "provider": "Fibery",
+   "url": "https://fibery.io"
+  },
+  {
+   "eligibility": [
+    "Terms not captured in the estate's filing record — official-page verification owed before any reliance (REPORTED)"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16 (main-chat startup sweep, second 10 resolved 22:38 PT — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED from the estate's own filing record only. Confirmation verbatim not captured — owed; NOT counted in the strict submitted total until produced.",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "Amount unpublished in the estate record — $0 counted"
+   },
+   "id": "appsignal-for-startups",
+   "offer": "Startup programme offer not captured in the estate's filing record — no figure is quoted (official-page verification owed)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "AppSignal also runs open-source / nonprofit support lanes in the market's general knowledge — none is quoted here because none was read on the official page for this record."
+    ],
+    "required_fields": [],
+    "review_clock": "Not captured.",
+    "steps": [
+     "The estate filing is on record (2026-11-16) — never re-file.",
+     "Owed: read AppSignal's official startup terms and capture the provider reply to complete this record."
+    ]
+   },
+   "programme": "AppSignal for Startups",
+   "provider": "AppSignal",
+   "url": "https://www.appsignal.com"
+  },
+  {
+   "eligibility": [
+    "Open-source projects: the programme applies to the project, not to individual maintainers or the company (confirmed against browserstack.com/open-source, 2026-11-16, via foropensource)",
+    "Project URL provided at registration"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16 (main-chat startup sweep, second 10 resolved 22:38 PT — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "Filing on record in the estate's final signup-loop report ('BrowserStack OSS' in the 8-fired batch). Confirmation verbatim not captured — owed; NOT counted in the strict submitted total until produced. Programme terms VERIFIED against the official page by foropensource on 2026-11-16 (free unlimited testing, 5 users / 5 parallels, duration of the project).",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "Free unlimited testing access (in-kind) — $0 counted"
+   },
+   "id": "browserstack-open-source-program",
+   "offer": "Free unlimited testing on desktop and mobile (Live, Automate, Percy) for 5 users and 5 parallel tests across 3,000+ browsers and real devices, for the duration of the open-source project",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Eligibility attaches to a genuine open-source project — the named project on the filing must be a real public project, never a commercial product dressed as one."
+    ],
+    "required_fields": [
+     "Sign-up via the open-source programme page",
+     "Project URL"
+    ],
+    "review_clock": "Not captured in the filing record.",
+    "steps": [
+     "The estate filing is on record (2026-11-16) — never re-file.",
+     "Capture the provider's reply to promote this record to submitted."
+    ]
+   },
+   "programme": "BrowserStack Open Source Program",
+   "provider": "BrowserStack",
+   "url": "https://www.browserstack.com/open-source"
+  },
+  {
+   "eligibility": [
+    "Open-source project lane (per the estate's filing record; full published criteria were not captured — official-page verification owed) (REPORTED)"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16 (main-chat startup sweep, second 10 resolved 22:38 PT — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED from the estate's filing record ('TestingBot OSS' in the 8-fired batch). Separately on record: a TestingBot free-account signup is pending the founder setting the password himself (browser task ended 2026-11-17 ~01:50 PT without a submission) — that account step is a Mike step and is NOT this record's filing. Confirmation verbatim not captured — owed; NOT counted in the strict submitted total.",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "Free OSS testing access (in-kind) — $0 counted"
+   },
+   "id": "testingbot-open-source-program",
+   "offer": "Open-source programme access (free testing for OSS projects; exact tier not captured in the estate record — official-page verification owed)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Keep the OSS programme filing and the pending free-account password step separate — the account signup never completed, so no account-based claim exists."
+    ],
+    "required_fields": [
+     "Open-source project details"
+    ],
+    "review_clock": "Not captured.",
+    "steps": [
+     "The estate OSS filing is on record (2026-11-16) — never re-file.",
+     "Mike step carried from the estate record: set the TestingBot account password himself if the free account is wanted.",
+     "Owed: read TestingBot's official OSS terms to complete this record."
+    ]
+   },
+   "programme": "TestingBot Open Source Program",
+   "provider": "TestingBot",
+   "url": "https://testingbot.com"
+  },
+  {
+   "eligibility": [
+    "A translation project created in Crowdin",
+    "Project licensed under an OSI-approved open-source licence",
+    "Source code publicly available for download",
+    "Applicant is the project lead",
+    "Project actively worked on for at least three months",
+    "Non-commercial / non-profit project (all from Crowdin's official open-source request form, read 2026-11-18)"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16 (main-chat startup sweep, second 10 resolved 22:38 PT — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "Filing on record in the estate's final signup-loop report ('Crowdin OSS' in the 8-fired batch). Confirmation verbatim not captured — owed; NOT counted in the strict submitted total until produced. Programme terms VERIFIED on Crowdin's official form page this run.",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "Free localisation platform access (in-kind) — $0 counted"
+   },
+   "id": "crowdin-for-open-source",
+   "offer": "Crowdin completely free of charge for qualifying open-source projects, including beta features, Global Translation Memory contribution/access, and Neural Machine Translator access",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Commercially backed projects are excluded by the programme's own criteria (secondary trackers concur) — the named project must be genuinely non-commercial open source."
+    ],
+    "required_fields": [
+     "Crowdin translation project (created first)",
+     "Project name, licence, website, description (request form)"
+    ],
+    "review_clock": "Not published on the form page.",
+    "steps": [
+     "Create the translation project in Crowdin first — the form requires it to exist.",
+     "Submit the Open Source License Request Form with the project's licence and public source URL.",
+     "The estate filing is on record (2026-11-16) — never re-file; capture the provider reply to promote this record."
+    ]
+   },
+   "programme": "Crowdin for Open Source",
+   "provider": "Crowdin",
+   "url": "https://crowdin.com/product/for-open-source"
+  },
+  {
+   "eligibility": [
+    "Terms not captured in the estate's filing record — official-page verification owed before any reliance (REPORTED)"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16 (main-chat startup sweep, second 10 resolved 22:38 PT — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED from the estate's own filing record only. Confirmation verbatim not captured — owed; NOT counted in the strict submitted total until produced.",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "Amount unpublished in the estate record — $0 counted"
+   },
+   "id": "featurebase-for-startups",
+   "offer": "Startup programme offer not captured in the estate's filing record — no figure is quoted (official-page verification owed)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "No figure from any aggregator is quoted for this record."
+    ],
+    "required_fields": [],
+    "review_clock": "Not captured.",
+    "steps": [
+     "The estate filing is on record (2026-11-16) — never re-file.",
+     "Owed: read Featurebase's official startup terms and capture the provider reply to complete this record."
+    ]
+   },
+   "programme": "Featurebase for Startups",
+   "provider": "Featurebase",
+   "url": "https://www.featurebase.app"
+  },
+  {
+   "eligibility": [
+    "Pendo Free (official pricing FAQ, read 2026-11-18): free-forever plan for up to 500 monthly active users — product analytics, in-app guides, branded roadmaps and NPS surveys",
+    "Pendo for Startups discounted package (REPORTED from secondary sources): web/mobile app, two or fewer products, 100 or fewer employees — pricing is sales-quoted, never published"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16/17 (main-chat sweep: 'Symbl + Pendo fired 22:32 PT in progress' — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "Filing on record in the estate's final signup-loop report addendum (status there: 'in progress'). Confirmation verbatim not captured — owed; NOT counted in the strict submitted total until produced. What was filed (Free enrolment vs the discounted Startups package) is not stated in the estate record — confirm before any reliance; the discounted package is a paid purchase (sales-quoted), never credits.",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "$0 counted — Pendo Free is a free tier; the Startups package is a discounted paid plan, never credits"
+   },
+   "id": "pendo-for-startups",
+   "offer": "Pendo Free: free-forever plan up to 500 MAU (official). Pendo for Startups: a discounted paid package (sales-quoted; secondary sources report roughly $7,000-$12,000/year) — a discount on a purchase, never credits",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Do not present Pendo Free (a free tier open to everyone) as a startup award, and do not present the Startups package as free — it is a paid contract."
+    ],
+    "required_fields": [],
+    "review_clock": "Not captured in the filing record.",
+    "steps": [
+     "The estate filing is on record (2026-11-16/17) — never re-file.",
+     "Confirm which Pendo lane the filing used before counting or renewing anything."
+    ]
+   },
+   "programme": "Pendo for Startups / Pendo Free",
+   "provider": "Pendo",
+   "url": "https://www.pendo.io/pricing/"
+  },
+  {
+   "eligibility": [
+    "Terms not captured in the estate's filing record — official-page verification owed before any reliance (REPORTED)"
+   ],
+   "estate_run": {
+    "attempted_at": "Filed 2026-11-16/17 (main-chat sweep: 'Symbl + Pendo fired 22:32 PT in progress' — SIGNUP-LOOP-STATE final report addendum, LOOP-FINAL-REPORT.md)",
+    "confirmation_verbatim": null,
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED from the estate's own filing record only (status there: 'in progress'). Confirmation verbatim not captured — owed; NOT counted in the strict submitted total until produced.",
+    "status": "submitted-per-estate-record",
+    "value_in_motion": "Amount unpublished in the estate record — $0 counted"
+   },
+   "id": "symbl-for-startups",
+   "offer": "Startup programme offer not captured in the estate's filing record — no figure is quoted (official-page verification owed)",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "No figure from any aggregator is quoted for this record."
+    ],
+    "required_fields": [],
+    "review_clock": "Not captured.",
+    "steps": [
+     "The estate filing is on record (2026-11-16/17) — never re-file.",
+     "Owed: read Symbl's official startup terms and capture the provider reply to complete this record."
+    ]
+   },
+   "programme": "Symbl.ai Startup Program",
+   "provider": "Symbl.ai",
+   "url": "https://symbl.ai"
   }
  ]
 }
