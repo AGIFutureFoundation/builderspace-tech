@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-18 (founders one-apply enterprise loop, 02:55 PT run — DB 257→269: 8 pending records landed + NVIDIA Inception, JetBrains, Pinecone, Deepgram verified on official pages; submitted 38→43)",
+ "generated_at": "2026-11-18 (founders one-apply enterprise loop, 08:25 PT run — DB 269→279: AssemblyAI + LiveKit verified on official pages; Redis, Awesome Foundation, WorkOS, Mozilla Incubator, Pollination Project, Coefficient Tailwind logged REPORTED; Cohere + Groq logged as no-live-programme-verified (withdrawn/closed); submitted unchanged at 43)",
  "source": "programmes-db.json",
  "buckets": {
   "verified_in_hand_usd": 75556,
   "verified_in_hand_note": "Estate headline $75,556 (2026-11-17). Itemized verified components: PostHog $50,000 + Algolia $10,000 coupon (ACTIVE to 2027-11-16) + Sentry $5,000 + Cartesia Startups grant approx $7,200 (Scale tier, 8M credits/month x 12 months, first invoice $0.00) + TiDB $500 + Deepgram $200 + You.com $99.98 + OpenRouter $15 + Railway $5 + Fireworks $1 + Cerebrium $5.00 = $73,025.98 itemized. The remaining $2,530.02 of the headline is not yet itemized to a console read — a reconciliation against the $65,826 itemized record is still owed (see MEMORY). Present the headline only with this breakdown and evidence labels, never as a bare number, and never as 'raised'. Dashboard/console/provider-confirmation evidence only; offers are never balances; discounts are never credits.",
   "in_motion_submitted_records": 43,
   "in_motion_note": "Confirmed submissions with published ceilings, counted as records not dollars; ceilings live on each record's offer field.",
-  "logged_candidate_records_total": 269,
+  "logged_candidate_records_total": 279,
   "loop_target": {
    "database_target": "300-350 records (enterprise loop, 2026-11-18)",
-   "records_now": 269,
+   "records_now": 279,
    "note": "Enterprise loop window 2026-11-18 ~00:25-10:25 PT. Prior credits + grants loop closed at 257 records / 38 submitted / 7 loop-window confirmed."
   }
  },
@@ -9495,6 +9495,342 @@
     "fields_not_asked": [],
     "review_clock": "Programme reporting: responses typically within about one week; deposit 24–48 hours after approval (official page)."
    }
+  },
+  {
+   "eligibility": [
+    "Early-stage startups — bootstrapped through Series A (official FAQ)",
+    "Building a product with voice or audio at its core",
+    "In production or launching within the next 6 months",
+    "Short application: what you are building, your stage, and who backs you; no deck required (official page)"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "VERIFIED on AssemblyAI official programme page read in full 2026-11-18 in the enterprise loop (assemblyai.com/contact/startup-program). Named in the signup loop never-touched list but had no DB record until this run. Estate voice work (podcast transcription, Ask Humanity voice interviews, Aura voice content) fits the voice/audio-core criterion; Foundation is bootstrapped, Beta Launched. Genuinely eligible unfiled candidate. Evidence class: VERIFIED.",
+    "status": "staged",
+    "value_in_motion": "$0 — not filed; no amount published"
+   },
+   "id": "assemblyai-startup-program",
+   "offer": "12 months of recurring free credits on core voice AI infrastructure (Speech-to-Text, Streaming Speech-to-Text, Dictation APIs), then discounted startup pricing phasing into standard pricing. No dollar amount published on the official page — third-party figures never quoted. Discount does not apply to LLM Gateway.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "No published dollar amount — do not budget a figure.",
+     "Startup discount does not apply to the LLM Gateway (official FAQ).",
+     "Review within one week; partner-VC fast-track 48h does not apply to the estate."
+    ],
+    "required_fields": [
+     "What you are building",
+     "Stage",
+     "Who backs you / investors"
+    ],
+    "review_clock": "Reviewed within one week (official page); credits in console within 48 hours of approval.",
+    "steps": [
+     "Apply on assemblyai.com/contact/startup-program: voice product, Beta Launched, $0 raised / bootstrapped (page welcomes bootstrapped teams).",
+     "On approval, credits land in console within 48 hours.",
+     "Verify on acceptance whether monthly allocations roll over — older official FAQ said they do not."
+    ]
+   },
+   "programme": "AssemblyAI Startup Program",
+   "provider": "AssemblyAI",
+   "url": "https://www.assemblyai.com/contact/startup-program"
+  },
+  {
+   "eligibility": [
+    "Voice, video, or physical AI core to the product",
+    "Fewer than 50 employees",
+    "Under $5M raised and pre-Series A ($5M+ case-by-case)",
+    "In production or launching within 6 months; live website with identifiable founding team",
+    "Card on file required to enrol (official page via trackers, 2026-11-18)"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "VERIFIED on LiveKit official programme page (livekit.com/startups) via official-page extraction 2026-11-18: offer structure, criteria, 12-month expiry are the provider own words. STOP: enrolment requires a card on file = Mike step. Estate memory records a separate Fellowship-side LiveKit lane as in motion from the main chat — not this Foundation record; reconcile before any filing, never double-file. Evidence class: VERIFIED.",
+    "status": "blocked",
+    "value_in_motion": "$0 — not filed; card on file required (Mike step)"
+   },
+   "id": "livekit-startup-program",
+   "offer": "Up to $23,000: one year of LiveKit Cloud Scale free ($500/mo waived, $6,000 value) + $10,000 additional LiveKit Cloud credits + $7,000 inference credits ($1,000 per participating partner: Deepgram, Inworld, Rime, Fish Audio, AssemblyAI, Gradium, plus hosted Gemma). Credits expire 12 months from issuance, no rollover (official page).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Cloud and inference credits are not interchangeable (official page).",
+     "YC companies use livekit.com/yc — estate is not YC-backed; general route only.",
+     "Net-new projects targeted; long-running/paying projects may be declined."
+    ],
+    "required_fields": [
+     "Company and product details",
+     "Team size and funding confirmation",
+     "Card on file at enrolment"
+    ],
+    "review_clock": "Rolling; no deadline published.",
+    "steps": [
+     "Mike step: card on file (Mike entry only).",
+     "Apply at livekit.com/startups (no deck required).",
+     "Note issuance date — 12-month clock runs from issuance."
+    ]
+   },
+   "programme": "LiveKit Startup Program",
+   "provider": "LiveKit",
+   "url": "https://livekit.com/startups"
+  },
+  {
+   "eligibility": [
+    "Early-stage companies building real-time applications (official blog)",
+    "Reported (secondary, unverified): privately held, under $5M funding"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "Existence VERIFIED on Redis official blog (redis.io, 2026-11-13 post, extracted 2026-11-18); amounts/criteria REPORTED from secondary trackers — re-verify on the official programme page in the filing run. Evidence class: REPORTED.",
+    "status": "staged",
+    "value_in_motion": "$0 — not filed; amount REPORTED only"
+   },
+   "id": "redis-for-startups",
+   "offer": "Redis Cloud credits and support for early-stage real-time builders. Trackers report up to $10,000 / 12 months (up to $25,000 via Google for Startups perks) — REPORTED only; the official content extracted 2026-11-18 publishes no amount and one tracker flags the offer as not fully confirmed on an official page. No figure counted.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Quote no amount until the official page states it."
+    ],
+    "required_fields": [
+     "Technical architecture and growth roadmap (secondary summaries — confirm officially)"
+    ],
+    "review_clock": "Reported 7-10 business days (secondary); not published officially.",
+    "steps": [
+     "Re-read redis.io/startups in full in the filing run; record published amount/criteria.",
+     "Apply via the portal linked from the official page.",
+     "Never double-count via the Google perks door."
+    ]
+   },
+   "programme": "Redis for Startups",
+   "provider": "Redis",
+   "url": "https://redis.io/startups"
+  },
+  {
+   "eligibility": [
+    "Open to individuals, groups, organisations (official site)",
+    "A specific project with a clear plan for the $1,000; no general donations without a plan, overhead, or untied salaries (chapter rules vary)"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED from official Awesome Foundation chapter pages extracted 2026-11-18 ($1,000/month per chapter confirmed on multiple official chapter pages). No submission on record in this DB — staged, never submitted. Filing needs one specific bounded project and the correct chapter. Evidence class: REPORTED.",
+    "status": "staged",
+    "value_in_motion": "$0 — not filed"
+   },
+   "id": "awesome-foundation-grants",
+   "offer": "$1,000 no-strings micro-grant per chapter per month for a specific project, awarded by independent volunteer chapters. Anyone eligible — individuals, groups, organisations. Chapters are local; some require local impact or an in-person pitch.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Not seed funding without social impact; not general operating support.",
+     "Award payment route is the chapter own (some use PayPal/Wise/Venmo) — Mike step at award time."
+    ],
+    "required_fields": [
+     "Project description and specific use of the $1,000",
+     "Chapter selection"
+    ],
+    "review_clock": "Monthly chapter cycles; dates vary by chapter.",
+    "steps": [
+     "Choose the chapter whose community the project serves; read its current rules on awesomefoundation.org.",
+     "Apply with one specific project and a concrete $1,000 plan.",
+     "Count only on chapter confirmation; re-application in a later month is permitted by chapter rules."
+    ]
+   },
+   "programme": "Awesome Foundation micro-grants",
+   "provider": "Awesome Foundation",
+   "url": "https://www.awesomefoundation.org"
+  },
+  {
+   "eligibility": [
+    "No application required for the free AuthKit tier",
+    "Open to bootstrapped and pre-seed teams"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED 2026-11-18 from trackers citing WorkOS official pricing (free AuthKit to 1M MAUs; SSO/SCIM paid). Estate tools review recommends WorkOS vs Descope for the one-apply tool — decision still Mike. Claiming = account creation = Mike password step (a WorkOS SMS restart already sits in Mike hand queue). Evidence class: REPORTED — re-read workos.com/pricing before any claim.",
+    "status": "staged",
+    "value_in_motion": "$0 — free tier claimed by signup (Mike password step); no application exists"
+   },
+   "id": "workos-for-startups",
+   "offer": "Free AuthKit + User Management up to 1,000,000 MAUs, permanently, no application (trackers checked against official pricing, Oct 2026). SSO and SCIM remain paid per-connection. An aggregator up-to-$25K figure is not published by WorkOS as a credit and is never counted.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Free is the user-management layer only; SSO/SCIM are the paid layer.",
+     "Never quote the aggregator $25K figure as credits."
+    ],
+    "required_fields": [],
+    "review_clock": "None — self-serve free tier.",
+    "steps": [
+     "Mike decision: WorkOS vs Descope for one-apply auth.",
+     "Mike creates the account (password step); free tier applies automatically.",
+     "Keep SSO/SCIM out of free-tier budgets."
+    ]
+   },
+   "programme": "WorkOS for Startups (AuthKit free tier)",
+   "provider": "WorkOS",
+   "url": "https://workos.com"
+  },
+  {
+   "eligibility": [
+    "Trial key: any new Cohere account (automatic)",
+    "Trial keys barred from production/commercial use (official pricing)"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "Logged 2026-11-18 so the database answers Cohere permanently: do not file, do not quote a Cohere credit figure, never use a trial key in production. Cohere Labs Catalyst (signup-loop never-touched list) is a separate research lane needing its own verification. Evidence class: REPORTED.",
+    "status": "no-live-programme-verified",
+    "value_in_motion": "$0 — nothing to file"
+   },
+   "id": "cohere-startup-programme",
+   "offer": "No live startup credit programme verified. Historical offer was a 25% discount for 12 months (Series B or earlier) — a discount, never credits — and trackers checking cohere.com Sep-Nov 2026 report the programme page now resolves to the homepage (appears withdrawn). Live offer is the free Trial API key: 1,000 calls/month, automatic with an account, evaluation only, not permitted for production or commercial use (official pricing via trackers, 2026-11-18).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Discount is not credits, even historically.",
+     "Trial inputs/outputs may be used to improve Cohere models per its policy — keep production and personal data off trial keys."
+    ],
+    "required_fields": [],
+    "review_clock": "N/A — no live programme.",
+    "steps": [
+     "No filing. Re-verify if Cohere republishes a programme on cohere.com.",
+     "Trial key for evaluation/prototyping only, within 1,000 calls/month."
+    ]
+   },
+   "programme": "Cohere Startup Program (historical) / Trial API key",
+   "provider": "Cohere",
+   "url": "https://cohere.com/pricing"
+  },
+  {
+   "eligibility": [
+    "Programme closed — no current route",
+    "Free tier: any GroqCloud account, rate-limited per model"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "Logged 2026-11-18 as a closed-door record so no future run files or quotes the stale $10,000 as available. Watch-only: re-check groq.com/groq-for-startups on a future sweep. Evidence class: REPORTED (tracker verification against groq.com, Oct 2026; two roundups agree it appears withdrawn).",
+    "status": "no-live-programme-verified",
+    "value_in_motion": "$0 — programme closed"
+   },
+   "id": "groq-for-startups",
+   "offer": "Historical: $10,000 GroqCloud inference credits expiring 90 days after award. CLOSED to new applications — programme URLs redirect to the Groq homepage (trackers, Oct 2026), no reopening date published. Live offer is a rate-limited free tier (no card, no credits system).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Stale $10,000 figures circulate on aggregators; the programme behind them is closed.",
+     "Historical credits expired 90 days after award."
+    ],
+    "required_fields": [],
+    "review_clock": "N/A — closed.",
+    "steps": [
+     "No filing while programme URLs redirect.",
+     "Free tier usable for prototyping within per-model rate limits."
+    ]
+   },
+   "programme": "Groq for Startups (closed)",
+   "provider": "Groq",
+   "url": "https://groq.com"
+  },
+  {
+   "eligibility": [
+    "Human-scale AI framing required — filing waits on Mike framing ruling (OmegaHive / Ask Humanity / pass), standing credits-loop Mike step",
+    "Full eligibility re-read on the official call page in the filing run"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED from estate verified records (GUIDE-CREDITS-AND-GRANTS.md; credits-loop STATE.md Mike step #10) — extensive estate coverage but no DB record until this run (2026-11-18). Deadline falls inside this loop window: on a framing ruling, re-read the official call page and file once, counting only on visible confirmation. Evidence class: REPORTED (official re-read owed at filing).",
+    "status": "staged",
+    "value_in_motion": "$0 — not filed; Mike framing ruling pending, deadline 2026-11-20 23:59 PT"
+   },
+   "id": "mozilla-human-scale-ai-incubator",
+   "offer": "Up to $300,000 initial funding (up to $500,000 over three years in funder materials) for human-scale AI projects. Closes Fri 2026-11-20 23:59 PT.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Some applications are decisions, not forms — an unruled framing filed in haste burns the one application.",
+     "Never state the $500,000 figure as the award; initial ceiling is $300,000."
+    ],
+    "required_fields": [
+     "Project framing and proposal (confirm on official call page)"
+    ],
+    "review_clock": "Closes 2026-11-20 23:59 PT (estate records).",
+    "steps": [
+     "Mike framing ruling first — before 2026-11-20 23:59 PT.",
+     "Re-read the official call page; confirm eligibility, amounts, route.",
+     "File once with the ruled framing; record confirmation verbatim."
+    ]
+   },
+   "programme": "Mozilla Human-Scale AI Incubator",
+   "provider": "Mozilla Foundation",
+   "url": "https://www.mozilla.org"
+  },
+  {
+   "eligibility": [
+    "Early-stage project with a named referee (required)",
+    "Full criteria re-read on the official site in the filing run"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED from estate records (GUIDE-CREDITS-AND-GRANTS.md; credits-loop STATE.md Mike step #11) — no DB record until this run (2026-11-18). The moment Mike names a referee the filing is a single form: re-read official criteria, file once, count only on confirmation. Evidence class: REPORTED.",
+    "status": "staged",
+    "value_in_motion": "$0 — not filed; referee name is the only blocker (Mike step #11)"
+   },
+   "id": "pollination-project-seed-grants",
+   "offer": "Seed grants up to $1,000 for early-stage changemaker projects. A named referee is required. Current cycle closes 2026-11-30 (estate records).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Never invent or substitute a referee.",
+     "Verify the cycle date on the official site at filing."
+    ],
+    "required_fields": [
+     "Project description",
+     "Named referee"
+    ],
+    "review_clock": "Current cycle closes 2026-11-30 (estate records; verify at filing).",
+    "steps": [
+     "Mike names the referee.",
+     "Re-read thepollinationproject.org criteria and cycle dates.",
+     "File once for one specific project; record confirmation verbatim."
+    ]
+   },
+   "programme": "Pollination Project seed grants",
+   "provider": "The Pollination Project",
+   "url": "https://thepollinationproject.org"
+  },
+  {
+   "eligibility": [
+    "Founders launching a NEW AI-safety initiative of a published-list type (e.g. rogue-incident detection, independent AI auditing, frontier-capabilities observatory)",
+    "No legal entity required to apply, but receipt needs a 501(c)(3) determination or fiscal sponsor — the Foundation holds neither today",
+    "Named founder-lead and concrete initiative are the real gates; funder is capacity-constrained"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "notes": "REPORTED from estate fundraising research (~/workspace/your_files/fundraising/grants-and-programs.md section 24, third-party verified 2026-11-07; official coefficientgiving.org Tailwind page not yet read — re-check before any approach). Not a cold-apply lane. Logged 2026-11-18 so the DB carries the grant lanes the fundraising work prepared. Evidence class: REPORTED.",
+    "status": "staged-future",
+    "value_in_motion": "$0 — not filed; needs named initiative + founder-lead + fiscal route (Mike decision)"
+   },
+   "id": "coefficient-giving-tailwind",
+   "offer": "Project Tailwind is a ~$200,000,000 call seeding NEW AI-safety initiatives: individual awards reported from $200,000 upward, rolling, no fixed deadline. It recruits founder-leads for new initiatives rather than funding general proposals. Direct receipt requires a 501(c)(3) or fiscal-sponsor route.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "$200M is the call total pool, never a per-grant figure.",
+     "The related Launchpad Funds EOI ($50M) closed 2026-10-02 — do not conflate."
+    ],
+    "required_fields": [
+     "Named initiative and founder-lead",
+     "Fiscal receipt route"
+    ],
+    "review_clock": "Rolling; no fixed deadline.",
+    "steps": [
+     "Mike decision: name one concrete initiative + founder-lead, or pass.",
+     "Resolve the receipt route before any approach.",
+     "Read the official Tailwind page, then draft the approach for Mike exact-text approval."
+    ]
+   },
+   "programme": "Coefficient Giving — Project Tailwind",
+   "provider": "Coefficient Giving (formerly Open Philanthropy)",
+   "url": "https://coefficientgiving.org"
   }
  ]
 }
