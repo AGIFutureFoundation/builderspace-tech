@@ -1,0 +1,126 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.1.0",
+  "entity": {
+    "type": "organisation",
+    "role": "owner",
+    "name": "AGI Future Foundation",
+    "email": "x@agifuturefoundation.org",
+    "phone": "+1 (628) 789-3750",
+    "description": "AGI Future Foundation is a California nonprofit corporation, filed 2026-04-24, registration B20260196664, based at 995 Market St, AGI Lab-10, San Francisco, CA 94103-1702, USA. California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status. The Foundation builds open data-network and knowledge-graph infrastructure for AI agents. Founded April 2026; bootstrapped; $0 raised; $0 revenue.",
+    "webpageUrl": {
+      "url": "https://github.com/AGIFutureFoundation",
+      "wellKnown": ""
+    }
+  },
+  "projects": [
+    {
+      "guid": "agi-data-network",
+      "name": "AGI Future Foundation open data-network / knowledge-graph",
+      "description": "Open data-network and knowledge-graph infrastructure for AI agents, built by the AGI Future Foundation as open-source base technology. Beta launched.",
+      "webpageUrl": {
+        "url": "https://github.com/AGIFutureFoundation",
+        "wellKnown": ""
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/AGIFutureFoundation/builderspace-tech",
+        "wellKnown": ""
+      },
+      "licenses": [],
+      "tags": ["open-data", "knowledge-graph", "data-network", "ai-agents", "open-source"]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "email-contact",
+        "type": "other",
+        "address": "x@agifuturefoundation.org",
+        "description": "Contact the Foundation by email to arrange funding; no payment details are published in this manifest."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "goodwill-plan",
+        "status": "active",
+        "name": "Goodwill plan",
+        "description": "Support the Foundation's open data-network / knowledge-graph work. Any amount.",
+        "amount": 0,
+        "currency": "USD",
+        "frequency": "one-time",
+        "channels": ["email-contact"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2026,
+        "income": 0,
+        "currency": "USD",
+        "description": "Bootstrapped; $0 raised; $0 revenue."
+      }
+    ]
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
