@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food Credits & Deals — BuilderSpace</title>
+<meta name="description" content="One-stop catalogue of verified food and beverage offers: free trials, signup bonuses, student deals and cashback. Claim on the provider's own site — we never submit anything for you.">
+<link rel="canonical" href="https://builderspace.tech/food-credits.html">
+<link rel="stylesheet" href="style.css">
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_yuj9CrYP8epdnwhmSJLUCFwq2KSzA6wLj3gQUiE6wApA',{api_host:'https://us.i.posthog.com',defaults:'2025-05-24',autocapture:true,capture_pageview:true,session_recording:{maskAllInputs:true}})
+</script>
+<style>
+.chip{display:inline-block;background:#124559;color:#fff;border-radius:999px;padding:.35rem .8rem;font-size:.82rem;font-weight:700;cursor:pointer;border:1px solid #124559;margin:.15rem}
+.chip.off{background:#fff;color:#124559}
+.chip.alt{background:#e4572e;border-color:#e4572e}
+.bucket-verified{border-top:4px solid #1a7f4b}
+.bucket-reported{border-top:4px solid #d9a400;opacity:.96}
+.expired{opacity:.45}
+.codebox{font-family:ui-monospace,monospace;background:#f7f5f0;border:1px dashed #124559;border-radius:8px;padding:.4rem .7rem;display:inline-block;font-weight:700}
+.copybtn{min-height:44px;min-width:44px;cursor:pointer}
+.claimed-on{background:#1a7f4b!important}
+.searchbox{width:100%;max-width:34rem;padding:.7rem 1rem;border:1px solid #e3ded2;border-radius:10px;font-size:1rem}
+.tag{font-size:.75rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+<a href="index.html"><strong>BuilderSpace</strong></a>
+<a href="one-apply.html">One-Apply</a>
+<a href="food-credits.html" class="here">Food Credits</a>
+<a href="mailto:events@builderspace.tech">events@builderspace.tech</a>
+</div></nav>
+<header class="pagehead"><div class="wrap">
+<div class="kicker">BuilderSpace · Food Credits &amp; Deals</div>
+<h1>Free food credits, trials and deals — in one place.</h1>
+<p class="lede">A searchable catalogue of <strong id="total-count">40</strong> food &amp; beverage offers, each checked on the provider's own official page. Pick an offer, copy the code if the provider publishes one, and claim it on the provider's own signup page. This app never submits anything for you and has no submit button. Your claimed list lives only in your browser.</p>
+<span class="badge">VERIFIED LIVE · REPORTED · EXPIRED-REMOVED — BUCKETS KEPT SEPARATE</span>
+<p class="meta" style="margin-top:1rem">My claimed offers: <strong id="claimed-count">0</strong> (stored in this browser only)</p>
+</div></header>
+<section><div class="wrap">
+<h2>Find an offer</h2>
+<input class="searchbox" id="q" type="search" placeholder="Search provider, offer, value…" aria-label="Search offers">
+<div id="cats" style="margin-top:.8rem"></div>
+<div style="margin-top:.5rem">
+<button class="chip" data-bucket="ALL">All buckets</button>
+<button class="chip off" data-bucket="VERIFIED">Verified Live</button>
+<button class="chip off" data-bucket="REPORTED">Reported</button>
+</div>
+<p class="sub" id="result-count"></p>
+<h2 style="margin-top:2rem">✅ Verified Live <span class="tag">checked on the official source</span></h2>
+<div class="grid" id="grid-verified"></div>
+<h2 style="margin-top:2.5rem">🟡 Reported <span class="tag">credible source — not yet confirmed on the official page</span></h2>
+<p class="sub">These are listed for completeness with the reason each is not yet verified. Check the official page before relying on them.</p>
+<div class="grid" id="grid-reported"></div>
+<div class="note"><strong>Expired-removed: 0.</strong> Offers past a published expiry are greyed out automatically on this page and retired by the daily checker (food-deals-daily-check), which re-verifies every offer against its official page, adds new verified offers, regenerates this catalogue and re-publishes it. Cashback offers (Upside, Ibotta) are labelled CASHBACK — they are cash back, not credits. Plain official links only: no affiliate or referral links.</div>
+</div></section>
+<footer><div class="wrap">
+<p><strong>BuilderSpace</strong> · <a href="index.html">builderspace.tech</a> · <a href="mailto:events@builderspace.tech">events@builderspace.tech</a></p>
+<p class="small">Food Credits is a BuilderSpace programme of the AGI Future Foundation estate. Offers, codes and terms are the providers' own published terms, checked 2026-11-18; providers can change them at any time. Claimed tracking is browser-local only — no personal data is collected. Analytics by PostHog.</p>
+</div></footer>
+<script src="offers-data.js"></script>
+<script>
+"use strict";
+var claimed = JSON.parse(localStorage.getItem('foodCreditsClaimed')||'[]');
+var activeCat='ALL', activeBucket='ALL';
+var CATS=['ALL','food-delivery','grocery','meal-kits','coffee-drinks','restaurant-apps','surplus-food','grocery-discount','cashback','student'];
+var catDiv=document.getElementById('cats');
+CATS.forEach(function(c){var b=document.createElement('button');b.className='chip'+(c==='ALL'?'':' off');b.textContent=c;b.onclick=function(){activeCat=c;catDiv.querySelectorAll('.chip').forEach(function(x){x.classList.add('off')});b.classList.remove('off');render()};catDiv.appendChild(b)});
+document.querySelectorAll('[data-bucket]').forEach(function(b){b.onclick=function(){activeBucket=b.getAttribute('data-bucket');document.querySelectorAll('[data-bucket]').forEach(function(x){x.classList.add('off')});b.classList.remove('off');render()}});
+document.getElementById('q').addEventListener('input',render);
+function isExpired(o){var m=/(\d{4})-(\d{2})-(\d{2})/.exec(o.expiry||'');if(!m)return false;if(/checked/i.test(o.expiry))return false;var d=new Date(o.expiry);return !isNaN(d)&&d<new Date()}
+function saveClaimed(){localStorage.setItem('foodCreditsClaimed',JSON.stringify(claimed));document.getElementById('claimed-count').textContent=claimed.length}
+function card(o){
+ var exp=isExpired(o);
+ var div=document.createElement('div');div.className='card '+(o.bucket==='VERIFIED'?'bucket-verified':'bucket-reported')+(exp?' expired':'');
+ var code=o.promo_code?'<p><span class="codebox">'+o.promo_code+'</span> <button class="btn copybtn" data-copy="'+o.promo_code+'">Copy code</button></p>':'';
+ var isC=claimed.indexOf(o.id)>=0;
+ div.innerHTML='<div class="date">'+o.provider+'</div><h3>'+o.programme+'</h3><p class="meta">'+o.offer_text+'</p><p class="meta"><strong>Value:</strong> '+o.value+'</p><p class="meta"><strong>Eligibility:</strong> '+o.eligibility+'</p><p class="meta"><strong>Expiry:</strong> '+o.expiry+(exp?' — <strong>Expired — pending removal</strong>':'')+'</p><p class="meta"><strong>Last verified:</strong> '+o.last_verified+' · Source: '+o.source+'</p>'+code+'<p><a class="btn" href="'+o.official_url+'" target="_blank" rel="noopener">Claim on '+o.provider+' →</a> <button class="btn copybtn '+(isC?'claimed-on':'')+'" data-claim="'+o.id+'">'+(isC?'✓ Claimed':'Mark claimed')+'</button></p>';
+ return div;
+}
+function render(){
+ var q=(document.getElementById('q').value||'').toLowerCase();var n=0;
+ ['VERIFIED','REPORTED'].forEach(function(bucket){
+  var grid=document.getElementById(bucket==='VERIFIED'?'grid-verified':'grid-reported');grid.innerHTML='';
+  (window.FOOD_OFFERS||[]).filter(function(o){return o.bucket===bucket}).filter(function(o){
+   if(activeBucket!=='ALL'&&o.bucket!==activeBucket)return false;
+   if(activeCat!=='ALL'&&o.category!==activeCat)return false;
+   if(q&&JSON.stringify(o).toLowerCase().indexOf(q)<0)return false;return true;
+  }).forEach(function(o){grid.appendChild(card(o));n++});
+ });
+ document.getElementById('result-count').textContent=n+' offers shown';
+ gridBind();
+}
+function gridBind(){
+ document.querySelectorAll('[data-copy]').forEach(function(b){b.onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(b.getAttribute('data-copy'));b.textContent='Copied ✓'}});
+ document.querySelectorAll('[data-claim]').forEach(function(b){b.onclick=function(){var id=b.getAttribute('data-claim');var i=claimed.indexOf(id);if(i>=0)claimed.splice(i,1);else claimed.push(id);saveClaimed();render()}});
+}
+document.getElementById('total-count').textContent=(window.FOOD_OFFERS||[]).length;
+saveClaimed();render();
+</script>
+</body>
+</html>
