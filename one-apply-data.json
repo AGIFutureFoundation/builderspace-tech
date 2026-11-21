@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-11-21 (R8 push — DB 392→407: 15 credits-hunt R8 records merged, 3 fire-ready + 12 Mike-step appendix, no dedupe collisions; Bucket A headline unchanged at $77,425.98 with the ≈$170 Cartesia flag)",
+ "generated_at": "2026-11-21 (R9 push — DB 407→418: 11 credits-hunt R9 records merged, no dedupe collisions; Bucket A headline unchanged at $77,425.98 with the ≈$170 Cartesia flag)",
  "source": "programmes-db.json",
  "buckets": {
   "verified_in_hand_usd": 77425.98,
   "verified_in_hand_note": "Estate headline $77,425.98 (2026-11-20 verified board). Itemised console-verified components: PostHog $50,000 + Algolia $10,000 coupon (ACTIVE to 2027-11-16) + Sentry $5,000 + Cartesia approx $7,200 + Murf $1,510 + Exa $1,000 + Airtable $500 + TiDB $500 + Neon $500 + Databricks trial $400 + Deepgram $200 + You.com $99.98 + Linkup $20 + OpenRouter $15 + Railway $5 + Cerebrium $5 + Fireworks $1 + ClickHouse trial $300 = $77,255.98 itemised. The approx $170 difference between the headline and the itemised sum sits inside the approximate Cartesia approx $7,200 figure — flagged, not smoothed; a Cartesia exact-balance console check resolves it. ScyllaDB reported $4,000 was console-verified ABSENT on 2026-11-20 and is counted nowhere. Present the headline only with this breakdown and evidence labels, never as a bare number, and never as raised. Dashboard/console/provider-confirmation evidence only; offers are never balances; discounts are never credits.",
   "in_motion_submitted_records": 93,
   "in_motion_note": "Confirmed submissions with published ceilings, counted as records not dollars; ceilings live on each record offer field.",
-  "logged_candidate_records_total": 407,
+  "logged_candidate_records_total": 418,
   "loop_target": {
    "database_target": "420 records (founders one-apply 420 loop, reopened 2026-11-18)",
-   "records_now": 407,
-   "note": "420 loop window Wed 2026-11-18 ~11:00-21:00 PT. Morning enterprise loop closed at 303 records / 51 strict submitted. Reconciled 2026-11-21: DB 361→392 with the Nov 19-21 firing waves integrated and Bucket A updated. R8 merge 2026-11-21: DB 392→407 (15 credits-hunt R8 records); Bucket A headline unchanged at $77,425.98."
+   "records_now": 418,
+   "note": "420 loop window Wed 2026-11-18 ~11:00-21:00 PT. Morning enterprise loop closed at 303 records / 51 strict submitted. Reconciled 2026-11-21: DB 361→392 with the Nov 19-21 firing waves integrated and Bucket A updated. R8 merge 2026-11-21: DB 392→407 (15 credits-hunt R8 records); Bucket A headline unchanged at $77,425.98. R9 merge 2026-11-21: DB 407→418 (11 credits-hunt R9 records); Bucket A headline unchanged at $77,425.98."
   }
  },
  "programmes": [
@@ -15097,6 +15097,411 @@
    "programme": "South Park Commons — Member Residency",
    "provider": "South Park Commons",
    "url": "https://southparkcommons.com/apply"
+  },
+  {
+   "access_note": "FIRE-READY (R9-01). Verified on the provider's own pricing page 2026-11-21; no 501(c)(3) or determination-letter requirement named on the page.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Nonprofit organisations — Fathom's pricing page offers 10 free seats to nonprofits with no determination letter named",
+    "Estate fit: registered California nonprofit corporation, team of 2 (within the 10 seats)"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Published value $1,800/year (Team list $15/user/mo annual x 10 seats) to $3,000/year (Business list $25/user/mo annual x 10 seats); the page does not state which tier the seats land on."
+   },
+   "id": "fathom-nonprofit-seats",
+   "offer": "10 free Fathom seats for nonprofits. Fathom's pricing page (fathom.ai/pricing, verified 2026-11-21) states: 'Get 10 free seats for nonprofits — Because we know that doing good is hard enough. Let us help get you started. APPLY HERE TO QUALIFY' (application is a Typeform). List prices on the same page: Team $15/user/month billed annually, Business $25/user/month billed annually; the tier granted to nonprofits is not specified on the page.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "If the application form or the review demands an IRS determination letter specifically, stop and report — the estate does not hold one and does not claim tax-exempt status.",
+     "Fathom's Qualified Portfolio Program is a separate VC/accelerator-gated door — do not use it."
+    ],
+    "required_fields": [
+     "Legal name: AGI Future Foundation",
+     "Contact: Mike Rice, CEO & Co-Founder",
+     "Email: x@agifuturefoundation.org",
+     "Website: agifuturefoundation.org",
+     "Team size: 2",
+     "Tax sentence (verbatim, if tax status is asked): California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status."
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "Open https://fathom.ai/pricing and follow the nonprofit 'APPLY HERE TO QUALIFY' Typeform link.",
+     "Apply as AGI Future Foundation; use case: meeting recording and transcription for Ask Humanity interviews and partner calls.",
+     "Fathom reviews and replies by email to x@agifuturefoundation.org."
+    ]
+   },
+   "programme": "Fathom Nonprofit Seats",
+   "provider": "Fathom",
+   "url": "https://fathom.ai/pricing"
+  },
+  {
+   "access_note": "FIRE-READY (R9-02). Verified on whimsical.com/pricing and whimsical.com/learn/billing/pricing 2026-11-21; no determination letter named on either page.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Non-profit organizations (Whimsical's own wording)",
+    "No determination letter or tax-exempt documentation named on the provider's pages"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Published saving $24/editor/year on Pro annual ($120 list) — $48/year for the estate's 2 editors; a discount, not a balance."
+   },
+   "id": "whimsical-nonprofit-discount",
+   "offer": "20% discount on Whimsical paid plans for non-profit organizations. Whimsical's pricing and billing pages (verified 2026-11-21) state: 'We gladly offer a 20% discount to non-profit organizations' with an application form linked from the billing page. Pro list price on the same pages: $10/editor/month billed annually ($120/editor/year); Business $20/editor/month billed annually.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "The application/approval fires now; purchasing a paid plan is a payment step and remains Mike's.",
+     "If the form requires an existing paid workspace or a determination letter, stop and report."
+    ],
+    "required_fields": [
+     "Legal name: AGI Future Foundation",
+     "Contact: Mike Rice, CEO & Co-Founder",
+     "Email: x@agifuturefoundation.org",
+     "Website: agifuturefoundation.org",
+     "Editors: 2",
+     "Tax sentence (verbatim, if asked): California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status."
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "Open https://whimsical.com/pricing and follow the non-profit discount application form (also linked from https://whimsical.com/learn/billing/pricing).",
+     "Apply as AGI Future Foundation; use case: diagrams and research mapping for the data-universe and Bio Graph programme boards.",
+     "Whimsical replies by email; any plan purchase after approval is a separate Mike decision."
+    ]
+   },
+   "programme": "Whimsical Nonprofit Discount",
+   "provider": "Whimsical",
+   "url": "https://whimsical.com/pricing"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R9-M1). Gates: new-account password via Secure Vault + homepage backlink placement (site edit needing Mike's approval). Verified on questionpro.com pages 2026-11-21; no determination letter named on either page.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Registered nonprofit organisation",
+    "New customers only",
+    "Published requirements: homepage backlink statement and citation/acknowledgement in research reports",
+    "Yearly renewal asks a public G2 review and up to 3 nonprofit referrals"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Published value $1,188/year (the free licence mirrors the Advanced plan listed at $99/user/month, one user)."
+   },
+   "id": "questionpro-nonprofit-license",
+   "offer": "Free QuestionPro Nonprofit License for registered nonprofits: the full licence at no charge, mirroring the Advanced plan listed at $99/user/month ($1,188/year published). Published requirements: registered nonprofit status, a backlink statement on the organisation's homepage, and citation/acknowledgement in research reports; new customers only. Route as published: create a free account, add the backlink, then email non-profit@questionpro.com for the free upgrade. Caveat: QuestionPro's waiver page mentions a 'QuestionPro - TechSoup partnership' for US signups — ambiguity flagged; no determination letter is named on either QuestionPro page.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "The homepage backlink is a public site edit on agifuturefoundation.org — it needs Mike's approval before placement.",
+     "If QuestionPro answers that US nonprofits must route through TechSoup validation keyed on IRS exempt status, the claim may fail — the estate holds no determination letter; do not represent otherwise."
+    ],
+    "required_fields": [
+     "QuestionPro free account on x@agifuturefoundation.org",
+     "Legal name: AGI Future Foundation",
+     "Website: agifuturefoundation.org",
+     "Tax sentence (verbatim, if asked): California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status."
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "MIKE STEP 1: create the free QuestionPro account (new-account password via Secure Vault).",
+     "MIKE STEP 2: approve and place the published backlink statement on the agifuturefoundation.org homepage.",
+     "Email non-profit@questionpro.com requesting the free Nonprofit License upgrade, citing the registered-nonprofit status and the placed backlink."
+    ]
+   },
+   "programme": "QuestionPro Nonprofit License",
+   "provider": "QuestionPro",
+   "url": "https://www.questionpro.com"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R9-M2). Gate: KYC financial-account opening (Mike step). Verified on Airwallex's own US programme terms 2026-11-21.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "US businesses; the Public (Non-Venture-Backed) tier is published for companies without venture backing — estate answer $0 raised fits",
+    "The Venture-Backed tier (headline fee credits) requires at least $500K raised and is NOT available to the estate",
+    "Opening a regulated financial account requires KYC identity verification"
+   ],
+   "estate_run": {
+    "entity": "UNDECIDED — see gotchas",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Published Public-tier value: up to $200 cashback plus fee waivers on the first $10,000 of FX conversions and of payment collections, and a 3-month subscription-fee waiver."
+   },
+   "id": "airwallex-for-startups-us",
+   "offer": "Airwallex for Startups, US Public (Non-Venture-Backed) tier, as published in Airwallex's own US terms: 2% cashback on the first $10,000 of card spend (maximum $200), fee waivers on the first $10,000 of FX conversions and on the first $10,000 of payment collections, and a 3-month subscription-fee waiver. The widely advertised '$150K in fee credits' figure belongs to the Venture-Backed tier, which requires at least $500K raised — the estate does not qualify and the figure must never be quoted for us.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Opening a financial account is a KYC step and a Mike-only action; it is never a fire-all item.",
+     "Entity shape: if a business account is wanted, W3 LLC is the estate's live for-profit seat; the Foundation is a nonprofit research corporation — Mike decides which entity, if any, opens the account."
+    ],
+    "required_fields": [
+     "Business legal name and registration details (entity per Mike's decision)",
+     "KYC identity documents (Mike, in person)"
+    ],
+    "review_clock": "Account review per Airwallex's onboarding process.",
+    "steps": [
+     "MIKE STEP: decide the entity (or decline) and complete Airwallex's account opening and KYC personally.",
+     "Claim the Public (Non-Venture-Backed) tier benefits only; never the Venture-Backed tier."
+    ]
+   },
+   "programme": "Airwallex for Startups (US)",
+   "provider": "Airwallex",
+   "url": "https://www.airwallex.com"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R9-M3). Gate: email-ask needs Mike's exact-text approval + send. Verified on datawrapper.de/pricing FAQ 2026-11-21.",
+   "access_type": "EMAIL-ASK",
+   "eligibility": [
+    "Non-profit organisations (Datawrapper's own FAQ wording)",
+    "No documentation requirement published by the provider"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. 20% discount on a paid plan; Pro lists at $21/user/month, so the saving depends on plan and seats chosen."
+   },
+   "id": "datawrapper-nonprofit-discount",
+   "offer": "20% discount on Datawrapper annual and monthly paid plans for non-profit organisations. Datawrapper's pricing FAQ (datawrapper.de/pricing, verified 2026-11-21) states: 'We gladly offer a 20% discount on annual and monthly paid plans' for non-profit organisations, claimed by writing to support@datawrapper.de. No verification documents are specified on the page. Pro lists at $21/user/month.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "If support answers that only a determination letter counts as proof, the claim stops — the estate does not hold one.",
+     "Any plan purchase after the discount is approved is a separate Mike decision."
+    ],
+    "required_fields": [
+     "Organisation details + proof of nonprofit status",
+     "Contact: Mike Rice, x@agifuturefoundation.org"
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "EMAIL-ASK — requires Mike's exact-text approval before sending (standing rule).",
+     "Draft ask to support@datawrapper.de from x@agifuturefoundation.org, attaching proof of California nonprofit corporation status (Secretary of State filing record) and the verbatim tax sentence: California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status.",
+     "Use case to state: charts and maps for the Bio Graph census and AURA research publications."
+    ]
+   },
+   "programme": "Datawrapper Nonprofit Discount",
+   "provider": "Datawrapper",
+   "url": "https://datawrapper.de/pricing"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R9-M4). Gate: new-account password via Secure Vault, then a team ask with NFP proof. Verified on help.humanitix.com 2026-11-21.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Registered charities, not-for-profit/non-profit organisations and schools (provider's own help centre)",
+    "Proof standard as published: any supporting documentation that shows NFP status — the estate's California nonprofit registration is that document"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. No fixed dollar value: the NFP rate saves 1.1 percentage points of ticket revenue versus the standard rate."
+   },
+   "id": "humanitix-nfp-rate",
+   "offer": "Humanitix not-for-profit ticket rate: USD 3.9% + $1.29 per paid ticket versus the standard 5% + $1.29, inclusive of card fees (Humanitix help centre, help.humanitix.com, verified 2026-11-21). Eligible organisations: registered charities, not-for-profit/non-profit organisations and schools, on proof of 'any supporting documentation that shows your NFP status.' Route as published: sign up with the account email first, then contact the Humanitix team to apply the rate.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Relevant only if estate event ticketing (e.g. BuilderSpace) ever moves to Humanitix — staging the rate now costs nothing and locks nothing in.",
+     "If the team requires charitable tax-exempt documentation beyond the CA nonprofit registration, the claim stops."
+    ],
+    "required_fields": [
+     "Humanitix account on x@agifuturefoundation.org",
+     "CA nonprofit registration document",
+     "Legal name: AGI Future Foundation"
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "MIKE STEP FIRST: create the Humanitix account (new-account password via Secure Vault).",
+     "Contact the Humanitix team with the CA nonprofit registration document and request the NFP rate on the account."
+    ]
+   },
+   "programme": "Humanitix NFP Rate",
+   "provider": "Humanitix",
+   "url": "https://help.humanitix.com"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R9-M5). Gate: support ask with proof needs Mike's exact-text approval. Verified on tickettailor.com published rates 2026-11-21.",
+   "access_type": "EMAIL-ASK",
+   "eligibility": [
+    "Registered charities: 50% off fees (provider-published)",
+    "A further 20% discount for not-for-profits/PTAs/B Corps is reported from the provider's Help Centre — which of the two rates applies to a US nonprofit corporation without a determination letter is ambiguous and must be asked, not assumed"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Published saving $0.42 per ticket pay-as-you-go ($0.85 to $0.43) or $0.15 prepaid ($0.30 to $0.15) at the charity rate."
+   },
+   "id": "ticket-tailor-charity-discount",
+   "offer": "Ticket Tailor publishes 'Registered charities get 50% off our fees': $0.85 to $0.43 per ticket on pay-as-you-go, $0.30 to $0.15 on prepaid credits. A further 20% discount for not-for-profits, PTAs and B Corps is reported from its Help Centre. Proof route as published: a support ask with a scanned official document showing charitable status, with a registration number where the organisation has one — the estate holds a California nonprofit corporation registration (B20260196664).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Charity-vs-not-for-profit ambiguity: ask which published rate applies to a California nonprofit public benefit corporation with no IRS determination letter; do not claim the charity rate as settled.",
+     "Relevant only if estate event ticketing ever moves to Ticket Tailor."
+    ],
+    "required_fields": [
+     "CA nonprofit registration document",
+     "Contact: Mike Rice, x@agifuturefoundation.org",
+     "Tax sentence (verbatim): California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status."
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "EMAIL/SUPPORT-ASK — requires Mike's exact-text approval before sending (standing rule).",
+     "Ask Ticket Tailor support which published discount applies on our facts, attaching the CA nonprofit filing record and the verbatim tax sentence."
+    ]
+   },
+   "programme": "Ticket Tailor Charity / NFP Discount",
+   "provider": "Ticket Tailor",
+   "url": "https://www.tickettailor.com"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R9-M6). Gate: new-account password via Secure Vault. Verified on transistor.fm/non-profits 2026-11-21.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Non-profit organisations (Transistor's own nonprofits page)",
+    "Discount is added by the support team during the free trial period — the ask must happen inside the 14-day trial window"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. 15% discount on a paid plan; Starter lists at $19/month. Podcasts are paused by standing order — this stages the discount for the restart only."
+   },
+   "id": "transistor-nonprofit-discount",
+   "offer": "15% off Transistor podcast hosting for non-profit organisations. Transistor's own nonprofits page (transistor.fm/non-profits, verified 2026-11-21) states: 'We offer 15% off for non-profit organisations, just ask our support team to add it to your account during the free trial period.' Starter plan lists at $19/month; annual billing is separately discounted.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "The discount can only be attached during the free trial — start the trial only when a podcast restart is actually planned, so the window is not wasted.",
+     "Any paid subscription after the trial is a payment step and remains Mike's."
+    ],
+    "required_fields": [
+     "Transistor trial account on x@agifuturefoundation.org",
+     "Legal name: AGI Future Foundation"
+    ],
+    "review_clock": "Support applies the discount during the trial on request.",
+    "steps": [
+     "MIKE STEP FIRST: create the Transistor free-trial account (new-account password via Secure Vault) when a podcast restart is scheduled.",
+     "During the 14-day trial, ask Transistor support (live chat or email) to add the 15% nonprofit discount to the account."
+    ]
+   },
+   "programme": "Transistor Nonprofit Discount",
+   "provider": "Transistor",
+   "url": "https://transistor.fm/non-profits/"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R9-M7). Gate: new-account password via Secure Vault. Programme existence verified on arize.com/pricing 2026-11-21; the 6-month term is REPORTED from aggregators, not published by Arize.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "First-time Arize customers building an AI-native product (aggregator-reported terms)",
+    "Reported funding bar: Series A or earlier, or less than $15M raised — estate answer $0 raised fits",
+    "Eligibility review is required; approval is not automatic"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Up to $300 IF the reported 6-months-free term holds (AX Pro list price $50/month is provider-published on arize.com/pricing)."
+   },
+   "id": "arize-for-startups",
+   "offer": "Arize for Startups: startup pricing on Arize AX, the AI observability/evaluation platform. Arize's own pricing page (arize.com/pricing, verified 2026-11-21) carries an 'Arize for startups' block — 'Apply for startup pricing to trace, evaluate, and iterate on your LLM applications' — but does not publish the programme's terms there. Aggregators report six months free of AX Pro for approved first-time customers (AX Pro: 50,000 trace spans/month, 10 GB ingestion, 30-day retention); AX Pro's list price of $50/month is provider-published. An event-sponsor variant of the 6-month offer existed with a redeem-by date of October 19, 2026 — expired; do not use it.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "The 6-month figure is REPORTED, not provider-published — confirm the actual term in the approval reply before valuing anything.",
+     "Create the free AX account first, then apply with the same work email, per the published claim route."
+    ],
+    "required_fields": [
+     "Arize AX free account on x@agifuturefoundation.org",
+     "Legal name: AGI Future Foundation",
+     "Website: agifuturefoundation.org",
+     "Total funding raised: $0"
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "MIKE STEP FIRST: create the free Arize AX account (new-account password via Secure Vault).",
+     "Apply for startup pricing from the Arize pricing page route / in-app, as AGI Future Foundation; use case: tracing and evaluation for the estate's agent layer."
+    ]
+   },
+   "programme": "Arize for Startups",
+   "provider": "Arize AI",
+   "url": "https://arize.com/pricing/"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R9-M8). Gate: new-account password via Secure Vault. Class: free-plan claim — no startup credit programme exists. Verified on comet.com pricing 2026-11-21.",
+   "access_type": "INSTANT",
+   "eligibility": [
+    "Any team; the free tier is the standard public plan",
+    "The expanded academic upgrade is .edu-gated and not available to the estate"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Free tier; no credits attach."
+   },
+   "id": "comet-opik-free-cloud",
+   "offer": "Opik Free Cloud tier (Comet's open-source LLM observability/evals platform): up to 10 team members, 25k spans/month, 60-day retention, free. Comet publishes NO startup credit programme — this is the standard free plan, staged as a free-plan claim for agent observability alongside the estate's Langfuse setup, not as credits.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Do not describe this as a credit award anywhere — it is a public free tier.",
+     "Free-tier limits (25k spans/month) suit evaluation workloads, not full production tracing."
+    ],
+    "required_fields": [
+     "Account on x@agifuturefoundation.org",
+     "Workspace: AGI Future Foundation"
+    ],
+    "review_clock": "Instant.",
+    "steps": [
+     "MIKE STEP FIRST: create the Comet account (new-account password via Secure Vault).",
+     "Stay on the Opik Free Cloud tier; use for agent eval workloads."
+    ]
+   },
+   "programme": "Comet Opik — Free Cloud Tier",
+   "provider": "Comet",
+   "url": "https://www.comet.com"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R9-M9). Gate: new-account password via Secure Vault. Class: signup credit claim — no programme or application exists. Credit figure from beam.cloud/pricing as read 2026-11-21; per-account landing unverified.",
+   "access_type": "INSTANT",
+   "eligibility": [
+    "Any new account on the Developer plan; no funding or programme criteria published"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R9 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Claimed $30/month recurring credit ($360/year) IF it lands per account — verify on the console before counting anything."
+   },
+   "id": "beam-developer-credit-claim",
+   "offer": "Beam (serverless GPU cloud) advertises a $30/month credit attached to its Developer plan on its pricing page (beam.cloud/pricing). There is no startup programme and no application — the credit is a signup claim, and independent readings flag it as advertised-not-confirmed per account. Staged only as a claim-and-verify item.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Verify the balance on the console immediately after signup; if no credit lands, record the claim as void — never quote the $30/month as held.",
+     "GPU usage beyond any landed credit is metered spend — a payment decision, not part of this claim."
+    ],
+    "required_fields": [
+     "Account on x@agifuturefoundation.org"
+    ],
+    "review_clock": "Instant on signup, if the credit lands.",
+    "steps": [
+     "MIKE STEP FIRST: create the Beam account (new-account password via Secure Vault).",
+     "Check the console balance; report whether the $30/month credit actually landed before any use."
+    ]
+   },
+   "programme": "Beam Developer Plan Credit (signup claim)",
+   "provider": "Beam",
+   "url": "https://beam.cloud/pricing"
   }
  ]
 }
