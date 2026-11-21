@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-11-21 (one-apply reconciliation — DB 361→392: 22 coordinator records + 9 firing-wave records landed; 23 spec corrections + 8 firing-wave updates applied as corrections[] entries with prior states preserved; process log 73→105 rows; Bucket A headline updated to $77,425.98 with the ≈$170 Cartesia flag)",
+ "generated_at": "2026-11-21 (R8 push — DB 392→407: 15 credits-hunt R8 records merged, 3 fire-ready + 12 Mike-step appendix, no dedupe collisions; Bucket A headline unchanged at $77,425.98 with the ≈$170 Cartesia flag)",
  "source": "programmes-db.json",
  "buckets": {
   "verified_in_hand_usd": 77425.98,
   "verified_in_hand_note": "Estate headline $77,425.98 (2026-11-20 verified board). Itemised console-verified components: PostHog $50,000 + Algolia $10,000 coupon (ACTIVE to 2027-11-16) + Sentry $5,000 + Cartesia approx $7,200 + Murf $1,510 + Exa $1,000 + Airtable $500 + TiDB $500 + Neon $500 + Databricks trial $400 + Deepgram $200 + You.com $99.98 + Linkup $20 + OpenRouter $15 + Railway $5 + Cerebrium $5 + Fireworks $1 + ClickHouse trial $300 = $77,255.98 itemised. The approx $170 difference between the headline and the itemised sum sits inside the approximate Cartesia approx $7,200 figure — flagged, not smoothed; a Cartesia exact-balance console check resolves it. ScyllaDB reported $4,000 was console-verified ABSENT on 2026-11-20 and is counted nowhere. Present the headline only with this breakdown and evidence labels, never as a bare number, and never as raised. Dashboard/console/provider-confirmation evidence only; offers are never balances; discounts are never credits.",
   "in_motion_submitted_records": 93,
   "in_motion_note": "Confirmed submissions with published ceilings, counted as records not dollars; ceilings live on each record offer field.",
-  "logged_candidate_records_total": 392,
+  "logged_candidate_records_total": 407,
   "loop_target": {
    "database_target": "420 records (founders one-apply 420 loop, reopened 2026-11-18)",
-   "records_now": 392,
-   "note": "420 loop window Wed 2026-11-18 ~11:00-21:00 PT. Morning enterprise loop closed at 303 records / 51 strict submitted. Reconciled 2026-11-21: DB 361→392 with the Nov 19-21 firing waves integrated and Bucket A updated."
+   "records_now": 407,
+   "note": "420 loop window Wed 2026-11-18 ~11:00-21:00 PT. Morning enterprise loop closed at 303 records / 51 strict submitted. Reconciled 2026-11-21: DB 361→392 with the Nov 19-21 firing waves integrated and Bucket A updated. R8 merge 2026-11-21: DB 392→407 (15 credits-hunt R8 records); Bucket A headline unchanged at $77,425.98."
   }
  },
  "programmes": [
@@ -14528,6 +14528,575 @@
    "url": "",
    "access_type": "APPLICATION",
    "access_note": "Programme URL not captured in the estate record at reconciliation (2026-11-21); verify on the provider official site before any action."
+  },
+  {
+   "access_note": "FIRE-READY (R8-01). Verified on the provider's own programme page 2026-11-21; credit structure and eligibility from Infobip's published Startup Tribe factsheet/playbook.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Must not be a current Infobip customer",
+    "Satisfy at least two of three: demonstrate high growth potential; no more than 100 employees; have not raised more than $5M in total",
+    "VC, incubator or accelerator backing is NOT required (programme FAQ: any startup meeting the criteria can apply, regardless of backing)",
+    "Open regardless of location or industry",
+    "Estate fit: team of 2, $0 raised, not an Infobip customer — all published criteria met"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Published value up to $60,000; direct-route initial tranche $10,000 per Infobip's own playbook."
+   },
+   "id": "infobip-startup-tribe",
+   "offer": "Product credits for Infobip omnichannel communications solutions (SMS, WhatsApp, email, voice, chat) plus a dedicated support team, global conference entry, network pass and exclusive partner deals. Infobip's published programme factsheet/playbook: up to US$60,000 in credits — direct applicants receive $10,000 in initial credits (partner-referred startups $20,000), with up to a further $50,000 as the startup scales; credits expire one year from first spend.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Direct applicants get the $10,000 initial tranche, not the $60,000 headline — the balance unlocks only with demonstrated scale inside the programme.",
+     "Credits expire one year from the moment spending starts — do not start the spend clock before a live messaging use case is ready.",
+     "If the award stage introduces a signed agreement, card or KYC step, stop — that becomes a Mike step."
+    ],
+    "required_fields": [
+     "Legal name: AGI Future Foundation",
+     "Contact: Mike Rice, CEO & Co-Founder",
+     "Email: x@agifuturefoundation.org",
+     "Website: agifuturefoundation.org",
+     "Employees: 2",
+     "Total funding raised: $0",
+     "Description: California nonprofit research foundation running agent-operated data and interview programmes (Ask Humanity, Bio Graph, One-Apply); communications use case as above",
+     "Tax sentence (verbatim, if tax status is asked): California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status."
+    ],
+    "review_clock": "Reviewed at Infobip's discretion; no published SLA.",
+    "steps": [
+     "Open https://startups.infobip.com and start the application (form linked from the programme page).",
+     "Apply as AGI Future Foundation with the standard fact set; use case: consented participant messaging for Ask Humanity interview invitations, BuilderSpace event notifications, and research-programme communications over SMS/WhatsApp/email.",
+     "Submit; Infobip reviews at its discretion and replies by email to x@agifuturefoundation.org."
+    ]
+   },
+   "programme": "Infobip Startup Tribe",
+   "provider": "Infobip",
+   "url": "https://startups.infobip.com"
+  },
+  {
+   "access_note": "FIRE-READY (R8-02). Verified on porter.run (pricing FAQ and Porter blog, read 2026-11-21) and the programme page as read by trackers 2026-10-13.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Startup deal: startup that has raised less than $5M in funding — estate answer $0 raised qualifies",
+    "Professionally funded startups usually reach the deal through an accelerator/investor (YC, a16z speedrun named); Porter states others can apply for the startup deal directly",
+    "Nonprofit discount: nonprofit organisations — 50% off, per Porter's pricing FAQ",
+    "Runs on the customer's own cloud account; underlying cloud cost is the customer's (cloud credits can be used)"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. No fixed published dollar value; aggregator estimates of up to $5,000 are REPORTED only and are not used."
+   },
+   "id": "porter-startup-deal",
+   "offer": "Startup deal: Porter (PaaS that deploys into your own AWS/Azure/GCP account) free for 6 months for qualifying startups that have raised less than $5M (programme page as read 2026-10-13; Porter's own blog and pricing FAQ confirm the deal and the <$5M line). Separately, Porter's pricing FAQ states verbatim: 'For non-profits, we offer a 50% discount.' No fixed dollar figure is published for either offer; Porter's platform is usage-priced ($6/GB RAM and $13/vCPU per month on Standard).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "The $10,000 Porter credit figure circulating on YC pages is gated on YC Startup School enrolment — do not claim it on this route.",
+     "Porter charges only for the platform layer; the underlying AWS/Azure/GCP bill remains ours.",
+     "If approval requires linking a cloud account with a card on file, stop — that becomes a Mike step."
+    ],
+    "required_fields": [
+     "Legal name: AGI Future Foundation",
+     "Contact: Mike Rice, CEO & Co-Founder",
+     "Email: x@agifuturefoundation.org",
+     "Website: agifuturefoundation.org",
+     "Total funding raised: $0",
+     "Team size: 2",
+     "Tax sentence (verbatim, if asked): California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status."
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "Open the Porter startups page and click 'Redeem Deal' to open the Typeform application.",
+     "Apply as AGI Future Foundation; state $0 raised (under the $5M line) and the nonprofit status, claiming the startup deal and noting the published 50% nonprofit discount as the fallback.",
+     "Use case: deploy estate services (Directus, one-apply backend, data APIs) into our own cloud account."
+    ]
+   },
+   "programme": "Porter Startup Deal + Nonprofit Discount",
+   "provider": "Porter (porter.run)",
+   "url": "https://porter.run/startups/aws-azure-gcp"
+  },
+  {
+   "access_note": "FIRE-READY (R8-03). Verified on n8n.io/pricing in this hunt (2026-11-21).",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Fewer than 20 employees (n8n pricing page)",
+    "Less than €5M in total funding (programme terms as read from n8n's pages) — estate answer $0 raised qualifies",
+    "Bootstrapped companies qualify; no VC or accelerator backing required",
+    "Discount applies to the Business plan (self-hosted)"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Published saving €4,008 over 12 months at list prices (≈$4,600) — a discount, not a balance."
+   },
+   "id": "n8n-startup-plan",
+   "offer": "50% off the n8n Business plan for eligible startups, for one year, renewable while the company still qualifies (programme terms as read from n8n's pages). n8n's pricing page (verified 2026-11-21) states: 'Under 20 employees? Check if you qualify for our Startup plan and get 50% off Business.' Business list price on the same page: €667/month billed annually — the Startup plan is listed at €333/month billed annually, a published saving of €334/month, €4,008 over 12 months. Business is self-hosted (fits the estate's Hostinger VPS).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "The discount is on the self-hosted Business plan — there is no cloud Business tier to claim.",
+     "One year at the discounted rate; renewal requires still meeting the criteria.",
+     "Purchasing the plan itself is a payment step — the application/approval is what fires now; any checkout is Mike's."
+    ],
+    "required_fields": [
+     "Legal name: AGI Future Foundation",
+     "Contact: Mike Rice, CEO & Co-Founder",
+     "Email: x@agifuturefoundation.org",
+     "Website: agifuturefoundation.org",
+     "Employees: 2",
+     "Total funding: $0 (under the €5M line)",
+     "Tax sentence (verbatim, if asked): California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status."
+    ],
+    "review_clock": "Decisions usually by email; no published SLA.",
+    "steps": [
+     "From n8n.io/pricing, follow the Startup plan 'Learn more' route and submit the application.",
+     "Apply as AGI Future Foundation: 2 employees, $0 total funding; use case: self-hosted workflow automation for outreach operations, data-lake pipelines and monitoring on our own VPS.",
+     "n8n decides and replies by email."
+    ]
+   },
+   "programme": "n8n Startup Plan",
+   "provider": "n8n",
+   "url": "https://n8n.io/pricing/"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M1). Gate: new-account password via Secure Vault. Verified on mailchimp.com help article 2026-11-21.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Verified nonprofit organization or charity",
+    "United States: EIN added to the Mailchimp account (the stated bar; a determination letter is a possible follow-up ask, not a published precondition)",
+    "Discount applies to future purchases only"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. 15% discount on a paid plan, value depends on plan chosen."
+   },
+   "id": "mailchimp-nonprofit-discount",
+   "offer": "15% discount on Mailchimp marketing plans (Essentials, Standard, Premium) for verified nonprofit organizations and charities (Mailchimp's own help article, verified 2026-11-21). US requirement as published: add the organisation's EIN to the account before requesting; Mailchimp 'may ask for additional information to validate your eligibility, such as a digital copy of your organization's 501c3 letter.' No retroactive discounts — the request must precede any purchase.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Ask first, buy second — Mailchimp cannot apply the discount retroactively.",
+     "If the billing team requires the determination letter itself (not just the EIN), the claim stops: the estate does not hold one and does not claim tax-exempt status."
+    ],
+    "required_fields": [
+     "Mailchimp account on x@agifuturefoundation.org",
+     "EIN on account (see playbook)",
+     "Legal name: AGI Future Foundation",
+     "Website: agifuturefoundation.org"
+    ],
+    "review_clock": "Billing team reaches out after the request; no published SLA.",
+    "steps": [
+     "MIKE STEP FIRST: create the free Mailchimp account (new-account password via Secure Vault).",
+     "Add the Foundation's EIN to the account (entered by the main chat from Mike's uploaded IRS letter under the standing per-task authorisation; the value is never recorded here).",
+     "Submit the discount request via Mailchimp's Contact page: Topic = Billing, question type = Non-profit Discount Requests (US), before purchasing any plan.",
+     "Note: mail stays on Hostinger by standing rule — this stages the discount only; any migration of sending is a separate Mike decision."
+    ]
+   },
+   "programme": "Mailchimp Nonprofit Discount",
+   "provider": "Intuit Mailchimp",
+   "url": "https://mailchimp.com/help/about-nonprofit-discount/"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M2). Gate: third-party nonprofit validation (TechSoup/Goodstack), already in motion via the TechSoup lane.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Registered nonprofit organization",
+    "Validation through TechSoup or Goodstack is mandatory (Hootsuite's own wording)",
+    "Schools, hospitals, government bodies, political, labour and fraternal organisations excluded"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Discount of up to $720 per user per year on Standard at published prices; no purchase is staged."
+   },
+   "id": "hootsuite-hootgiving",
+   "offer": "Up to 60% off Hootsuite Standard, Professional and Advanced for eligible nonprofits: published nonprofit prices $39 / $79 / $159 per user per month billed annually against list prices of $99 / $199 / $399 (Hootsuite's own nonprofit page and social-impact page, verified 2026-11-21). The offer is limited to TechSoup- or Goodstack-validated nonprofit organizations.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "US nonprofit validation through TechSoup/Goodstack generally keys on IRS exempt-status records; the Foundation holds no determination letter, so validation may fail — do not represent otherwise.",
+     "'Up to 60%' — the exact percentage varies by plan; the published per-plan nonprofit prices above are the reliable figures."
+    ],
+    "required_fields": [
+     "TechSoup or Goodstack validation token/status",
+     "Legal name: AGI Future Foundation",
+     "Website: agifuturefoundation.org"
+    ],
+    "review_clock": "Validation reviews reported at 2–14 business days (TechSoup) / 2–3 (Goodstack) — REPORTED figures.",
+    "steps": [
+     "GATE: the estate's TechSoup validation is already in motion (see techsoup-membership record). HootGiving cannot be claimed until a TechSoup or Goodstack validation succeeds.",
+     "Once validated, apply from Hootsuite's nonprofit page with the validation in place.",
+     "Any plan purchase remains a separate Mike decision."
+    ]
+   },
+   "programme": "Hootsuite HootGiving Nonprofit Pricing",
+   "provider": "Hootsuite",
+   "url": "https://www.hootsuite.com/pages/non-profit-new-users"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M3). Gates: TechSoup validation outcome + account password at claim.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Nonprofit validated through TechSoup",
+    "New Grammarly subscribers or current Free-plan users only; existing paid subscribers are not eligible",
+    "One year at the discounted rate"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. 30% discount for one year; TechSoup admin fee may apply at claim time."
+   },
+   "id": "grammarly-techsoup-discount",
+   "offer": "30% off Grammarly Pro for one year for eligible nonprofits, for new subscribers or current Free-plan users, fulfilled through TechSoup (Grammarly's free Grammarly for Nonprofits programme ended May 1, 2024; the TechSoup route replaced it and was re-confirmed active October 2026).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Do not cite the old free Grammarly for Nonprofits offer — it ended May 1, 2024.",
+     "US TechSoup validation generally keys on IRS exempt-status records; the Foundation holds no determination letter."
+    ],
+    "required_fields": [
+     "TechSoup validation status",
+     "Legal name: AGI Future Foundation"
+    ],
+    "review_clock": "TechSoup validation clock governs.",
+    "steps": [
+     "GATE: estate TechSoup validation (already in motion) must succeed first.",
+     "Claim via the TechSoup Grammarly page once validated; a TechSoup admin fee and a Grammarly account signup (password via Secure Vault) sit at the claim step."
+    ]
+   },
+   "programme": "Grammarly Pro — Nonprofit Discount via TechSoup",
+   "provider": "Grammarly (via TechSoup)",
+   "url": "https://www.techsoup.org/grammarly"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M4). Gate: new-account password via Secure Vault. Class: membership.",
+   "access_type": "INSTANT",
+   "eligibility": [
+    "Any founder/company; creating a profile, applying to programmes and claiming basic perks is free",
+    "Each deal on the platform carries its own terms and eligibility"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. F6S's $581K figure is a provider aggregate claim — REPORTED, never counted."
+   },
+   "id": "f6s-founder-membership",
+   "offer": "Free founder membership: a company profile that applies to accelerators, grants and funding programmes on the platform, free job postings, and access to F6S's software deals section (f6s.com/software). F6S advertises its free benefits as worth $581K in total — that figure is F6S's own aggregate marketing claim across all deals, not a verified value for any single member, and many listed deals duplicate programmes already in this database (AWS Activate, GitHub, Notion, HubSpot).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "A public F6S profile attracts unsolicited sales pitches (widely reported) — use the x@ mailbox, never a personal address.",
+     "Never claim a deal through F6S for a programme already filed directly (one-application rule)."
+    ],
+    "required_fields": [
+     "Company profile: AGI Future Foundation, agifuturefoundation.org, San Francisco, AI/research nonprofit",
+     "Founder profile: Mike Rice"
+    ],
+    "review_clock": "Instant membership; per-deal clocks vary.",
+    "steps": [
+     "MIKE STEP FIRST: create the F6S account (new-account password via Secure Vault) and the AGI Future Foundation company profile.",
+     "Claim deals only after verifying each one on the provider's own page — most headline deals are already filed directly in this database; use F6S only for deals with no direct route."
+    ]
+   },
+   "programme": "F6S Founder Membership + Deals",
+   "provider": "F6S Network Limited",
+   "url": "https://www.f6s.com"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M5). Gate: new-account password via Secure Vault. Class: membership (aggregator — provider-page verification required per deal).",
+   "access_type": "INSTANT",
+   "eligibility": [
+    "Businesses with a work email; free accounts are manually approved",
+    "Per-deal eligibility is set by each vendor"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. No independent published value; deal values belong to the underlying vendors and are counted in their own records when filed directly."
+   },
+   "id": "secret-free-tier-membership",
+   "offer": "Free-tier membership of the Secret deals marketplace: access to every deal marked 'free' on the marketplace (Secret's pricing page listed 641 deals on 2026-11-14, 370 of them free; counts vary by page and over time). Premium ($149/year or $399 lifetime) unlocks the rest and is NOT staged — it is a paid decision. Secret is a middleman: it does not issue credits and cannot approve applications; every deal must be verified on the provider's own page at claim time.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Premium upsell is aggressive and renewal/cancellation complaints are widely reported — do not start a Premium trial.",
+     "Several Premium-tier deals (e.g. HubSpot 90%, Datadog Pro year, OpenRouter $1,000) duplicate programmes already filed or in motion directly — never pay to re-claim them."
+    ],
+    "required_fields": [
+     "Work email: x@agifuturefoundation.org",
+     "Company: AGI Future Foundation"
+    ],
+    "review_clock": "Free accounts manually approved; no published SLA.",
+    "steps": [
+     "MIKE STEP FIRST: create the free Secret account with x@agifuturefoundation.org (new-account password via Secure Vault).",
+     "Use the free tier only to spot deals with no direct route; verify each on the vendor's own page before any claim, and check this database first to avoid duplicates."
+    ]
+   },
+   "programme": "Secret (joinsecret.com) — Free Tier Membership",
+   "provider": "Secret / Tech-Lab SAS",
+   "url": "https://www.joinsecret.com"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M6). Gate: new-account password via Secure Vault. Class: membership.",
+   "access_type": "INSTANT",
+   "eligibility": [
+    "Founders; membership is free and instant",
+    "CleverTap Leap+ via membership: raised up to Series B, not an existing active CleverTap customer, bootstrapped OK"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. CleverTap Leap+ value is a percentage discount with no published dollar figure."
+   },
+   "id": "remote-builders-membership",
+   "offer": "Free, instant founder-community membership whose members receive partner deals. The member-relevant route: CleverTap Leap+ — up to 50% off CleverTap enterprise plans for members (bootstrapped companies qualify; up to Series B; new CleverTap customers), which is a distinct door from CleverTap's partner-gated public Leap programme. Remote Builders' own CleverTap page states claiming is 'not open yet' (checked 2026-10-28) — membership now, claim when the route opens. Other member listings largely mirror provider programmes already in this database.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Do not double-file CleverTap through any second door if the member route is used (one-application rule).",
+     "Most other Remote Builders listings duplicate direct programmes already in this database."
+    ],
+    "required_fields": [
+     "Founder: Mike Rice",
+     "Company: AGI Future Foundation, agifuturefoundation.org"
+    ],
+    "review_clock": "Membership instant; Leap+ reviews reported at 1–2 weeks once claiming opens.",
+    "steps": [
+     "MIKE STEP FIRST: join Remote Builders free (new-account password via Secure Vault).",
+     "Watch the CleverTap Leap+ member route; when claiming opens, apply through the member link (reviews reported at 1–2 weeks)."
+    ]
+   },
+   "programme": "Remote Builders — Free Founder Membership",
+   "provider": "Remote Builders",
+   "url": "https://remotebuilders.io"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M7). Gate: new-account password via Secure Vault. Class: partner/free-plan benefit claim.",
+   "access_type": "INSTANT",
+   "eligibility": [
+    "Built for startups and founding teams; free plan open to any company",
+    "No credit card required for the free plan"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Free plan; the paid comparator (Premium) lists at $199/month."
+   },
+   "id": "dover-free-ats",
+   "offer": "Dover's applicant-tracking system is 100% free with unlimited users, jobs and candidates, and no credit card required (Dover's own pricing page, verified 2026-11-21): candidate tracking and CRM, careers page, sourcing, distribution to 50+ job boards, Gmail/Outlook/Google Calendar/Slack integrations, scorecards and interview plans. Premium ($199/month flat) adds AI resume review, AI notetaker and automations — not staged.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Free-plan limits exist on tags, email templates, analytics history and careers-page customisation — acceptable for the estate's hiring volume.",
+     "Candidate data is personal data: keep Dover use inside the estate's consent and privacy fences."
+    ],
+    "required_fields": [
+     "Company: AGI Future Foundation",
+     "Admin: Mike Rice, x@agifuturefoundation.org"
+    ],
+    "review_clock": "Instant.",
+    "steps": [
+     "MIKE STEP FIRST: create the Dover account (new-account password via Secure Vault).",
+     "Set up the AGI Future Foundation workspace on the Free plan only; do not enable Premium."
+    ]
+   },
+   "programme": "Dover Free ATS",
+   "provider": "Dover",
+   "url": "https://www.dover.com/pricing"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M8). Gate: card-on-file verification (Mike step). No startup programme exists — free plan only.",
+   "access_type": "INSTANT",
+   "eligibility": [
+    "Any user; no funding requirement",
+    "Payment method on file required to create resources (provider's billing docs)"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. Free plan worth up to $20/month in resources at published rates."
+   },
+   "id": "northflank-sandbox-free-plan",
+   "offer": "Free Developer Sandbox plan: 2 services, 2 jobs, 1 database/addon and one bring-your-own-cloud cluster, always-on with no sleeping — worth up to $20/month of resources on Northflank Cloud per the pricing page. Northflank publishes NO startup credit programme; 'credits' on Northflank are prepaid balances you buy (minimum purchase $50). Northflank's billing documentation states every user must add a payment method to create resources, even on the free plan (identity verification; card verified, not charged, until a billing cycle ends).",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "GPU workloads require a $50+ credit purchase — a purchase, not part of this free claim.",
+     "BYOC usage is billed by the underlying cloud provider, not covered by the Sandbox allowance."
+    ],
+    "required_fields": [
+     "Account on x@agifuturefoundation.org",
+     "Payment method for verification (Mike step)"
+    ],
+    "review_clock": "Instant.",
+    "steps": [
+     "MIKE STEP: sign up and add the payment method for verification (card step is Mike's, on the estate's existing card route only if he approves it for this provider).",
+     "Stay on the Sandbox plan; do not purchase credit balances (minimum $50) without a separate decision."
+    ]
+   },
+   "programme": "Northflank Developer Sandbox (Free Plan)",
+   "provider": "Northflank",
+   "url": "https://northflank.com/pricing"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M9). Gate: email-ask needs Mike's exact-text approval + send. Class: discount.",
+   "access_type": "EMAIL-ASK",
+   "eligibility": [
+    "Nonprofit organisation able to show proof of status",
+    "Discount applies to future payments after approval"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. 20% discount; aggregator estimate ≈$190/year on entry plans is REPORTED only."
+   },
+   "id": "activecampaign-nonprofit-discount",
+   "offer": "20% off ActiveCampaign paid plans (Starter, Plus, Pro, Enterprise) for nonprofit organisations, applied once ActiveCampaign has proof of nonprofit status (ActiveCampaign help-center offer as read 2026-11-08/2026-11-21). New accounts request via the sales team; existing accounts via support, applied to future payments. ActiveCampaign does not publish which specific document it requires as proof.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "If ActiveCampaign answers that only a determination letter counts as proof, the claim stops — the estate does not hold one.",
+     "New accounts are charged for all contacts regardless of status (published 2025-11-03 policy) — factor into any plan decision."
+    ],
+    "required_fields": [
+     "Organisation details + proof of nonprofit status",
+     "Contact: Mike Rice, x@agifuturefoundation.org"
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "EMAIL-ASK — requires Mike's exact-text approval before sending (standing rule).",
+     "Draft ask to ActiveCampaign sales (new account route) from x@agifuturefoundation.org, attaching proof of California nonprofit corporation status (Secretary of State filing record) and the verbatim tax sentence: California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status.",
+     "Note: mail stays on Hostinger by standing rule — this stages the discount only."
+    ]
+   },
+   "programme": "ActiveCampaign Nonprofit Discount",
+   "provider": "ActiveCampaign",
+   "url": "https://www.activecampaign.com"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M10). Gate: email-ask needs Mike's exact-text approval + send. Class: discount.",
+   "access_type": "EMAIL-ASK",
+   "eligibility": [
+    "Nonprofit organisation",
+    "Discount arranged through the sales team; proof of status expected at application (documents not published)"
+   ],
+   "estate_run": {
+    "entity": "AGI Future Foundation",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. 15% discount on a paid plan; value depends on plan and list size."
+   },
+   "id": "campaign-monitor-nonprofit-discount",
+   "offer": "15% discount on Campaign Monitor paid plans for nonprofits. Campaign Monitor's own pricing FAQ states: 'If your company is a nonprofit, we offer a 15% discount. Please contact our sales team to find out more.' The vendor does not publish its verification process or required documents.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Verification documents are unpublished — if sales requires a determination letter, the claim stops.",
+     "Annual-billing saving (10%) may not stack with the nonprofit discount — unconfirmed."
+    ],
+    "required_fields": [
+     "Organisation details + proof of nonprofit status",
+     "Contact: Mike Rice, x@agifuturefoundation.org"
+    ],
+    "review_clock": "Not published.",
+    "steps": [
+     "EMAIL-ASK — requires Mike's exact-text approval before sending (standing rule).",
+     "Ask Campaign Monitor sales for the 15% nonprofit discount, attaching proof of California nonprofit corporation status and the verbatim tax sentence: California nonprofit corporation; EIN assigned; IRS determination letter not yet issued — the organisation does not claim tax-exempt status.",
+     "Note: mail stays on Hostinger by standing rule — this stages the discount only."
+    ]
+   },
+   "programme": "Campaign Monitor Nonprofit Discount",
+   "provider": "Campaign Monitor (Marigold)",
+   "url": "https://www.campaignmonitor.com/non-profits/"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M11). Gate: commitment decision + executive sign-off (Mike). Class: membership.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Any company, any size, any country",
+    "Requires taking the pledge (a public commitment) with executive sign-off"
+   ],
+   "estate_run": {
+    "entity": "UNDECIDED — see gotchas",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. No monetary value published or claimed."
+   },
+   "id": "pledge-1-percent-membership",
+   "offer": "Free membership in the Pledge 1% movement (18,000+ companies): member community, playbooks, tools and events for companies that pledge 1% of equity, profit, product and/or time to social impact. Pledge 1%'s own pages: 'There are no fees or special reporting requirements when you take the pledge'; joining requires executive sign-off or internal permission to complete the form. No credits or discounts attach — the value is network, signalling and the impact framework.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "This is a commitment, not an application — it must never be filed on a fire-all basis.",
+     "Do not pledge Foundation equity or assets under any framing."
+    ],
+    "required_fields": [
+     "Company name and website",
+     "Pledge types selected (equity / profit / product / time)",
+     "Executive sign-off (Mike)"
+    ],
+    "review_clock": "Confirmation email follows form submission.",
+    "steps": [
+     "MIKE DECISION FIRST: whether to take a public giving pledge at all, and for which entity.",
+     "Entity shape if approved: the Foundation is itself a nonprofit and never issues equity, so an equity pledge cannot be the Foundation's; a W3 LLC product/time pledge is the only structurally honest shape.",
+     "If approved, submit the pledge form at pledge1percent.org with the chosen pledge types only."
+    ]
+   },
+   "programme": "Pledge 1% Membership",
+   "provider": "Pledge 1%",
+   "url": "https://pledge1percent.org"
+  },
+  {
+   "access_note": "MIKE-STEP APPENDIX (R8-M12). Gate: personal application + attendance commitment (Mike). Class: membership.",
+   "access_type": "APPLICATION",
+   "eligibility": [
+    "Individual technologists/founders/researchers, including people who already have a company (progress is weighed in evaluation)",
+    "SF hub fits the estate (Mike is San Francisco-based)",
+    "In-person attendance expectation — a real time commitment"
+   ],
+   "estate_run": {
+    "entity": "Mike Rice (individual)",
+    "staged_at": "2026-11-21 (R8 hunt)",
+    "status": "staged",
+    "value_in_motion": "$0 counted. No monetary value; membership is the benefit."
+   },
+   "id": "spc-member-residency",
+   "offer": "Member Residency: up to six months as a full SPC member — community, offices (SF/NYC/Bangalore) and programming — at no cost and with no equity taken (SPC's own FAQ and Fellowship page, verified 2026-11-21). Rolling applications; replies in 1–3 weeks, then an interview. Members are individuals: ~70% founders, ~30% researchers/experts; members are expected to show up in person through the week. Distinct from the SPC Founder Fellowship ($400K for 7% + $600K guaranteed), which is already packeted in the accelerator pack and must not be duplicated here.",
+   "playbook": {
+    "fields_not_asked": [],
+    "gotchas": [
+     "Residency expects in-person presence 3+ days/week — Mike's calendar call.",
+     "Fellowship terms involve equity (7% SAFE) — Foundation can never be the applicant; any Fellowship filing is W3-only per the accelerator-pack rules."
+    ],
+    "required_fields": [
+     "Personal application answers (Mike's own words)",
+     "Current focus and past builds"
+    ],
+    "review_clock": "1–3 weeks to first reply (SPC FAQ).",
+    "steps": [
+     "MIKE STEP: the application is personal — it asks what he has built and what he can't stop tinkering with — and must be written in Mike's own voice and judgement.",
+     "If Mike approves, submit at southparkcommons.com/apply under Member Residency (not the Founder Fellowship track).",
+     "Do not file the Founder Fellowship from this record — it lives in the accelerator packets (packet-spc) under W3 LLC rules."
+    ]
+   },
+   "programme": "South Park Commons — Member Residency",
+   "provider": "South Park Commons",
+   "url": "https://southparkcommons.com/apply"
   }
  ]
 }
