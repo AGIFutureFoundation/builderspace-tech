@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Founders One-Apply — BuilderSpace</title>
+<style>
+  :root{--paper:#f7f5f0;--ink:#1c2b33;--teal:#124559;--accent:#e4572e;--line:#e3ded2;--mut:#5a6b7a;--card:#fffdf8;--warn:#fdf3e3;--bad:#b3381c;--ok:#1d6b4f}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1020px;margin:0 auto;padding:24px 18px 80px}
+  h1{font-size:2.3rem;line-height:1.15;color:var(--teal);margin:.2em 0}
+  h2{color:var(--teal);margin-top:2.2em;border-bottom:2px solid var(--line);padding-bottom:.3em}
+  h3{color:var(--teal)}
+  a{color:var(--accent)}
+  .lede{font-size:1.15rem;color:var(--mut)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+  label{display:block;font-weight:600;font-size:.92rem;margin:10px 0 4px}
+  input,select,textarea{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:#fff;font:inherit}
+  .checks label{font-weight:400;display:inline-block;margin:4px 14px 4px 0}
+  .checks input{width:auto}
+  button{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:12px 22px;font-size:1rem;cursor:pointer}
+  button.secondary{background:var(--teal)}
+  button.small{padding:5px 12px;font-size:.85rem}
+  .banner{background:var(--warn);border:1px solid #e8c98a;border-radius:8px;padding:12px 16px;margin:14px 0;font-weight:600}
+  .err{color:var(--bad);font-weight:600}
+  .counts{font-size:1.1rem}
+  .prog{border-top:1px solid var(--line);padding:10px 0}
+  .prog .name{font-weight:700}
+  .tag{display:inline-block;font-size:.75rem;border:1px solid var(--line);border-radius:20px;padding:1px 9px;margin-left:6px;color:var(--mut)}
+  .tag.match{color:var(--ok);border-color:var(--ok)}
+  .tag.held{color:var(--bad);border-color:var(--bad)}
+  .reason{color:var(--mut);font-size:.93rem}
+  .estate{color:var(--teal);font-size:.9rem;font-style:italic}
+  pre.packet{background:#f3efe4;border:1px solid var(--line);border-radius:8px;padding:12px;white-space:pre-wrap;font-size:.85rem}
+  details{margin:6px 0}
+  summary{cursor:pointer;font-weight:600;color:var(--teal)}
+  .stale{opacity:.55}
+  .stale-note{color:var(--bad);font-weight:700}
+  footer{margin-top:50px;color:var(--mut);font-size:.9rem;border-top:2px solid var(--line);padding-top:14px}
+  .clock{font-size:.88rem;color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p><strong>Founders One-Apply</strong> · a BuilderSpace programme</p>
+  <h1>One application. Every programme you actually qualify for.</h1>
+  <p class="lede">Tell us who you are — once. The matcher checks <strong>every programme in the database</strong>
+  against <strong>every gate that programme publishes</strong> — entity type, funding, country, determination-letter,
+  incorporation, referral, sector — and gives you a reason for every single result. No silent passes, no silent failures.</p>
+  <p>What one click honestly means: one application with us produces a truthful match report and a copy-ready
+  packet for every match. <strong>Submission happens on the provider's site, under your own account and attestation.</strong>
+  Anything only you can do — creating a provider account, an ID check, entering a card — is spelled out as
+  <em>your step</em>, in advance, per programme.</p>
+  <p><strong>New in v3 — the One-Click Apply Pack:</strong> the full review now ends with a <strong>Send Queue</strong>
+  that sorts every match into three honestly labelled lanes — <strong>EMAIL-ROUTE</strong> (the application can be
+  sent as one email; the packet text is ready for you to send from your own mailbox), <strong>FOUNDER-PORTAL</strong>
+  (the programme requires your own account/portal; the packet, the portal address, and the exact account needed are
+  listed), and <strong>NEEDS-INPUT</strong> (the packet is ready and one named input is still missing — the input is
+  named, per programme). The whole pack downloads as one file. <strong>One-Apply does not auto-submit anything, to
+  anyone, ever</strong> — email-route packets are ready for <em>you</em> to send, and portal applications are filed by
+  you under your own account and attestation.</p>
+</header>
+
+<h2>Proven on our own journey first</h2>
+<div class="card" id="ledger">
+  <p class="counts">Programme support verified in hand for the operator's own estate:
+  <strong id="ledger-headline">$77,255.98</strong></p>
+  <p id="ledger-note" class="reason"></p>
+  <p class="reason"><span id="db-counts"></span> · <span id="in-motion"></span></p>
+</div>
+
+<h2>Instant preview — try the matcher</h2>
+<p id="preview-intro" class="reason"></p>
+<form id="preview-form" novalidate></form>
+<div id="preview-results" aria-live="polite"></div>
+
+<h2>The one application</h2>
+<p>Same questions, same matcher — run against the full database, with a packet for every match and the
+provider's review clock where one is published.</p>
+<form id="full-form" novalidate></form>
+<div id="full-results" aria-live="polite"></div>
+
+<h2>Free today — and what opens next</h2>
+<div class="card">
+  <p>The matcher, the report, and the packets are free today. Coming next: saved reports and review-clock
+  tracking across visits, so a submitted application is watched until the provider answers.</p>
+  <p><a href="https://builderspace.tech/">How to Get Credits for Startup Founders</a> — the free guide series.</p>
+</div>
+
+<footer>
+  <p>Founders One-Apply is operated by BuilderSpace. It is a matching and preparation tool: it does not
+  submit applications to providers, and it never asks for your EIN number — only whether you have one.</p>
+</footer>
+
+</div>
+
+<script id="oa-core">
+"use strict";
+/* ============ Canonical option sets (P1-1): ONE definition, both forms ============ */
+const OA_OPTIONS = {
+  entity_type: [["nonprofit","Nonprofit"],["for_profit","For-profit"],["individual","Individual / not yet a company"]],
+  stage: [["idea","Idea stage"],["pre-seed","Pre-seed"],["seed","Seed"],["series-a","Series A"],["bootstrapped","Bootstrapped — no round"]],
+  raised_band: [["0","$0 raised"],["1-100k","$1 – $100K"],["100k-1m","$100K – $1M"],["1m-5m","$1M – $5M"],["5m-10m","$5M – $10M"],["10m-20m","$10M – $20M"],["20m+","$20M+"]],
+  raised_usd: {"0":0,"1-100k":50000,"100k-1m":500000,"1m-5m":3000000,"5m-10m":7500000,"10m-20m":15000000,"20m+":25000000},
+  country: [["US","United States"],["FR","France"],["OTHER","Another country"]],
+  determination: [["held","Held — I have a determination letter"],["pending","Pending — applied, awaiting determination"],["not_held","Not held"],["na","Not applicable (for-profit)"]],
+  religious: [["no","No"],["yes","Yes — church / religious organization (incl. §508(c) mandatory exception)"]],
+  formation: [["formed","Formed / incorporated"],["not_formed","Not yet formed"]],
+  yesno: [["yes","Yes"],["no","No"]],
+  categories: [["AI","AI"],["Cloud","Cloud"],["Business","Business"],["Grants","Grants"],["Web3","Web3"],["Nonprofit","Nonprofit"]]
+};
+
+/* ============ The ONE gate-evaluation function (P0-2) ============
+   Used by BOTH the preview and the full matcher. A programme is a Match
+   only if the profile passes every gate the record carries. Anything the
+   record does not let us verify is a hold-back, never a pass. */
+const SECTOR_TOKENS = ["stellar","soroban","solana","filecoin","chainlink","aptos","base","stellar",
+  "open-source","open source","docker","ai-driven","generative media","web3","onchain","move"];
+function sectorPasses(required, profile){
+  if(!required) return true;
+  const req = required.toLowerCase(), sec = (profile.sector||"").toLowerCase();
+  if(/ai-driven|ai product/.test(req) && /\bai\b|artificial intelligence/.test(sec)) return true;
+  const toks = SECTOR_TOKENS.filter(t => req.includes(t));
+  if(!toks.length) return false;               // a stated build requirement we cannot confirm
+  return toks.some(t => sec.includes(t) || (t==="open source" && sec.includes("open-source")));
+}
+/* Sector relevance (P0-3b): the profile's sector text ranks matches and is
+   printed as a reason line — it never gates. Two profiles differing only in
+   sector therefore get visibly different match orderings and reasons. */
+function sectorRelevance(profile, rec){
+  const sec = (profile.sector||"").toLowerCase();
+  const words = [...new Set(sec.split(/[^a-z0-9-]+/).filter(w => w.length > 3))];
+  const hay = ((rec.programme||"") + " " + (rec.provider||"") + " " + (rec.offer||"") + " " +
+               (rec.eligibility||[]).join(" ")).toLowerCase();
+  const shared = words.filter(w => hay.includes(w));
+  return {score: shared.length, shared};
+}
+function evaluateProgramme(profile, rec){
+  const g = rec.gates || {};
+  if(rec.programme_status && rec.programme_status !== "live")
+    return {status:"no_live", reasons:["Programme status: " + rec.programme_status.replace("_"," ")]};
+  if(g.gates_unverified)
+    return {status:"held", reasons:["Gates not yet verified — this record does not state evaluable criteria, so it is held back rather than passed."]};
+  const reasons = [];
+  if(g.entity_types && !g.entity_types.includes(profile.entity_type))
+    reasons.push("Entity gate: this programme is for " + g.entity_types.join(" / ") + " applicants.");
+  if(g.determination_required && profile.determination !== "held")
+    reasons.push("Requires a 501(c)(3) determination letter — not held (pending is not held).");
+  if((g.excludes||[]).includes("religious_organization") && profile.religious === "yes")
+    reasons.push("Provider exclusion: this programme's exclusion list bars a church, association of churches, or other religious organization.");
+  if((g.excludes||[]).includes("grant_making_foundation") && /foundation/i.test(profile.org_name||""))
+    reasons.push("Provider exclusion: this programme excludes grant-making foundations.");
+  if(g.religious_required && profile.religious !== "yes")
+    reasons.push("Church/faith-based category: this route is for a church or other faith-based organization applying with a project that benefits the community at large.");
+  if(g.custom_hold)
+    reasons.push(g.custom_hold);
+  if((g.excludes||[]).includes("agency_devshop") && /agency|dev ?shop/i.test(profile.sector||""))
+    reasons.push("Provider exclusion: agencies / dev shops are excluded.");
+  const ageApplies = g.formation_required || g.max_age_years;
+  if(ageApplies && profile.formation !== "formed")
+    reasons.push("Requires an incorporated company — entity not yet formed.");
+  if(g.max_age_years && profile.formation === "formed" && profile.founded_year){
+    const age = 2026 - Number(profile.founded_year);
+    if(age > g.max_age_years) reasons.push("Company-age gate: must be under " + g.max_age_years + " years old.");
+  }
+  const f = g.funding || {};
+  if(f.vc_required && profile.vc_backed !== "yes")
+    reasons.push("Funding gate: requires venture backing / external funding (self-funded applicants are not eligible).");
+  if(f.min_raised_usd && profile.raised_usd < f.min_raised_usd)
+    reasons.push("Funding gate: requires at least $" + f.min_raised_usd.toLocaleString() + " raised.");
+  if(f.max_raised_usd && profile.raised_usd > f.max_raised_usd)
+    reasons.push("Funding gate: limited to applicants with under $" + f.max_raised_usd.toLocaleString() + " raised.");
+  if(f.round_within_months && profile.vc_backed !== "yes")
+    reasons.push("Funding gate: requires a funding round within the last " + f.round_within_months + " months.");
+  if(f.committed_spend_required)
+    reasons.push("Funding gate: requires committed spend (credits match spend dollar-for-dollar; $0 spend = $0 credits).");
+  const c = g.country || {};
+  if(c.allowed_countries && !c.allowed_countries.includes(profile.country))
+    reasons.push("Country gate: requires incorporation/establishment in " + c.allowed_countries.join(", ") + ".");
+  if(c.allowed_regions && profile.country === "US")
+    reasons.push("Country gate: team must be based in " + c.allowed_regions.join(" or ") + ".");
+  if(g.referral_required){
+    const aff = (profile.partner_affiliations||"").toLowerCase();
+    const note = (g.referral_note||"").toLowerCase();
+    const pass = aff && [...aff.split(",")].some(a => a.trim() && note.includes(a.trim()));
+    if(!pass) reasons.push("Referral/partner gate: " + (g.referral_note || "requires a partner route") + ".");
+  }
+  if(g.requires_live_product && profile.has_live_product !== "yes")
+    reasons.push("Stage gate: requires a live product / MVP in use.");
+  if(g.sector_required && !sectorPasses(g.sector_required, profile))
+    reasons.push("Sector/build gate: " + g.sector_required + ".");
+  return reasons.length ? {status:"held", reasons} : {status:"match", reasons:[]};
+}
+if (typeof module !== "undefined") module.exports = {OA_OPTIONS, evaluateProgramme, sectorRelevance};
+</script>
+
+<script>
+"use strict";
+let DB = null;
+const $ = s => document.querySelector(s);
+
+function fieldHTML(formId, name, label, kind, opts){
+  const id = formId + "-" + name;
+  if(kind === "select")
+    return `<div><label for="${id}">${label}</label><select id="${id}" name="${name}">` +
+      opts.map(o => `<option value="${o[0]}">${o[1]}</option>`).join("") + `</select></div>`;
+  return `<div><label for="${id}">${label}</label><input id="${id}" name="${name}" type="text"></div>`;
+}
+function formHTML(formId){
+  const O = OA_OPTIONS;
+  return `<div class="card"><div class="grid">
+    ${fieldHTML(formId,"org_name","Organization / project name","text")}
+    ${fieldHTML(formId,"entity_type","Entity type","select",O.entity_type)}
+    ${fieldHTML(formId,"stage","Stage","select",O.stage)}
+    ${fieldHTML(formId,"raised_band","Raised so far","select",O.raised_band)}
+    ${fieldHTML(formId,"vc_backed","VC-backed?","select",O.yesno)}
+    ${fieldHTML(formId,"country","Country","select",O.country)}
+    ${fieldHTML(formId,"determination","501(c)(3) determination","select",O.determination)}
+    ${fieldHTML(formId,"religious","Religious organization?","select",O.religious)}
+    ${fieldHTML(formId,"formation","Formation status","select",O.formation)}
+    ${fieldHTML(formId,"founded_year","Founded year (if formed)","text")}
+    ${fieldHTML(formId,"ein_present","Do you have an EIN? (presence only — never enter the number)","select",O.yesno)}
+    ${fieldHTML(formId,"has_live_product","Live product / MVP in use?","select",O.yesno)}
+    ${fieldHTML(formId,"website","Website","text")}
+    ${fieldHTML(formId,"partner_affiliations","Partner affiliations (e.g. AWS Activate, PostHog for Startups)","text")}
+    </div>
+    <div><label for="${formId}-sector">What are you building? (sector — feeds matching reasons)</label>
+    <textarea id="${formId}-sector" name="sector" rows="2"></textarea></div>
+    <div class="checks" id="${formId}-cats"><strong>Categories:</strong><br>` +
+    O.categories.map(c => `<label><input type="checkbox" name="cat" value="${c[0]}"> ${c[1]}</label>`).join("") +
+    `</div>
+    <p><button type="submit">${formId === "preview" ? "Preview my matches →" : "Apply once → generate my full review"}</button></p>
+    <div class="err" id="${formId}-err"></div></div>`;
+}
+function readProfile(form){
+  const v = n => { const el = form.elements[n]; return el ? el.value.trim() : ""; };
+  const cats = [...form.querySelectorAll('input[name="cat"]:checked')].map(i => i.value);
+  return { org_name:v("org_name"), entity_type:v("entity_type"), stage:v("stage"),
+    raised_usd: OA_OPTIONS.raised_usd[v("raised_band")] || 0, vc_backed:v("vc_backed"),
+    country:v("country"), determination:v("determination"), religious:v("religious"),
+    formation:v("formation"), founded_year:v("founded_year"), ein_present:v("ein_present"),
+    has_live_product:v("has_live_product"), website:v("website"),
+    partner_affiliations:v("partner_affiliations"), sector:v("sector"), categories:cats };
+}
+function categoryOf(rec){
+  const t = ((rec.programme||"") + " " + (rec.provider||"") + " " + (rec.offer||"")).toLowerCase();
+  if(rec.requires_determination_letter || /nonprofit|non-profit/.test(t)) return "Nonprofit";
+  if(rec.gates && rec.gates.sector_required && /stellar|solana|chainlink|aptos|base|web3|onchain/.test(rec.gates.sector_required.toLowerCase())) return "Web3";
+  if(/\bai\b|llm|model/.test(t)) return "AI";
+  if(/cloud|hosting|database|infra/.test(t)) return "Cloud";
+  if(/grant|fund/.test(t)) return "Grants";
+  return "Business";
+}
+const LANE_LABELS = { email: "EMAIL-ROUTE", portal: "FOUNDER-PORTAL", input: "NEEDS-INPUT" };
+function laneLabel(rec){ return LANE_LABELS[rec.apply_lane || "portal"] || "FOUNDER-PORTAL"; }
+function packetText(p, rec){
+  const pb = rec.playbook || {};
+  const fields = (pb.required_fields || []).join("; ") || "Packet fields not in dataset — apply on the provider's site.";
+  return [
+    "PROGRAMME: " + rec.programme + " (" + rec.provider + ")",
+    "OFFER: " + (rec.offer || ""),
+    "APPLY AT: " + (rec.terms_url || rec.url || ""),
+    "APPLICANT: " + (p.org_name || "(your organization)"),
+    "ENTITY: " + p.entity_type + " · STAGE: " + p.stage + " · COUNTRY: " + p.country,
+    "WEBSITE: " + (p.website || "(none given)"),
+    "WHAT WE ARE BUILDING: " + (p.sector || ""),
+    "PROVIDER ASKS FOR: " + fields,
+    "REVIEW CLOCK: " + (rec.review_clock || "No review timeframe published."),
+    "SEND LANE: " + laneLabel(rec),
+    ...(rec.apply_lane === "portal" ? ["PORTAL: " + (rec.terms_url || rec.url || "(no public URL published)"), "ACCOUNT NEEDED: " + (rec.lane_account || "Your own account with the provider")] : []),
+    ...(rec.apply_lane === "input" ? ["ACCOUNT / ROUTE: " + (rec.lane_account || "Your own account with the provider"), "MISSING INPUT: " + (rec.lane_missing_input || "")] : []),
+    ...(rec.apply_lane === "email" ? ["SEND TO: the provider's published application email — the packet above is the email text, ready to send from your own mailbox"] : []),
+    "YOUR STEP: " + (rec.founder_step || "")
+  ].join("\n");
+}
+function renderResults(container, profile, results, scopeLabel, generatedNote, showPack){
+  const matches = results.filter(r => r.ev.status === "match");
+  const held = results.filter(r => r.ev.status === "held");
+  const nolive = results.filter(r => r.ev.status === "no_live");
+  const unformed = profile.formation !== "formed";
+  const isEstate = /agi future foundation/i.test(profile.org_name || "");
+  const notSelected = OA_OPTIONS.categories.map(c => c[0]).filter(c => !profile.categories.includes(c));
+  let h = "";
+  if(unformed) h += `<div class="banner">This entity is not yet formed. Programmes that require an incorporated
+    company are held back below. Matches shown are programmes you can prepare for now and file the week the
+    entity exists — nothing can be submitted in the name of an entity that does not yet exist.</div>`;
+  h += `<div class="card"><h3>Review generated for ${profile.org_name || "your profile"} — ${scopeLabel}</h3>
+    <p class="counts">${matches.length} matches · ${held.length} held back · ${nolive.length} no live programme
+    (of ${results.length} programmes checked)</p>
+    <p class="clock">${generatedNote} Inputs: ${profile.entity_type}, ${profile.stage}, country ${profile.country},
+    determination ${profile.determination}, religious ${profile.religious}, formation ${profile.formation}.</p>`;
+  if(notSelected.length) h += `<p class="reason">Categories not searched: ${notSelected.join(", ")} — matched programmes in those categories appear in the labelled section below, never silently dropped.</p>`;
+  h += `</div>`;
+  const renderProg = (r, showPacket) => {
+    const rec = r.rec, ev = r.ev;
+    const cat = categoryOf(rec);
+    const outside = profile.categories.length && !profile.categories.includes(cat);
+    let label, cls;
+    if(ev.status === "match"){ label = unformed ? "Match — file after formation" : "Match"; cls = "match"; }
+    else if(ev.status === "held"){ label = "Held back"; cls = "held"; }
+    else { label = "No live programme"; cls = ""; }
+    let s = `<div class="prog"><span class="name">${rec.programme}</span> <span class="reason">· ${rec.provider}</span>
+      <span class="tag ${cls}">${label}</span>${ev.status === "match" ? `<span class="tag">${laneLabel(rec)}</span>` : ""}${outside ? '<span class="tag">outside your selected categories</span>' : ""}
+      <div class="reason">${rec.offer || ""}</div>`;
+    if(ev.reasons.length) s += `<div class="reason">Reason: ${ev.reasons.join(" ")}</div>`;
+    if(rec.review_clock) s += `<div class="clock">Review clock: ${rec.review_clock}</div>`;
+    if(rec.route_prerequisite) s += `<div class="reason">Route prerequisite: ${rec.route_prerequisite}</div>`;
+    if(ev.status === "match" && r.rel && r.rel.score)
+      s += `<div class="reason">Sector relevance: your stated sector shares ${r.rel.shared.join(", ")} with this programme.</div>`;
+    if(rec.founder_step) s += `<div class="reason">${rec.founder_step}</div>`;
+    if(isEstate && rec.estate_status)
+      s += `<div class="estate">Estate status (${profile.org_name}): ${rec.estate_status.status || ""}${rec.estate_status.submitted_at ? " · submitted " + rec.estate_status.submitted_at : ""}</div>`;
+    if(showPacket && ev.status === "match")
+      s += `<details><summary>Copy-ready packet${unformed ? " (preparation only)" : ""}</summary>
+            <pre class="packet">${packetText(profile, rec)}</pre>
+            <button type="button" class="small secondary" onclick="navigator.clipboard&&navigator.clipboard.writeText(this.previousElementSibling.textContent)">Copy packet</button></details>`;
+    return s + `</div>`;
+  };
+  if(showPack) h += renderSendQueue(profile, matches, held, unformed);
+  h += `<h3>Matches (${matches.length})</h3>` + (matches.map(r => renderProg(r, true)).join("") || '<p class="reason">None.</p>');
+  h += `<h3>Held back (${held.length})</h3>` + (held.map(r => renderProg(r, false)).join("") || '<p class="reason">None.</p>');
+  h += `<details><summary>No live programme (${nolive.length})</summary>` +
+       (nolive.map(r => renderProg(r, false)).join("") || '<p class="reason">None.</p>') + `</details>`;
+  container.innerHTML = h;
+}
+
+function packText(profile, matches, held){
+  const unformed = profile.formation !== "formed";
+  const lane = l => matches.filter(r => (r.rec.apply_lane || "portal") === l);
+  let t = "# One-Click Apply Pack — " + (profile.org_name || "your profile") + "\n";
+  t += "Generated " + new Date().toLocaleString() + " by Founders One-Apply (BuilderSpace).\n";
+  t += "One-Apply does not auto-submit anything. EMAIL-ROUTE packets are ready for you to send from your own mailbox; " +
+       "FOUNDER-PORTAL applications are filed by you under your own account and attestation; NEEDS-INPUT packets wait on the named input.\n";
+  if(unformed) t += "NOTE: this entity is not yet formed — every packet below is preparation only; nothing can be sent or submitted in its name yet.\n";
+  const section = (title, rows, extra) => {
+    t += "\n## " + title + " (" + rows.length + ")\n";
+    rows.forEach(r => { t += "\n---\n" + packetText(profile, r.rec) + "\n"; if(extra) t += extra(r.rec) + "\n"; });
+  };
+  section("EMAIL-ROUTE — application can be sent as one email; packet text ready to send", lane("email"));
+  section("FOUNDER-PORTAL — requires your own account/portal; packet + portal + exact account listed", lane("portal"));
+  section("NEEDS-INPUT — packet ready; the named input is missing", lane("input"));
+  t += "\n## Held back (" + held.length + ") — programme: reasons\n";
+  held.forEach(r => { t += "- " + r.rec.programme + " (" + r.rec.provider + "): " + r.ev.reasons.join(" ") + "\n"; });
+  return t;
+}
+function renderSendQueue(profile, matches, held, unformed){
+  const lanes = [["email","EMAIL-ROUTE — application can be sent as one email; packet text ready to send"],
+                 ["portal","FOUNDER-PORTAL — requires your own account/portal; packet + portal + exact account listed"],
+                 ["input","NEEDS-INPUT — packet ready; one named input is missing"]];
+  let h = `<div class="card"><h3>Send Queue — your One-Click Apply Pack</h3>`;
+  h += `<p class="reason">One-Apply does not auto-submit anything. Email-route packets are ready for <em>you</em> to send
+    from your own mailbox; portal applications are filed by you under your own account and attestation.</p>`;
+  if(unformed) h += `<p class="banner">This entity is not yet formed — the queue below is preparation only. Nothing in it can be sent or submitted in this entity's name today (0 submittable).</p>`;
+  lanes.forEach(([key, title]) => {
+    const rows = matches.filter(r => (r.rec.apply_lane || "portal") === key);
+    h += `<h4>${title} (${rows.length})</h4>`;
+    if(!rows.length){ h += '<p class="reason">None.</p>'; return; }
+    rows.forEach(r => {
+      const rec = r.rec;
+      h += `<div class="prog"><span class="name">${rec.programme}</span> <span class="reason">· ${rec.provider}</span>`;
+      if(key === "portal") h += `<div class="reason">Portal: ${rec.terms_url || rec.url || "(no public URL published)"}<br>Account needed: ${rec.lane_account || "Your own account with the provider"}</div>`;
+      if(key === "input") h += `<div class="reason">Route: ${rec.lane_account || "Your own account with the provider"}<br>Missing input: ${rec.lane_missing_input || ""}</div>`;
+      if(key === "email") h += `<div class="reason">Send the packet text as one email from your own mailbox to the provider's published application address.</div>`;
+      h += `</div>`;
+    });
+  });
+  h += `<p><button type="button" class="secondary" id="pack-download">Download the full Apply Pack (one file)</button></p></div>`;
+  setTimeout(() => {
+    const btn = document.getElementById("pack-download");
+    if(btn) btn.addEventListener("click", () => {
+      const blob = new Blob([packText(profile, matches, held)], {type: "text/markdown"});
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "one-apply-pack-" + (profile.org_name || "profile").replace(/[^a-z0-9]+/gi, "-").toLowerCase() + ".md";
+      a.click(); URL.revokeObjectURL(a.href);
+    });
+  }, 0);
+  return h;
+}
+function wireForm(formId, resultsId, snapshotOnly){
+  const form = document.getElementById(formId + "-form");
+  form.innerHTML = formHTML(formId);
+  const results = document.getElementById(resultsId);
+  const catsBox = form.querySelector("#" + formId + "-cats");
+  const syncCats = () => { // P1-5: nonprofit lane defaults ON for nonprofits
+    const et = form.elements["entity_type"].value;
+    const np = catsBox.querySelector('input[value="Nonprofit"]');
+    if(et === "nonprofit") np.checked = true;
+  };
+  ["AI","Cloud","Business","Grants"].forEach(c => { const b = catsBox.querySelector(`input[value="${c}"]`); if(b) b.checked = true; });
+  syncCats();
+  form.addEventListener("change", () => { // P2-3: invalidate stale results
+    syncCats();
+    if(results.innerHTML){ results.classList.add("stale");
+      if(!results.querySelector(".stale-note")) results.insertAdjacentHTML("afterbegin",
+        '<p class="stale-note">Inputs changed — re-run to update results.</p>'); }
+  });
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const err = form.querySelector("#" + formId + "-err");
+    const p = readProfile(form);
+    if(!p.org_name){ err.textContent = "Please enter your organization / project name (the report is generated for a named profile)."; return; }
+    err.textContent = "";
+    if(!DB){ err.textContent = "Dataset still loading — try again in a moment."; return; }
+    const pool = snapshotOnly ? DB.programmes.filter(r => r.in_preview_snapshot) : DB.programmes;
+    const t0 = performance.now();
+    const results2 = pool.map(rec => ({rec, ev: evaluateProgramme(p, rec), rel: sectorRelevance(p, rec)}));
+    results2.sort((a,b) => (b.ev.status === "match") - (a.ev.status === "match") || (b.rel.score||0) - (a.rel.score||0));
+    const ms = Math.max(1, Math.round(performance.now() - t0));
+    results.classList.remove("stale");
+    renderResults(results, p, results2,
+      snapshotOnly ? `instant preview — ${pool.length}-programme snapshot` : `full review — ${pool.length} programmes`,
+      `Generated ${new Date().toLocaleString()} in ${ms} ms — save or print this page; tracking across visits is not yet stored.`,
+      !snapshotOnly);
+  });
+}
+fetch("one-apply-data-v3.json").then(r => r.json()).then(db => {
+  DB = db;
+  const live = db.programmes.filter(r => r.programme_status === "live").length;
+  $("#db-counts").textContent = `${db.database_count} programmes / ${db.provider_count} providers in the database (${live} live)`;
+  $("#in-motion").textContent = `${db.buckets.in_motion_submitted_records} applications in motion`;
+  $("#ledger-headline").textContent = "$" + db.buckets.verified_in_hand_usd.toLocaleString("en-US",{minimumFractionDigits:2});
+  $("#ledger-note").textContent = db.buckets.verified_in_hand_note;
+  const snap = db.programmes.filter(r => r.in_preview_snapshot);
+  const snapLive = snap.filter(r => r.programme_status === "live").length;
+  $("#preview-intro").textContent = `The preview checks a ${snap.length}-programme snapshot of the playbook database (${snapLive} live programmes; the rest are shown in the "No live programme" bucket, never counted as passes).`;
+  wireForm("preview", "preview-results", true);
+  wireForm("full", "full-results", false);
+}).catch(() => {
+  $("#preview-intro").textContent = "Could not load one-apply-data-v3.json — the matcher needs the dataset beside the page.";
+  wireForm("preview", "preview-results", true); wireForm("full", "full-results", false);
+});
+</script>
+</body>
+</html>
