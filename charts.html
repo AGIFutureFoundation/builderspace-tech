@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One-Click Operations Dashboard — BuilderSpace</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0f1420;color:#e8ecf3}
+.wrap{max-width:900px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:26px;margin:0 0 4px} h2{font-size:19px;margin:34px 0 10px;color:#9fd1ff}
+.sub{color:#aab4c4;font-size:14px} .card{background:#171e2e;border:1px solid #26314a;border-radius:10px;padding:18px;margin-top:14px}
+.row{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:13.5px}
+.lab{width:230px;text-align:right;color:#cdd6e4;flex:none}
+.bar{height:16px;border-radius:3px;flex:none} .val{font-weight:600}
+.svg-lab{fill:#cdd6e4;font-size:13px} .svg-val{fill:#e8ecf3;font-size:13px;font-weight:600}
+.kpis{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.kpi{background:#171e2e;border:1px solid #26314a;border-radius:10px;padding:14px 18px;flex:1;min-width:150px}
+.kpi b{font-size:24px;display:block} .kpi span{color:#aab4c4;font-size:12.5px}
+.note{color:#aab4c4;font-size:13px;line-height:1.55} a{color:#9fd1ff}
+.funnel div{margin:4px auto;text-align:center;color:#0f1420;font-weight:600;border-radius:4px;padding:6px 0;font-size:13.5px}
+</style></head><body><div class="wrap">
+<h1>One-Click Operations Dashboard</h1>
+<p class="sub">The outreach &amp; grants operation behind BuilderSpace's One-Apply programme — every chart drawn from the operating record, compiled 2026-11-24. Sources: <i>outreach-dashboard/OUTREACH_MASTER.csv</i> (184 items) and <i>fundraising/credits-sprint/APPLICATIONS_LOG.md</i> (the governing applications log).</p>
+<div class="kpis">
+<div class="kpi"><b>184</b><span>outreach items on record</span></div>
+<div class="kpi"><b>20 of 25</b><span>sprint applications submitted (log-governed)</span></div>
+<div class="kpi"><b>$76,280.98</b><span>secured credits charted, 18 vendors (see note)</span></div>
+<div class="kpi"><b>$0</b><span>cash raised — all support is non-cash credits</span></div>
+</div>
+
+<h2>Outreach by category</h2><div class="card">
+<div class="row"><span class="lab">Grant & credit applications</span><span class="bar" style="width:520px;background:#4da3ff"></span><span class="val">57</span></div>
+<div class="row"><span class="lab">Programme signups & discounts</span><span class="bar" style="width:328px;background:#4da3ff"></span><span class="val">36</span></div>
+<div class="row"><span class="lab">City & government outreach</span><span class="bar" style="width:255px;background:#4da3ff"></span><span class="val">28</span></div>
+<div class="row"><span class="lab">Partnership proposals</span><span class="bar" style="width:182px;background:#4da3ff"></span><span class="val">20</span></div>
+<div class="row"><span class="lab">University campaign</span><span class="bar" style="width:182px;background:#4da3ff"></span><span class="val">20</span></div>
+<div class="row"><span class="lab">Champion & funder outreach</span><span class="bar" style="width:137px;background:#4da3ff"></span><span class="val">15</span></div>
+<div class="row"><span class="lab">Internal coordination</span><span class="bar" style="width:73px;background:#4da3ff"></span><span class="val">8</span></div>
+<p class="note">Source: OUTREACH_MASTER.csv, compiled 2026-11-24.</p></div>
+
+<h2>Outreach by entity (applicant of record)</h2><div class="card">
+<div class="row"><span class="lab">AGI Future Foundation</span><span class="bar" style="width:520px;background:#7ee0a3"></span><span class="val">147</span></div>
+<div class="row"><span class="lab">AGI Corp</span><span class="bar" style="width:71px;background:#7ee0a3"></span><span class="val">20</span></div>
+<div class="row"><span class="lab">AGI Fellowship</span><span class="bar" style="width:53px;background:#7ee0a3"></span><span class="val">15</span></div>
+<div class="row"><span class="lab">Mike Rice (personal)</span><span class="bar" style="width:7px;background:#7ee0a3"></span><span class="val">2</span></div>
+<p class="note">Three legal applicants only — AGI Future Foundation, AGI Fellowship, AGI Corp. Project names (BuilderSpace, WAVE, One-Apply) are never applicants. Source: OUTREACH_MASTER.csv.</p></div>
+
+<h2>Pipeline by status</h2><div class="card"><div class="funnel">
+<div style="width:92%;background:#4da3ff">Sent — 72</div>
+<div style="width:72%;background:#6db3ff">Staged — 55</div>
+<div style="width:48%;background:#8fc3ff">Submitted — 19</div>
+<div style="width:48%;background:#8fc3ff">Browser-ready — 19</div>
+<div style="width:34%;background:#b1d3ff">Gated — 8</div>
+<div style="width:26%;background:#d3e5ff">In review — 5</div>
+<div style="width:20%;background:#e8f1ff">Offer claimed 2 · Declined 2 · Replied 1 · Unverified 1</div>
+</div><p class="note">A submission counts only with a confirmation, a sent-email record, or a verified portal status. Source: OUTREACH_MASTER.csv.</p></div>
+
+<h2>Applications sprint — the 25 slots</h2><div class="card">
+<div class="row"><span class="lab">Submitted & counted</span><span class="bar" style="width:520px;background:#ffb84d"></span><span class="val">20</span></div>
+<div class="row"><span class="lab">Not yet submitted (gated / staged / needs a human step)</span><span class="bar" style="width:130px;background:#ffb84d"></span><span class="val">5</span></div>
+<p class="note">Foundation 19 · Fellowship 1 · AGI Corp 0 counted. Three further AGI Corp applications (Stytch, Supermemory, Phala) are packaged and count only when confirmed sent. Source: APPLICATIONS_LOG.md, which governs over every other record.</p></div>
+
+<h2>Secured credits by vendor</h2><div class="card">
+<svg viewBox="0 0 760 550" width="100%" role="img">
+<text x="0" y="22" class="svg-lab">PostHog</text>
+<rect x="170" y="8" width="500" height="18" fill="#c792ff"/>
+<text x="678" y="22" class="svg-val">$50,000</text>
+<text x="0" y="52" class="svg-lab">Algolia</text>
+<rect x="170" y="38" width="100" height="18" fill="#c792ff"/>
+<text x="278" y="52" class="svg-val">$10,000</text>
+<text x="0" y="82" class="svg-lab">Cartesia (approx.)</text>
+<rect x="170" y="68" width="72" height="18" fill="#c792ff"/>
+<text x="250" y="82" class="svg-val">$7,200</text>
+<text x="0" y="112" class="svg-lab">Sentry</text>
+<rect x="170" y="98" width="50" height="18" fill="#c792ff"/>
+<text x="228" y="112" class="svg-val">$5,000</text>
+<text x="0" y="142" class="svg-lab">Murf</text>
+<rect x="170" y="128" width="15" height="18" fill="#c792ff"/>
+<text x="193" y="142" class="svg-val">$1,510</text>
+<text x="0" y="172" class="svg-lab">Airtable</text>
+<rect x="170" y="158" width="5" height="18" fill="#c792ff"/>
+<text x="183" y="172" class="svg-val">$500</text>
+<text x="0" y="202" class="svg-lab">TiDB</text>
+<rect x="170" y="188" width="5" height="18" fill="#c792ff"/>
+<text x="183" y="202" class="svg-val">$500</text>
+<text x="0" y="232" class="svg-lab">Neon</text>
+<rect x="170" y="218" width="5" height="18" fill="#c792ff"/>
+<text x="183" y="232" class="svg-val">$500</text>
+<text x="0" y="262" class="svg-lab">Databricks (trial)</text>
+<rect x="170" y="248" width="4" height="18" fill="#c792ff"/>
+<text x="182" y="262" class="svg-val">$400</text>
+<text x="0" y="292" class="svg-lab">ClickHouse (trial)</text>
+<rect x="170" y="278" width="3" height="18" fill="#c792ff"/>
+<text x="181" y="292" class="svg-val">$300</text>
+<text x="0" y="322" class="svg-lab">Deepgram</text>
+<rect x="170" y="308" width="2" height="18" fill="#c792ff"/>
+<text x="180" y="322" class="svg-val">$200</text>
+<text x="0" y="352" class="svg-lab">You.com</text>
+<rect x="170" y="338" width="2" height="18" fill="#c792ff"/>
+<text x="180" y="352" class="svg-val">$100</text>
+<text x="0" y="382" class="svg-lab">Oumi</text>
+<rect x="170" y="368" width="2" height="18" fill="#c792ff"/>
+<text x="180" y="382" class="svg-val">$25</text>
+<text x="0" y="412" class="svg-lab">Linkup</text>
+<rect x="170" y="398" width="2" height="18" fill="#c792ff"/>
+<text x="180" y="412" class="svg-val">$20</text>
+<text x="0" y="442" class="svg-lab">OpenRouter</text>
+<rect x="170" y="428" width="2" height="18" fill="#c792ff"/>
+<text x="180" y="442" class="svg-val">$15</text>
+<text x="0" y="472" class="svg-lab">Railway</text>
+<rect x="170" y="458" width="2" height="18" fill="#c792ff"/>
+<text x="180" y="472" class="svg-val">$5</text>
+<text x="0" y="502" class="svg-lab">Cerebrium</text>
+<rect x="170" y="488" width="2" height="18" fill="#c792ff"/>
+<text x="180" y="502" class="svg-val">$5</text>
+<text x="0" y="532" class="svg-lab">Fireworks</text>
+<rect x="170" y="518" width="2" height="18" fill="#c792ff"/>
+<text x="180" y="532" class="svg-val">$1</text>
+</svg>
+<p class="note">Itemized ledger total charted: $76,280.98 across 18 vendors. The public headline of $77,280.98 (19 vendors) includes a $1,000 Exa line that is an <b>unresolved record conflict</b> — it is deliberately excluded here and must never be quoted as secured until a console check resolves it. All amounts are non-cash programme credits. Inception Labs' 100M free tokens are in-kind and carry no dollar figure. Source: APPLICATIONS_LOG.md / dashboard ledger, compiled 2026-11-24.</p></div>
+
+<h2>Outreach timeline (items by date)</h2><div class="card">
+<div class="row"><span class="lab">2026-11-20</span><span class="bar" style="width:3px;background:#ff8fa3"></span><span class="val">1</span></div>
+<div class="row"><span class="lab">2026-11-21</span><span class="bar" style="width:3px;background:#ff8fa3"></span><span class="val">1</span></div>
+<div class="row"><span class="lab">2026-11-23</span><span class="bar" style="width:12px;background:#ff8fa3"></span><span class="val">4</span></div>
+<div class="row"><span class="lab">2026-11-24</span><span class="bar" style="width:520px;background:#ff8fa3"></span><span class="val">178</span></div>
+<p class="note">The operation's recorded history begins 2026-11-20; 178 of 184 items date to the single sprint day 2026-11-24. Source: OUTREACH_MASTER.csv.</p></div>
+
+<h2>How this becomes one click</h2><div class="card"><p class="note">
+The manual process behind these charts is documented step-by-step in the <b>Agent Training Guide</b> (AGENT_TRAINING_GUIDE.md in the one-click playbook), including the 16 holdup patterns mined from this sprint and the mapping from every manual step to the One-Apply system features (F1–F11) that automate it: gates before drafting, a capture-point tracker for expiring codes, a human-step stager that batches the founder's taps into one sitting, duplicate and one-applicant guards, a verified-figures service so numbers never drift, and receipt capture so "submitted" is always earned. The goal: a founder picks a programme, and the system does everything except the steps only a human may do.</p></div>
+</div></body></html>
